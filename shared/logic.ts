@@ -72,6 +72,10 @@ export function fitToWeek<T extends { validFrom?: string; validTo?: string }>(o:
 export function parsePackGrams(text: string | undefined): number | undefined {
   if (!text) return undefined;
   const t = text.toLowerCase().replace(/,/g, '.');
+  // Kanadische Preise je Pfund („lb“, „/lb“, „per lb“) bzw. Packungen in lb/oz
+  const imperial = t.match(/(\d+(?:\.\d+)?)\s*(lb|lbs|oz)\b/);
+  if (imperial) return Number(imperial[1]) * (imperial[2] === 'oz' ? 28.35 : 453.6);
+  if (/^\s*(?:\/|per\s+|je\s+)?(?:lb|lbs)\b/.test(t)) return 453.6;
   const multi = t.match(/(\d+)\s*[x×]\s*(\d+(?:\.\d+)?)\s*(kg|g|ml|l)\b/);
   if (multi) return Number(multi[1]) * Number(multi[2]) * (multi[3] === 'kg' || multi[3] === 'l' ? 1000 : 1);
   const single = t.match(/(\d+(?:\.\d+)?)\s*(kg|g|ml|l)\b/);

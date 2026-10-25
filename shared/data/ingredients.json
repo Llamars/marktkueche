@@ -196,7 +196,9 @@
     "ketchup",
     "getrocknet",
     "sauce",
-    "soße"
+    "soße",
+    "soup",
+    "suppe"
    ]
   },
   {
@@ -462,7 +464,10 @@
    "noMatch": [
     "dose",
     "glas",
-    "creme"
+    "creme",
+    "soup",
+    "suppe",
+    "cream of"
    ]
   },
   {
@@ -1245,7 +1250,10 @@
     "kondensmilch",
     "käse",
     "schmelz",
-    "milkana"
+    "milkana",
+    "chocolate",
+    "chocolat",
+    "schoko"
    ]
   },
   {
@@ -1277,7 +1285,12 @@
     "saure sahne",
     "sprühsahne",
     "sahnejoghurt",
-    "eis"
+    "eis",
+    "soup",
+    "suppe",
+    "cream of",
+    "ice cream",
+    "cheese"
    ]
   },
   {
