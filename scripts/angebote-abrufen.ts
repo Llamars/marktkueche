@@ -3,7 +3,8 @@
 // verschlüsselt in public/daten/angebote.json ab. Ohne DATA_KEY bricht das Skript ab.
 //
 // Umgebung: DATA_KEY (Familien-Schlüssel), GEMINI_API_KEY (kostenlos) oder ANTHROPIC_API_KEY / OPENAI_API_KEY,
-// optional AI_PROVIDER, AI_MODEL, OUT_DIR (Standard public/daten), FORCE=1 (bekannte Prospekte neu auslesen).
+// optional AI_PROVIDER, AI_MODEL, AI_FALLBACK_MODEL (bei Auslastung), OUT_DIR (Standard public/daten),
+// FORCE=1 (bekannte Prospekte neu auslesen).
 import fs from 'node:fs';
 import path from 'node:path';
 import type { Ingredient, Offer } from '../shared/types';
@@ -24,6 +25,8 @@ export interface SourceReport {
   validFrom?: string;
   validTo?: string;
   note?: string;
+  /** nicht alle Teile des Prospekts lesbar – beim nächsten Lauf erneut versuchen */
+  partial?: boolean;
 }
 
 export interface FetchStatus {
@@ -53,17 +56,41 @@ function aiFromEnv(): AiConfig | null {
 
 const pause = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-/** Im kostenlosen Tarif sind nur wenige Anfragen pro Minute erlaubt: bei „zu viele Anfragen“ warten und erneut versuchen. */
+// Zweites kostenloses Modell, falls das erste gerade überlastet ist
+const FALLBACK_MODEL: Partial<Record<AiProvider, string>> = { gemini: 'gemini-3.5-flash-lite' };
+
+const isBusy = (e: unknown) =>
+  e instanceof AiError && (e.retryable || /429|quota|RESOURCE_EXHAUSTED|rate limit|overloaded|high demand|unavailable|try again/i.test(e.message));
+
+/**
+ * Im kostenlosen Tarif sind nur wenige Anfragen pro Minute erlaubt und die Modelle zeitweise ausgelastet:
+ * warten und erneut versuchen, zuletzt mit dem Ersatzmodell.
+ */
 async function askWithRetry(ai: AiConfig, req: AiRequest): Promise<string> {
-  for (let attempt = 0; ; attempt++) {
+  for (let attempt = 0; attempt < 4; attempt++) {
     try {
       return await askAI(ai, req);
     } catch (e) {
-      const busy = e instanceof AiError && /429|quota|RESOURCE_EXHAUSTED|rate|overloaded|503/i.test(e.message);
-      if (!busy || attempt >= 3) throw e;
+      if (!isBusy(e) || attempt === 3) {
+        const fallback = process.env.AI_FALLBACK_MODEL || FALLBACK_MODEL[ai.provider];
+        if (isBusy(e) && fallback && fallback !== ai.model) {
+          console.log(`  weiter mit Ersatzmodell ${fallback} …`);
+          return askAI({ ...ai, model: fallback }, req);
+        }
+        throw e;
+      }
       console.log(`  KI ausgelastet, warte ${30 * (attempt + 1)} s …`);
       await pause(30000 * (attempt + 1));
     }
+  }
+  throw new AiError('Die KI ist zurzeit nicht erreichbar.');
+}
+
+function previousStatus(): FetchStatus | null {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(OUT, 'status.json'), 'utf8')) as FetchStatus;
+  } catch {
+    return null;
   }
 }
 
@@ -80,9 +107,14 @@ async function main() {
   if (!KEY) throw new Error('DATA_KEY fehlt – ohne Familien-Schlüssel werden keine Angebote veröffentlicht.');
   const ai = aiFromEnv();
   const prev = await previousOffers();
+  const prevStatus = previousStatus();
   const fresh: SourceOffer[] = [];
   const reports: SourceReport[] = [];
-  const done = (sourceId: string, validFrom?: string) => prev.some((o) => o.sourceId === sourceId && o.validFrom === validFrom);
+  // Fertig ist eine Ausgabe nur, wenn sie beim letzten Mal vollständig gelesen wurde
+  const done = (sourceId: string, validFrom?: string) => {
+    const last = prevStatus?.sources.find((x) => x.id === sourceId && x.validFrom === validFrom);
+    return !!last?.ok && !last.partial && prev.some((o) => o.sourceId === sourceId && o.validFrom === validFrom);
+  };
 
   // Aldi Süd: Prospekt-PDF mit der KI auslesen
   const aldi: SourceReport = { id: 'aldi-sued-prospekt', label: 'Aldi Süd', cityId: 'freiburg', marketId: 'aldi-sued', ok: false, count: 0 };
@@ -107,30 +139,42 @@ async function main() {
       const task = offersTask({ market: 'Aldi Süd', city: 'Freiburg im Breisgau', currency: 'EUR', today, catalog });
       const seen = new Set<string>();
       const offers: ReturnType<typeof readOffers> = [];
+      const failed: number[] = [];
+      let lastError = '';
       for (const [k, part] of parts.entries()) {
         if (k > 0) await pause(8000);
-        const text = await askWithRetry(ai, {
-          ...task,
-          prompt: `Teil ${k + 1} von ${parts.length} des Prospekts.\n${task.prompt}`,
-          files: [{ mime: 'application/pdf', base64: Buffer.from(part).toString('base64'), name: `${e.key}-${k + 1}.pdf` }],
-        });
-        for (const o of readOffers(parseJson(text), catalog)) {
-          const id = `${o.title.toLowerCase()}|${o.price}`;
-          if (!seen.has(id)) {
-            seen.add(id);
-            offers.push(o);
+        try {
+          const text = await askWithRetry(ai, {
+            ...task,
+            prompt: `Teil ${k + 1} von ${parts.length} des Prospekts.\n${task.prompt}`,
+            files: [{ mime: 'application/pdf', base64: Buffer.from(part).toString('base64'), name: `${e.key}-${k + 1}.pdf` }],
+          });
+          for (const o of readOffers(parseJson(text), catalog)) {
+            const id = `${o.title.toLowerCase()}|${o.price}`;
+            if (!seen.has(id)) {
+              seen.add(id);
+              offers.push(o);
+            }
           }
+          console.log(`  Teil ${k + 1}/${parts.length}: ${offers.length} Angebote bisher`);
+        } catch (err) {
+          // Einzelne Teile dürfen scheitern – der Rest bleibt erhalten
+          failed.push(k + 1);
+          lastError = err instanceof Error ? err.message : String(err);
+          console.log(`  Teil ${k + 1}/${parts.length} nicht lesbar: ${lastError}`);
         }
-        console.log(`  Teil ${k + 1}/${parts.length}: ${offers.length} Angebote bisher`);
       }
-      if (!offers.length) throw new Error('Die KI hat im Prospekt keine Angebote gefunden.');
+      if (!offers.length) throw new Error(lastError || 'Die KI hat im Prospekt keine Angebote gefunden.');
+      if (failed.length) {
+        aldi.partial = true;
+        aldi.note = `Teil ${failed.join(', ')} von ${parts.length} nicht lesbar – wird beim nächsten Lauf erneut versucht.`;
+      }
       fresh.push(...offers.map((o) => ({
         ...o, cityId: 'freiburg', marketId: 'aldi-sued', source: 'auto' as const, sourceId: aldi.id,
         validFrom: o.validFrom ?? e.validFrom, validTo: o.validTo ?? e.validTo,
       })));
       aldi.ok = true;
       aldi.count += offers.length;
-      aldi.note = undefined;
     }
   } catch (e) {
     aldi.note = e instanceof Error ? e.message : String(e);

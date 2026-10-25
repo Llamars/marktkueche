@@ -34,7 +34,14 @@ export const AI_PROVIDERS: Record<AiProvider, { label: string; defaultModel: str
   openai: { label: 'OpenAI', defaultModel: '', free: false, keyUrl: 'https://platform.openai.com/api-keys', loadsUrls: false },
 };
 
-export class AiError extends Error {}
+/** retryable: vorübergehend (Auslastung, zu viele Anfragen) – später erneut versuchen lohnt sich */
+export class AiError extends Error {
+  constructor(message: string, public retryable = false) {
+    super(message);
+  }
+}
+
+const temporary = (status: number) => status === 429 || status >= 500;
 
 /** Fragt die KI und gibt den Antworttext zurück. */
 export async function askAI(cfg: AiConfig, req: AiRequest): Promise<string> {
@@ -85,7 +92,7 @@ async function gemini(key: string, model: string, r: AiRequest): Promise<string>
     body: JSON.stringify(body),
   });
   const data = (await res.json().catch(() => ({}))) as GeminiResponse;
-  if (!res.ok) throw new AiError(`Gemini: ${data.error?.message ?? `Fehler ${res.status}`}`);
+  if (!res.ok) throw new AiError(`Gemini: ${data.error?.message ?? `Fehler ${res.status}`}`, temporary(res.status));
   const cand = data.candidates?.[0];
   const text = cand?.content?.parts?.map((p) => p.text ?? '').join('') ?? '';
   if (!text) throw new AiError(`Gemini hat keine Antwort geliefert (${cand?.finishReason ?? data.promptFeedback?.blockReason ?? 'leer'}).`);
@@ -107,7 +114,13 @@ async function claude(key: string, model: string, r: AiRequest): Promise<string>
   const tools: Anthropic.ToolUnion[] | undefined = r.url ? [{ type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 3 }] : undefined;
   // Ein Server-Werkzeug (Web-Fetch) kann die Runde pausieren – dann einfach fortsetzen
   for (let round = 0; round < 4; round++) {
-    const msg = await client.messages.stream({ model, max_tokens: r.maxTokens ?? 32000, system: r.system, messages, tools }).finalMessage();
+    let msg: Anthropic.Message;
+    try {
+      msg = await client.messages.stream({ model, max_tokens: r.maxTokens ?? 32000, system: r.system, messages, tools }).finalMessage();
+    } catch (e) {
+      const status = (e as { status?: number }).status;
+      throw new AiError(`Claude: ${e instanceof Error ? e.message : String(e)}`, !!status && temporary(status));
+    }
     if (msg.stop_reason === 'refusal') throw new AiError('Claude hat die Anfrage abgelehnt.');
     if (msg.stop_reason === 'max_tokens') throw new AiError('Die Antwort war zu lang und wurde abgeschnitten.');
     if (msg.stop_reason === 'pause_turn') {
@@ -141,7 +154,7 @@ async function openai(key: string, model: string, r: AiRequest): Promise<string>
     }),
   });
   const data = (await res.json().catch(() => ({}))) as { choices?: { message?: { content?: string } }[]; error?: { message?: string } };
-  if (!res.ok) throw new AiError(`OpenAI: ${data.error?.message ?? `Fehler ${res.status}`}`);
+  if (!res.ok) throw new AiError(`OpenAI: ${data.error?.message ?? `Fehler ${res.status}`}`, temporary(res.status));
   const text = data.choices?.[0]?.message?.content;
   if (!text) throw new AiError('OpenAI hat keine Antwort geliefert.');
   return text;
