@@ -38,7 +38,8 @@ Die App liegt auf **GitHub Pages**, der Workflow `.github/workflows/seite.yml` v
   pro Woche und Markt, mit Pausen). discounto zeigt die bundesweiten Ausgaben – regionale Abweichungen sind möglich.
 - **EDEKA** (regional, Südwest) gibt es dort nicht; kaufDA sperrt automatische Abrufe. Dafür in der App
   **Prospekt-Foto** nutzen (die KI liest abfotografierte Seiten oder ganze PDFs aus).
-- **Toronto – No Frills:** Bildseiten des Ontario-Prospekts von flyers-on-line.com (robots.txt erlaubt alles außer
+- **Toronto – No Frills und T&T:** Bildseiten der Ontario-Prospekte von flyers-on-line.com (T&T zeigt dort nicht
+  jede Woche einen Prospekt) (robots.txt erlaubt alles außer
   `/admin/`). Kanadische Prospekte gelten Donnerstag bis Mittwoch, deshalb läuft zusätzlich donnerstags um 12:00 UTC ein
   Abruf. nofrills.ca, T&T und Flipp sperren automatische Abrufe bzw. verbieten sie – T&T daher per Prospekt-Foto.
 

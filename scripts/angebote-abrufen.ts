@@ -132,6 +132,8 @@ const PROSPECT_SOURCES: ProspectSource[] = [
   { id: 'discounto-penny', label: 'Penny', marketId: 'penny', ...FREIBURG, find: () => findDiscountoEditions('penny_markt') },
   // Kanadische Prospekte laufen Donnerstag bis Mittwoch (deshalb zusätzlich ein Abruf donnerstags)
   { id: 'fol-no-frills', label: 'No Frills', marketId: 'no-frills', ...TORONTO, find: () => findFlyersOnlineEditions('no-frills/ontario') },
+  // T&T ist dort gelistet, zeigt aber nicht jede Woche Prospektseiten – dann meldet der Status „keine aktuelle Ausgabe“
+  { id: 'fol-tnt', label: 'T&T', marketId: 'tnt', ...TORONTO, find: () => findFlyersOnlineEditions('t-t-supermarket/ontario') },
 ];
 
 const IMAGE_BATCH_BYTES = 7 * 1024 * 1024;
