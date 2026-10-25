@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+
+  --color-bg: #faf7f2;
+  --color-surface: #ffffff;
+  --color-surface-2: #f3eee6;
+  --color-raised: #ffffff;
+  --color-ink: #1f1d1a;
+  --color-muted: #6e675d;
+  --color-line: #e8e1d6;
+  --color-brand: #2e7d5b;
+  --color-brand-ink: #ffffff;
+  --color-brand-soft: #e3f1ea;
+  --color-accent: #d9472b;
+  --color-accent-soft: #fce7e1;
+  --color-warn: #b45309;
+  --color-warn-soft: #fef3c7;
+  --color-good: #15803d;
+
+  --radius-card: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(31 29 26 / 0.04), 0 4px 16px rgb(31 29 26 / 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #141311;
+    --color-surface: #1d1b18;
+    --color-surface-2: #26231f;
+    --color-raised: #3a3630;
+    --color-ink: #f2eee7;
+    --color-muted: #a39c90;
+    --color-line: #34302a;
+    --color-brand: #5dbb8e;
+    --color-brand-ink: #10241a;
+    --color-brand-soft: #1e3a2e;
+    --color-accent: #f07a5e;
+    --color-accent-soft: #3a211b;
+    --color-warn: #f59e0b;
+    --color-warn-soft: #3a2a10;
+    --color-good: #4ade80;
+    --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+  }
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+.font-display { font-family: var(--font-display); font-optical-sizing: auto; letter-spacing: -0.01em; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+.pb-safe { padding-bottom: max(env(safe-area-inset-bottom), 0.5rem); }
+.tabular { font-variant-numeric: tabular-nums; }
+
+@keyframes sheet-in { from { transform: translateY(100%); } to { transform: translateY(0); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes toast-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.animate-sheet { animation: sheet-in 0.28s cubic-bezier(0.2, 0.9, 0.3, 1); }
+.animate-fade { animation: fade-in 0.2s ease-out; }
+.animate-toast { animation: toast-in 0.25s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .animate-sheet, .animate-fade, .animate-toast { animation: none; }
+}

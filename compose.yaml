@@ -1,0 +1,42 @@
+# Betrieb auf einem eigenen Server: docker compose up -d --build
+# Einstellungen stehen in .env (Vorlage: .env.production.example), Anleitung in DEPLOY.md.
+
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    init: true
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: "8787"
+      DATA_DIR: /data
+      COOKIE_SECURE: "true"
+      # Caddy erreicht die App über das interne Docker-Netz (private Adressen)
+      TRUST_PROXY: uniquelocal
+    volumes:
+      # Datenbank, Angebote, KI-Bilder und tägliche Sicherungen (data/backups)
+      - ./data:/data
+    expose:
+      - "8787"
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      DOMAIN: ${DOMAIN:?DOMAIN in .env setzen}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

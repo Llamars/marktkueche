@@ -1,0 +1,82 @@
+# Marktküche auf GitHub Pages: bei jeder Änderung neu veröffentlichen, montags früh vorher die Angebote abrufen.
+# Geheimnisse (Settings → Secrets and variables → Actions): DATA_KEY (Familien-Schlüssel) und GEMINI_API_KEY (kostenlos).
+# Optional statt Gemini: ANTHROPIC_API_KEY oder OPENAI_API_KEY, Auswahl über die Variable AI_PROVIDER, Modell über AI_MODEL.
+name: Seite und Angebote
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 4 * * 1' # montags 04:00 UTC = 05:00 (Winter) bzw. 06:00 (Sommer) deutscher Zeit
+  workflow_dispatch:
+    inputs:
+      abrufen:
+        description: Angebote jetzt abrufen
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: seite
+  cancel-in-progress: false
+
+jobs:
+  angebote:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.abrufen)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Angebote abrufen
+        env:
+          DATA_KEY: ${{ secrets.DATA_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+        run: node --import tsx scripts/angebote-abrufen.ts
+      - name: Verschlüsselte Angebote speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/daten
+          git diff --cached --quiet || git commit -m "Angebote vom $(date -u +%Y-%m-%d)"
+          git push
+
+  seite:
+    needs: angebote
+    # Auch veröffentlichen, wenn der Abruf übersprungen wurde oder fehlschlug (dann mit den bisherigen Angeboten)
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@v4

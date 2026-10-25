@@ -1,0 +1,16 @@
+# Caddy holt das HTTPS-Zertifikat für die Domain automatisch (Let's Encrypt) und leitet an die App weiter.
+{$DOMAIN} {
+	# Live-Abgleich (/api/events) nicht komprimieren, sonst kommen Änderungen verzögert an
+	@compress not path /api/events
+	encode @compress zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+
+	reverse_proxy app:8787
+}

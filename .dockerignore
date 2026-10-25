@@ -1,0 +1,11 @@
+node_modules
+dist
+data
+server/storage
+.env
+.env.*
+!.env.example
+!.env.production.example
+.claude
+.DS_Store
+*.log

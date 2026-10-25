@@ -1,0 +1,19 @@
+{
+  "name": "Marktküche",
+  "short_name": "Marktküche",
+  "description": "Rezeptvorschläge aus aktuellen Supermarkt-Angeboten",
+  "lang": "de",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#2E7D5B",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "./"
+}
