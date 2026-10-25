@@ -12,6 +12,8 @@ on:
     - cron: '0 21 * * 6'
     # Nachlauf sonntags 02:00 UTC: liest nur, was beim ersten Durchgang unvollständig blieb (z. B. wegen Auslastung)
     - cron: '0 2 * * 0'
+    # Kanadische Prospekte (No Frills) gelten Donnerstag bis Mittwoch: donnerstags 12:00 UTC = 8 Uhr in Toronto (Sommerzeit)
+    - cron: '0 12 * * 4'
   workflow_dispatch:
     inputs:
       abrufen:

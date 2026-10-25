@@ -150,7 +150,7 @@ function AutoFetchCard() {
       ) : (
         <p className="text-sm text-muted">Für {city.name} gibt es noch keinen automatischen Abruf – Prospektfotos auslesen oder Angebote eintragen.</p>
       )}
-      <p className="mt-2 text-[11px] text-muted">Jeden Samstagabend aus den veröffentlichten Prospekten (Marktseiten und discounto.de){remote.status.provider ? `, ausgelesen mit ${remote.status.provider}` : ''}.</p>
+      <p className="mt-2 text-[11px] text-muted">Jeden Samstagabend (kanadische Prospekte zusätzlich donnerstags) aus veröffentlichten Prospekten{remote.status.provider ? `, ausgelesen mit ${remote.status.provider}` : ''}.</p>
     </Card>
   );
 }

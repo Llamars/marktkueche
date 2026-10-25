@@ -37,7 +37,10 @@ Die App liegt auf **GitHub Pages**, der Workflow `.github/workflows/seite.yml` v
 - **REWE, Lidl, Netto, Penny:** Prospekt-PDFs von discounto.de (robots.txt erlaubt `/Prospekte/`; höchstens ein Abruf
   pro Woche und Markt, mit Pausen). discounto zeigt die bundesweiten Ausgaben – regionale Abweichungen sind möglich.
 - **EDEKA** (regional, Südwest) gibt es dort nicht; kaufDA sperrt automatische Abrufe. Dafür in der App
-  **Prospekt-Foto** nutzen (die KI liest abfotografierte Seiten aus).
+  **Prospekt-Foto** nutzen (die KI liest abfotografierte Seiten oder ganze PDFs aus).
+- **Toronto – No Frills:** Bildseiten des Ontario-Prospekts von flyers-on-line.com (robots.txt erlaubt alles außer
+  `/admin/`). Kanadische Prospekte gelten Donnerstag bis Mittwoch, deshalb läuft zusätzlich donnerstags um 12:00 UTC ein
+  Abruf. nofrills.ca, T&T und Flipp sperren automatische Abrufe bzw. verbieten sie – T&T daher per Prospekt-Foto.
 
 Die Angebote liegen **verschlüsselt** in `public/daten/angebote.json` (AES-256-GCM). Lesbar sind sie nur mit dem
 **Familien-Schlüssel**, den man einmal in der App einträgt (Profil → Familien-Schlüssel) oder per Einladungslink bekommt.
@@ -121,7 +124,7 @@ ausgeschlossen. Frühstück lässt sich im Wochenplan als eigene Mahlzeit planen
 | `shared/ai.ts`, `shared/aiTasks.ts` | KI-Anbindung (Gemini, Claude, OpenAI) und Aufgaben: Prospekt auslesen, Rezept importieren, Ideen |
 | `shared/crypto.ts` | Verschlüsselung der abgerufenen Angebote |
 | `scripts/angebote-abrufen.ts` | Wöchentlicher Abruf (GitHub Action) |
-| `server/lib/quellen.ts` | Angebotsquellen (Aldi Süd, Alnatura, discounto.de) |
+| `server/lib/quellen.ts` | Angebotsquellen (Aldi Süd, Alnatura, discounto.de, flyers-on-line.com) |
 | `src/` | React-App (Vite, Tailwind) |
 | `server/` | optionale Server-Variante: Konten und Haushalte, Live-Abgleich, automatische Angebotsquellen, Rezept-Import, KI |
 

@@ -177,3 +177,37 @@ export async function findDiscountoEditions(slug: string, today = new Date()): P
   }
   return editions;
 }
+
+// ------------------------------------------------------------ flyers-on-line.com: kanadische Prospekte als Bildseiten
+// robots.txt erlaubt alles außer /admin/ (Stand Oktober 2026); keine Nutzungsbedingungen. Abruf höchstens einmal je Ausgabe.
+
+export interface ImageEdition extends Edition {
+  imageUrls: string[];
+}
+
+const FOL = 'https://www.flyers-on-line.com';
+const MONTHS: Record<string, number> = {
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+};
+
+/** Aktueller Prospekt eines Markts, z. B. „no-frills/ontario“: Bildseiten und Gültigkeit („Valid from October 22 to 28, 2026“). */
+export async function findFlyersOnlineEditions(path: string): Promise<ImageEdition[]> {
+  const html = await (await get(`${FOL}/${path}`)).text();
+  const found = [...html.matchAll(/(?:https?:\/\/www\.flyers-on-line\.com)?\/data\/promotions\/(\d+)\/[^"'?\s]+?\.(?:jpe?g|png|webp)/g)];
+  if (!found.length) return [];
+  // Nur der Hauptprospekt (erste Ausgabe auf der Seite), Seiten in der richtigen Reihenfolge
+  const promo = found[0][1];
+  const pageNo = (u: string) => Number(u.match(/_(\d+)\.\w+$/)?.[1] ?? 0);
+  const imageUrls = [...new Set(found.filter((m) => m[1] === promo).map((m) => (m[0].startsWith('http') ? m[0] : `${FOL}${m[0]}`)))]
+    .sort((a, b) => pageNo(a) - pageNo(b));
+  const v = html.match(/Valid from (\w+) (\d{1,2})(?:st|nd|rd|th)? to (?:(\w+) )?(\d{1,2})(?:st|nd|rd|th)?,? (\d{4})/i);
+  if (!v) return [];
+  const m1 = MONTHS[v[1].toLowerCase()];
+  const m2 = v[3] ? MONTHS[v[3].toLowerCase()] : m1;
+  const year = Number(v[5]);
+  if (!m1 || !m2) return [];
+  // Ausgaben über den Jahreswechsel (Dezember bis Januar)
+  const y1 = m1 > m2 ? year - 1 : year;
+  const iso = (y: number, m: number, d: string) => `${y}-${String(m).padStart(2, '0')}-${d.padStart(2, '0')}`;
+  return [{ key: `${path.replace(/\//g, '-')}-${promo}`, validFrom: iso(y1, m1, v[2]), validTo: iso(year, m2, v[4]), imageUrls }];
+}

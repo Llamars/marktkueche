@@ -1,5 +1,6 @@
 // Wöchentlicher Angebotsabruf (läuft samstags um 22 Uhr MEZ als GitHub Action, siehe .github/workflows/seite.yml).
-// Holt die Prospekte (Aldi Süd und Alnatura von deren Seiten, REWE, Lidl, Netto und Penny über discounto.de),
+// Holt die Prospekte (Aldi Süd und Alnatura von deren Seiten, REWE, Lidl, Netto und Penny über discounto.de,
+// No Frills für Toronto über flyers-on-line.com),
 // liest PDFs mit der KI aus und legt die Angebote verschlüsselt in public/daten/angebote.json ab.
 // Ohne DATA_KEY bricht das Skript ab.
 //
@@ -9,11 +10,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { Ingredient, Offer } from '../shared/types';
-import { AI_PROVIDERS, AiError, askAI, parseJson, type AiConfig, type AiProvider, type AiRequest } from '../shared/ai';
+import { AI_PROVIDERS, AiError, askAI, parseJson, type AiConfig, type AiFile, type AiProvider, type AiRequest } from '../shared/ai';
 import { offersTask, readOffers } from '../shared/aiTasks';
 import { isSealed, seal, unseal } from '../shared/crypto';
 import { fitToWeek, isoDate, matchIngredient } from '../shared/logic';
-import { fetchAlnatura, findAldiSuedEditions, findDiscountoEditions, get, type AldiEdition, type SourceOffer } from '../server/lib/quellen';
+import {
+  fetchAlnatura, findAldiSuedEditions, findDiscountoEditions, findFlyersOnlineEditions, get, type AldiEdition, type ImageEdition, type SourceOffer,
+} from '../server/lib/quellen';
 import { splitPdf } from '../shared/pdfSplit';
 
 export interface SourceReport {
@@ -106,20 +109,68 @@ async function previousOffers(): Promise<Offer[]> {
   }
 }
 
-const PDF_SOURCES: { id: string; label: string; marketId: string; find: () => Promise<AldiEdition[]> }[] = [
-  { id: 'aldi-sued-prospekt', label: 'Aldi Süd', marketId: 'aldi-sued', find: () => findAldiSuedEditions() },
-  { id: 'discounto-rewe', label: 'REWE', marketId: 'rewe', find: () => findDiscountoEditions('REWE') },
-  { id: 'discounto-lidl', label: 'Lidl', marketId: 'lidl', find: () => findDiscountoEditions('lidl') },
-  { id: 'discounto-netto', label: 'Netto', marketId: 'netto', find: () => findDiscountoEditions('Netto-Marken-Discount') },
-  { id: 'discounto-penny', label: 'Penny', marketId: 'penny', find: () => findDiscountoEditions('penny_markt') },
+type Prospect = AldiEdition | ImageEdition;
+
+interface ProspectSource {
+  id: string;
+  label: string;
+  marketId: string;
+  cityId: string;
+  city: string;
+  currency: string;
+  find: () => Promise<Prospect[]>;
+}
+
+const FREIBURG = { cityId: 'freiburg', city: 'Freiburg im Breisgau', currency: 'EUR' };
+const TORONTO = { cityId: 'toronto', city: 'Toronto', currency: 'CAD' };
+
+const PROSPECT_SOURCES: ProspectSource[] = [
+  { id: 'aldi-sued-prospekt', label: 'Aldi Süd', marketId: 'aldi-sued', ...FREIBURG, find: () => findAldiSuedEditions() },
+  { id: 'discounto-rewe', label: 'REWE', marketId: 'rewe', ...FREIBURG, find: () => findDiscountoEditions('REWE') },
+  { id: 'discounto-lidl', label: 'Lidl', marketId: 'lidl', ...FREIBURG, find: () => findDiscountoEditions('lidl') },
+  { id: 'discounto-netto', label: 'Netto', marketId: 'netto', ...FREIBURG, find: () => findDiscountoEditions('Netto-Marken-Discount') },
+  { id: 'discounto-penny', label: 'Penny', marketId: 'penny', ...FREIBURG, find: () => findDiscountoEditions('penny_markt') },
+  // Kanadische Prospekte laufen Donnerstag bis Mittwoch (deshalb zusätzlich ein Abruf donnerstags)
+  { id: 'fol-no-frills', label: 'No Frills', marketId: 'no-frills', ...TORONTO, find: () => findFlyersOnlineEditions('no-frills/ontario') },
 ];
 
-/** Lädt ein Prospekt-PDF, zerlegt es in Teile und lässt die KI jeden Teil auslesen. Einzelne Teile dürfen scheitern. */
-async function readProspectPdf(ai: AiConfig, market: string, e: AldiEdition, report: SourceReport) {
-  const pdf = new Uint8Array(await (await get(e.pdfUrl, 'application/pdf')).arrayBuffer());
-  const parts = await splitPdf(pdf);
-  console.log(`${market} ${e.key}: PDF ${(pdf.length / 1048576).toFixed(1)} MB in ${parts.length} Teilen → ${AI_PROVIDERS[ai.provider].label}`);
-  const task = offersTask({ market, city: 'Freiburg im Breisgau', currency: 'EUR', today, catalog });
+const IMAGE_BATCH_BYTES = 7 * 1024 * 1024;
+
+/** Prospekt als Pakete für die KI: PDFs in Teile zerlegt, Bildseiten zu Paketen gebündelt. */
+async function prospectParts(e: Prospect): Promise<{ files: AiFile[]; label: string }[]> {
+  if ('pdfUrl' in e) {
+    const pdf = new Uint8Array(await (await get(e.pdfUrl, 'application/pdf')).arrayBuffer());
+    const parts = await splitPdf(pdf);
+    console.log(`  PDF ${(pdf.length / 1048576).toFixed(1)} MB in ${parts.length} Teilen`);
+    return parts.map((p, k) => ({ files: [{ mime: 'application/pdf', base64: Buffer.from(p).toString('base64'), name: `${e.key}-${k + 1}.pdf` }], label: `Teil ${k + 1} von ${parts.length}` }));
+  }
+  const batches: { files: AiFile[]; label: string }[] = [];
+  let files: AiFile[] = [];
+  let bytes = 0;
+  let first = 1;
+  for (const [k, url] of e.imageUrls.entries()) {
+    await pause(2000);
+    const res = await get(url, 'image/*');
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (files.length && bytes + buf.length > IMAGE_BATCH_BYTES) {
+      batches.push({ files, label: `Seiten ${first}–${k} von ${e.imageUrls.length}` });
+      files = [];
+      bytes = 0;
+      first = k + 1;
+    }
+    files.push({ mime: res.headers.get('content-type')?.split(';')[0] || 'image/jpeg', base64: buf.toString('base64'), name: `${e.key}-${k + 1}` });
+    bytes += buf.length;
+  }
+  if (files.length) batches.push({ files, label: `Seiten ${first}–${e.imageUrls.length} von ${e.imageUrls.length}` });
+  console.log(`  ${e.imageUrls.length} Bildseiten in ${batches.length} Paketen`);
+  return batches;
+}
+
+/** Lässt die KI jedes Paket eines Prospekts auslesen. Einzelne Pakete dürfen scheitern. */
+async function readProspect(ai: AiConfig, src: ProspectSource, e: Prospect, report: SourceReport) {
+  console.log(`${src.label} ${e.key} → ${AI_PROVIDERS[ai.provider].label}`);
+  const parts = await prospectParts(e);
+  const task = offersTask({ market: src.label, city: src.city, currency: src.currency, today, catalog });
   const seen = new Set<string>();
   const offers: ReturnType<typeof readOffers> = [];
   const failed: number[] = [];
@@ -128,11 +179,7 @@ async function readProspectPdf(ai: AiConfig, market: string, e: AldiEdition, rep
     // Abstand zwischen den Anfragen, damit das Minutenkontingent des Gratis-Tarifs reicht
     await pause(15000);
     try {
-      const text = await askWithRetry(ai, {
-        ...task,
-        prompt: `Teil ${k + 1} von ${parts.length} des Prospekts.\n${task.prompt}`,
-        files: [{ mime: 'application/pdf', base64: Buffer.from(part).toString('base64'), name: `${e.key}-${k + 1}.pdf` }],
-      });
+      const text = await askWithRetry(ai, { ...task, prompt: `${part.label} des Prospekts.\n${task.prompt}`, files: part.files });
       for (const o of readOffers(parseJson(text), catalog)) {
         const id = `${o.title.toLowerCase()}|${o.price}`;
         if (!seen.has(id)) {
@@ -169,10 +216,11 @@ async function main() {
   };
 
   // Aldi Süd: Prospekt-PDF mit der KI auslesen
-  // Prospekt-PDFs mit der KI auslesen: Aldi Süd von der eigenen Seite, die übrigen Märkte über discounto.de
+  // Prospekte mit der KI auslesen: Aldi Süd von der eigenen Seite, REWE/Lidl/Netto/Penny über discounto.de,
+  // No Frills (Toronto) über flyers-on-line.com
   const soon = isoDate(new Date(Date.now() + 2 * 864e5));
-  for (const src of PDF_SOURCES) {
-    const report: SourceReport = { id: src.id, label: src.label, cityId: 'freiburg', marketId: src.marketId, ok: false, count: 0 };
+  for (const src of PROSPECT_SOURCES) {
+    const report: SourceReport = { id: src.id, label: src.label, cityId: src.cityId, marketId: src.marketId, ok: false, count: 0 };
     reports.push(report);
     try {
       // Ausgaben, die morgen noch gelten (am Samstagabend also nicht mehr die auslaufende Woche) und spätestens
@@ -192,9 +240,9 @@ async function main() {
         if (!ai) throw new Error('Kein KI-Schlüssel hinterlegt (GEMINI_API_KEY).');
         // Mehrere Prospekte derselben Woche können dieselben Angebote enthalten
         const known = new Set(fresh.filter((o) => o.sourceId === src.id).map((o) => `${o.title.toLowerCase()}|${o.price}`));
-        const offers = (await readProspectPdf(ai, src.label, e, report)).filter((o) => !known.has(`${o.title.toLowerCase()}|${o.price}`));
+        const offers = (await readProspect(ai, src, e, report)).filter((o) => !known.has(`${o.title.toLowerCase()}|${o.price}`));
         fresh.push(...offers.map((o) => fitToWeek({
-          ...o, cityId: 'freiburg', marketId: src.marketId, source: 'auto' as const, sourceId: src.id,
+          ...o, cityId: src.cityId, marketId: src.marketId, source: 'auto' as const, sourceId: src.id,
         }, e)));
         report.ok = true;
         report.count += offers.length;
