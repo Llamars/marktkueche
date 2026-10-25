@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T10:46:04.303Z",
+ "updatedAt": "2026-10-25T16:06:16.259Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -8,9 +8,10 @@
    "cityId": "freiburg",
    "marketId": "aldi-sued",
    "ok": true,
-   "count": 76,
+   "count": 101,
    "validFrom": "2026-10-26",
-   "validTo": "2026-10-31"
+   "validTo": "2026-10-31",
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-rewe",
@@ -18,7 +19,7 @@
    "cityId": "freiburg",
    "marketId": "rewe",
    "ok": true,
-   "count": 56,
+   "count": 82,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
    "note": "bereits ausgelesen"
@@ -29,11 +30,11 @@
    "cityId": "freiburg",
    "marketId": "lidl",
    "ok": true,
-   "count": 77,
+   "count": 102,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
    "partial": true,
-   "note": "Teil 9 von 11 nicht lesbar – wird beim nächsten Lauf erneut versucht."
+   "note": "Teil 4, 6 von 11 nicht lesbar – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-netto",
@@ -41,7 +42,7 @@
    "cityId": "freiburg",
    "marketId": "netto",
    "ok": true,
-   "count": 74,
+   "count": 118,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
    "note": "bereits ausgelesen"
@@ -52,19 +53,30 @@
    "cityId": "freiburg",
    "marketId": "penny",
    "ok": true,
-   "count": 68,
+   "count": 113,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
    "note": "bereits ausgelesen"
+  },
+  {
+   "id": "fol-no-frills",
+   "label": "No Frills",
+   "cityId": "toronto",
+   "marketId": "no-frills",
+   "ok": true,
+   "count": 127,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-28"
   },
   {
    "id": "alnatura-wochenangebote",
    "label": "Alnatura",
    "cityId": "freiburg",
    "marketId": "alnatura",
-   "ok": false,
-   "count": 0,
-   "note": "fetch failed"
+   "ok": true,
+   "count": 6,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-31"
   }
  ]
 }
