@@ -1,0 +1,27 @@
+{
+ "updatedAt": "2026-10-25T02:20:33.632Z",
+ "provider": "Gemini (Google)",
+ "sources": [
+  {
+   "id": "aldi-sued-prospekt",
+   "label": "Aldi Süd",
+   "cityId": "freiburg",
+   "marketId": "aldi-sued",
+   "ok": false,
+   "count": 0,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-31",
+   "note": "Gemini: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+  },
+  {
+   "id": "alnatura-wochenangebote",
+   "label": "Alnatura",
+   "cityId": "freiburg",
+   "marketId": "alnatura",
+   "ok": true,
+   "count": 6,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-31"
+  }
+ ]
+}
