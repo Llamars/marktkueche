@@ -68,6 +68,8 @@ export async function findAldiSuedEditions(): Promise<AldiEdition[]> {
       const kw = slug?.match(/kw(\d{1,2})-(\d{2})/);
       if (!slug || !pdf || !kw || editions.some((e) => e.key === slug)) continue;
       const { from, to } = isoWeek(Number(kw[1]), 2000 + Number(kw[2]));
+      // Denselben Wochenprospekt gibt es in zwei Fassungen (…-op-mp und …-op) – eine reicht
+      if (editions.some((e) => e.validFrom === from)) continue;
       editions.push({ key: slug, validFrom: from, validTo: to, pdfUrl: pdf.replace(/&amp;/g, '&') });
     } catch {
       /* Kandidat existiert nicht */
@@ -109,4 +111,69 @@ export async function fetchAlnatura(): Promise<{ edition: Edition | null; offers
     });
   });
   return { edition, offers };
+}
+
+// ------------------------------------------------------------ discounto.de: Prospekte vieler Märkte als PDF
+// robots.txt erlaubt /Prospekte/ ausdrücklich (Stand Oktober 2026); abgerufen wird höchstens einmal pro Woche und Markt,
+// mit Pausen zwischen den Seiten (crawl-delay 2 s).
+
+const DISCOUNTO = 'https://www.discounto.de';
+const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/**
+ * Wochenprospekte eines Markts auf discounto (z. B. „REWE“, „lidl“, „penny_markt“, „Netto-Marken-Discount“):
+ * laufende und nächste Woche, ohne Monats- und Sonderkataloge.
+ */
+export async function findDiscountoEditions(slug: string, today = new Date()): Promise<AldiEdition[]> {
+  const iso = (d: Date) => d.toISOString().slice(0, 10);
+  const soon = iso(new Date(today.getTime() + 2 * 864e5));
+  const now = iso(today);
+  const esc = slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const detail = new RegExp(`/Prospekte/(${esc}-(\\d{4}-\\d{2}-\\d{2})_(\\d{4}-\\d{2}-\\d{2})_\\d+)/`, 'g');
+  const pdfRe = /\/\/src\.discounto\.de\/Prospekt\/[^"'\s]+\.pdf/;
+  const found = new Map<string, AldiEdition>();
+
+  for (const page of [`${DISCOUNTO}/Prospekte/Anbieter:${slug}/naechste-woche/`, `${DISCOUNTO}/Prospekte/Anbieter:${slug}/`]) {
+    await wait(3000);
+    let html: string;
+    try {
+      html = await (await get(page)).text();
+    } catch {
+      continue;
+    }
+    for (const m of html.matchAll(detail)) {
+      const [, key, from, to] = m;
+      const days = (Date.parse(to) - Date.parse(from)) / 864e5;
+      // Nur Wochenprospekte, die gerade gelten oder in den nächsten zwei Tagen beginnen
+      if (days > 8 || to < now || from > soon || found.has(key)) continue;
+      found.set(key, { key, validFrom: from, validTo: to, pdfUrl: '' });
+    }
+    // Die Seite „nächste Woche“ zeigt das PDF manchmal direkt, ohne Detailseite
+    const direct = html.match(pdfRe)?.[0];
+    const until = html.match(/gültig bis zum <strong>[^<]*?(\d{2})\.(\d{2})\.(\d{4})/);
+    const from = direct?.match(/\/(\d{4}-\d{2}-\d{2})(?:-\d+)?\//)?.[1];
+    if (direct && from && until) {
+      const to = `${until[3]}-${until[2]}-${until[1]}`;
+      const key = `${slug}-${from}_${to}`;
+      const known = [...found.values()].some((e) => e.validFrom === from);
+      if (!known && to >= now && from <= soon) found.set(key, { key, validFrom: from, validTo: to, pdfUrl: `https:${direct}` });
+    }
+  }
+
+  // Nur die neueste Ausgabe (bei mehreren Prospekten derselben Woche höchstens zwei), PDF-Adresse von der Detailseite holen
+  const newest = [...found.values()].reduce((m, e) => ((e.validFrom ?? '') > m ? e.validFrom ?? '' : m), '');
+  const editions: AldiEdition[] = [];
+  for (const e of [...found.values()].filter((x) => x.validFrom === newest).slice(0, 2)) {
+    if (!e.pdfUrl) {
+      await wait(3000);
+      try {
+        const pdf = (await (await get(`${DISCOUNTO}/Prospekte/${e.key}/`)).text()).match(pdfRe)?.[0];
+        if (pdf) e.pdfUrl = `https:${pdf}`;
+      } catch {
+        /* Detailseite nicht erreichbar */
+      }
+    }
+    if (e.pdfUrl) editions.push(e);
+  }
+  return editions;
 }

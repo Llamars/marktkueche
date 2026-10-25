@@ -34,8 +34,10 @@ Die App liegt auf **GitHub Pages**, der Workflow `.github/workflows/seite.yml` v
 - **Aldi Süd:** offizieller Wochenprospekt (PDF, 40–50 MB). Er wird in Teile zerlegt und von der KI ausgelesen –
   standardmäßig mit **Gemini im kostenlosen Tarif** (Google darf Anfragen im Gratis-Tarif zur Verbesserung nutzen).
 - **Alnatura:** Angebotsseite, ohne KI.
-- REWE, EDEKA, Lidl, Netto, Penny und Portale wie kaufDA sperren automatische Abrufe – dafür gibt es in der App
-  **Prospekt-Foto** (die KI liest abfotografierte Seiten aus).
+- **REWE, Lidl, Netto, Penny:** Prospekt-PDFs von discounto.de (robots.txt erlaubt `/Prospekte/`; höchstens ein Abruf
+  pro Woche und Markt, mit Pausen). discounto zeigt die bundesweiten Ausgaben – regionale Abweichungen sind möglich.
+- **EDEKA** (regional, Südwest) gibt es dort nicht; kaufDA sperrt automatische Abrufe. Dafür in der App
+  **Prospekt-Foto** nutzen (die KI liest abfotografierte Seiten aus).
 
 Die Angebote liegen **verschlüsselt** in `public/daten/angebote.json` (AES-256-GCM). Lesbar sind sie nur mit dem
 **Familien-Schlüssel**, den man einmal in der App einträgt (Profil → Familien-Schlüssel) oder per Einladungslink bekommt.
@@ -119,7 +121,7 @@ ausgeschlossen. Frühstück lässt sich im Wochenplan als eigene Mahlzeit planen
 | `shared/ai.ts`, `shared/aiTasks.ts` | KI-Anbindung (Gemini, Claude, OpenAI) und Aufgaben: Prospekt auslesen, Rezept importieren, Ideen |
 | `shared/crypto.ts` | Verschlüsselung der abgerufenen Angebote |
 | `scripts/angebote-abrufen.ts` | Wöchentlicher Abruf (GitHub Action) |
-| `server/lib/quellen.ts` | Offizielle Angebotsquellen (Aldi Süd, Alnatura) |
+| `server/lib/quellen.ts` | Angebotsquellen (Aldi Süd, Alnatura, discounto.de) |
 | `src/` | React-App (Vite, Tailwind) |
 | `server/` | optionale Server-Variante: Konten und Haushalte, Live-Abgleich, automatische Angebotsquellen, Rezept-Import, KI |
 
