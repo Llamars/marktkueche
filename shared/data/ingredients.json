@@ -1,0 +1,4062 @@
+{
+ "_info": "Zutatenkatalog. bls = Code im Bundeslebensmittelschlüssel 4.0 (Max Rubner-Institut, CC BY 4.0). units = Gramm je Einheit. pack.price = Richtpreis in EUR (Deutschland, Discounter-Niveau, Schätzung Herbst 2026). allergens nach LMIV Anhang II.",
+ "items": [
+  {
+   "id": "zwiebel",
+   "name": "Zwiebeln",
+   "one": "Zwiebel",
+   "bls": "G480100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 80
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1-kg-Netz",
+    "price": 1.79
+   },
+   "match": [
+    "zwiebel",
+    "speisezwiebel",
+    "gemüsezwiebel",
+    "onion"
+   ],
+   "noMatch": [
+    "frühlingszwiebel",
+    "lauchzwiebel",
+    "röstzwiebel",
+    "green onion"
+   ]
+  },
+  {
+   "id": "rote_zwiebel",
+   "name": "Rote Zwiebeln",
+   "one": "rote Zwiebel",
+   "bls": "G480100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 80
+   },
+   "pack": {
+    "g": 500,
+    "label": "500-g-Netz",
+    "price": 1.29
+   },
+   "match": [
+    "rote zwiebel",
+    "red onion"
+   ]
+  },
+  {
+   "id": "knoblauch",
+   "name": "Knoblauch",
+   "bls": "G490100",
+   "aisle": "gemuese",
+   "units": {
+    "zehe": 4,
+    "knolle": 50
+   },
+   "pack": {
+    "g": 100,
+    "label": "2 Knollen",
+    "price": 0.89
+   },
+   "match": [
+    "knoblauch",
+    "garlic"
+   ]
+  },
+  {
+   "id": "fruehlingszwiebel",
+   "name": "Frühlingszwiebeln",
+   "one": "Frühlingszwiebel",
+   "bls": "G482100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 15,
+    "bund": 120
+   },
+   "pack": {
+    "g": 120,
+    "label": "1 Bund",
+    "price": 0.79
+   },
+   "match": [
+    "frühlingszwiebel",
+    "lauchzwiebel",
+    "green onion",
+    "scallion"
+   ]
+  },
+  {
+   "id": "paprika_rot",
+   "name": "Rote Paprika",
+   "one": "rote Paprika",
+   "bls": "G543100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 160
+   },
+   "pack": {
+    "g": 500,
+    "label": "3 Stück",
+    "price": 2.49
+   },
+   "match": [
+    "paprika rot",
+    "rote paprika",
+    "paprika mix",
+    "paprika",
+    "bell pepper",
+    "red pepper",
+    "peppers"
+   ],
+   "noMatch": [
+    "paprikapulver",
+    "paprika edelsüß",
+    "chips",
+    "gewürz"
+   ]
+  },
+  {
+   "id": "paprika_gelb",
+   "name": "Gelbe Paprika",
+   "one": "gelbe Paprika",
+   "bls": "G542100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 160
+   },
+   "pack": {
+    "g": 500,
+    "label": "3 Stück",
+    "price": 2.49
+   },
+   "match": [
+    "paprika gelb",
+    "gelbe paprika",
+    "paprika mix",
+    "yellow pepper"
+   ],
+   "noMatch": [
+    "pulver",
+    "chips"
+   ]
+  },
+  {
+   "id": "paprika_gruen",
+   "name": "Grüne Paprika",
+   "one": "grüne Paprika",
+   "bls": "G541100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 160
+   },
+   "pack": {
+    "g": 500,
+    "label": "3 Stück",
+    "price": 1.99
+   },
+   "match": [
+    "paprika grün",
+    "grüne paprika",
+    "green pepper"
+   ],
+   "noMatch": [
+    "pulver"
+   ]
+  },
+  {
+   "id": "tomate",
+   "name": "Tomaten",
+   "one": "Tomate",
+   "bls": "G561100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 100
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.49
+   },
+   "match": [
+    "tomate",
+    "rispentomate",
+    "strauchtomate",
+    "tomatoes"
+   ],
+   "noMatch": [
+    "kirschtomate",
+    "cherrytomate",
+    "cocktailtomate",
+    "passiert",
+    "dose",
+    "mark",
+    "ketchup",
+    "getrocknet",
+    "sauce",
+    "soße"
+   ]
+  },
+  {
+   "id": "kirschtomaten",
+   "name": "Kirschtomaten",
+   "bls": "G561100",
+   "aisle": "gemuese",
+   "units": {
+    "schale": 250
+   },
+   "pack": {
+    "g": 250,
+    "label": "250-g-Schale",
+    "price": 1.29
+   },
+   "match": [
+    "kirschtomate",
+    "cherrytomate",
+    "cocktailtomate",
+    "datteltomate",
+    "snacktomate",
+    "cherry tomato",
+    "grape tomato"
+   ]
+  },
+  {
+   "id": "tomaten_dose",
+   "name": "Gehackte Tomaten (Dose)",
+   "bls": "G568900",
+   "aisle": "trocken",
+   "units": {
+    "dose": 400
+   },
+   "pack": {
+    "g": 400,
+    "label": "400-g-Dose",
+    "price": 0.79
+   },
+   "match": [
+    "gehackte tomaten",
+    "geschälte tomaten",
+    "tomaten stückig",
+    "stückige tomaten",
+    "pizzatomaten",
+    "diced tomatoes",
+    "canned tomatoes"
+   ]
+  },
+  {
+   "id": "passierte_tomaten",
+   "name": "Passierte Tomaten",
+   "bls": "R161200",
+   "aisle": "trocken",
+   "units": {
+    "pck": 500
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 0.69
+   },
+   "match": [
+    "passierte tomaten",
+    "passata",
+    "tomatenpüree"
+   ]
+  },
+  {
+   "id": "tomatenmark",
+   "name": "Tomatenmark",
+   "bls": "R160000",
+   "aisle": "trocken",
+   "units": {
+    "el": 15,
+    "tl": 5
+   },
+   "pack": {
+    "g": 200,
+    "label": "200-g-Tube",
+    "price": 0.69
+   },
+   "match": [
+    "tomatenmark",
+    "tomato paste"
+   ]
+  },
+  {
+   "id": "kartoffel",
+   "name": "Kartoffeln",
+   "one": "Kartoffel",
+   "bls": "K110100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 120
+   },
+   "pack": {
+    "g": 2500,
+    "label": "2,5-kg-Sack",
+    "price": 2.99
+   },
+   "match": [
+    "kartoffel",
+    "speisekartoffel",
+    "drillinge",
+    "potatoes"
+   ],
+   "noMatch": [
+    "süßkartoffel",
+    "chips",
+    "püree",
+    "kloß",
+    "pommes",
+    "rösti",
+    "puffer",
+    "salat",
+    "gnocchi"
+   ]
+  },
+  {
+   "id": "suesskartoffel",
+   "name": "Süßkartoffeln",
+   "one": "Süßkartoffel",
+   "bls": "K420100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 300
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 2.99
+   },
+   "match": [
+    "süßkartoffel",
+    "suesskartoffel",
+    "batate",
+    "sweet potato"
+   ],
+   "noMatch": [
+    "pommes",
+    "chips"
+   ]
+  },
+  {
+   "id": "moehre",
+   "name": "Möhren",
+   "one": "Möhre",
+   "bls": "G620100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 80
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1-kg-Beutel",
+    "price": 0.99
+   },
+   "match": [
+    "möhre",
+    "karotte",
+    "moehre",
+    "carrot"
+   ],
+   "noMatch": [
+    "saft",
+    "kuchen"
+   ]
+  },
+  {
+   "id": "zucchini",
+   "name": "Zucchini",
+   "bls": "G582100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 250
+   },
+   "pack": {
+    "g": 500,
+    "label": "2 Stück",
+    "price": 1.49
+   },
+   "match": [
+    "zucchini",
+    "zucchetti"
+   ]
+  },
+  {
+   "id": "brokkoli",
+   "name": "Brokkoli",
+   "bls": "G312100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 500
+   },
+   "pack": {
+    "g": 500,
+    "label": "1 Kopf",
+    "price": 1.49
+   },
+   "match": [
+    "brokkoli",
+    "broccoli"
+   ]
+  },
+  {
+   "id": "blumenkohl",
+   "name": "Blumenkohl",
+   "bls": "G311100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 800
+   },
+   "pack": {
+    "g": 800,
+    "label": "1 Kopf",
+    "price": 1.99
+   },
+   "match": [
+    "blumenkohl",
+    "cauliflower"
+   ]
+  },
+  {
+   "id": "spinat_tk",
+   "name": "Blattspinat (TK)",
+   "bls": "G211200",
+   "aisle": "tk",
+   "units": {},
+   "pack": {
+    "g": 750,
+    "label": "750-g-Beutel",
+    "price": 1.49
+   },
+   "match": [
+    "blattspinat",
+    "spinat",
+    "spinach"
+   ],
+   "noMatch": [
+    "rahmspinat",
+    "tortelloni",
+    "pizza"
+   ]
+  },
+  {
+   "id": "champignons",
+   "name": "Champignons",
+   "bls": "K701100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 400,
+    "label": "400-g-Schale",
+    "price": 1.79
+   },
+   "match": [
+    "champignon",
+    "pilze",
+    "mushroom"
+   ],
+   "noMatch": [
+    "dose",
+    "glas",
+    "creme"
+   ]
+  },
+  {
+   "id": "lauch",
+   "name": "Lauch",
+   "bls": "G470100",
+   "aisle": "gemuese",
+   "units": {
+    "stange": 300
+   },
+   "pack": {
+    "g": 300,
+    "label": "1 Stange",
+    "price": 0.99
+   },
+   "match": [
+    "lauch",
+    "porree",
+    "leek"
+   ]
+  },
+  {
+   "id": "kuerbis",
+   "name": "Hokkaido-Kürbis",
+   "bls": "G581000",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 1200
+   },
+   "pack": {
+    "g": 1200,
+    "label": "1 Stück",
+    "price": 2.49
+   },
+   "match": [
+    "hokkaido",
+    "kürbis",
+    "butternut",
+    "pumpkin",
+    "squash"
+   ],
+   "noMatch": [
+    "kürbiskern",
+    "kernöl",
+    "suppe"
+   ]
+  },
+  {
+   "id": "erbsen_tk",
+   "name": "Erbsen (TK)",
+   "bls": "G760200",
+   "aisle": "tk",
+   "units": {},
+   "pack": {
+    "g": 1000,
+    "label": "1-kg-Beutel",
+    "price": 1.99
+   },
+   "match": [
+    "erbsen",
+    "junge erbsen",
+    "peas"
+   ],
+   "noMatch": [
+    "kichererbse",
+    "erbsensuppe",
+    "zuckerschote"
+   ]
+  },
+  {
+   "id": "mais",
+   "name": "Mais (Dose)",
+   "bls": "G570902",
+   "aisle": "trocken",
+   "units": {
+    "dose": 285
+   },
+   "pack": {
+    "g": 285,
+    "label": "Dose, 285 g abgetropft",
+    "price": 0.89
+   },
+   "match": [
+    "gemüsemais",
+    "zuckermais",
+    "mais",
+    "corn"
+   ],
+   "noMatch": [
+    "maismehl",
+    "polenta",
+    "popcorn",
+    "chips",
+    "maiskolben"
+   ]
+  },
+  {
+   "id": "gurke",
+   "name": "Salatgurke",
+   "bls": "G520100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 400
+   },
+   "pack": {
+    "g": 400,
+    "label": "1 Stück",
+    "price": 0.69
+   },
+   "match": [
+    "salatgurke",
+    "gurke",
+    "cucumber"
+   ],
+   "noMatch": [
+    "gewürzgurke",
+    "essiggurke",
+    "gurken im glas"
+   ]
+  },
+  {
+   "id": "eisberg",
+   "name": "Eisbergsalat",
+   "bls": "G103100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 500
+   },
+   "pack": {
+    "g": 500,
+    "label": "1 Kopf",
+    "price": 0.99
+   },
+   "match": [
+    "eisberg",
+    "iceberg",
+    "kopfsalat",
+    "salatherz",
+    "romana",
+    "lettuce"
+   ]
+  },
+  {
+   "id": "feldsalat",
+   "name": "Feldsalat",
+   "bls": "G104100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 150,
+    "label": "150-g-Schale",
+    "price": 1.49
+   },
+   "match": [
+    "feldsalat",
+    "rapunzel",
+    "nüsslisalat"
+   ]
+  },
+  {
+   "id": "rucola",
+   "name": "Rucola",
+   "bls": "G130100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 125,
+    "label": "125-g-Schale",
+    "price": 1.29
+   },
+   "match": [
+    "rucola",
+    "rauke",
+    "arugula"
+   ]
+  },
+  {
+   "id": "kidneybohnen",
+   "name": "Kidneybohnen (Dose)",
+   "bls": "H742902",
+   "aisle": "trocken",
+   "units": {
+    "dose": 250
+   },
+   "pack": {
+    "g": 250,
+    "label": "Dose, 250 g abgetropft",
+    "price": 0.79
+   },
+   "match": [
+    "kidneybohne",
+    "kidney",
+    "rote bohnen",
+    "chilibohnen"
+   ]
+  },
+  {
+   "id": "kichererbsen",
+   "name": "Kichererbsen (Dose)",
+   "bls": "H720902",
+   "aisle": "trocken",
+   "units": {
+    "dose": 265
+   },
+   "pack": {
+    "g": 265,
+    "label": "Dose, 265 g abgetropft",
+    "price": 0.79
+   },
+   "match": [
+    "kichererbse",
+    "chickpea",
+    "chick peas"
+   ],
+   "noMatch": [
+    "mehl",
+    "hummus",
+    "snack"
+   ]
+  },
+  {
+   "id": "rote_linsen",
+   "name": "Rote Linsen",
+   "bls": "H730000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.99
+   },
+   "match": [
+    "rote linsen",
+    "red lentils",
+    "linsen"
+   ],
+   "noMatch": [
+    "linsensuppe",
+    "eintopf",
+    "chips"
+   ]
+  },
+  {
+   "id": "ingwer",
+   "name": "Ingwer",
+   "bls": "R211200",
+   "aisle": "gemuese",
+   "units": {
+    "stueck": 20
+   },
+   "pack": {
+    "g": 100,
+    "label": "ca. 100 g",
+    "price": 0.5
+   },
+   "match": [
+    "ingwer",
+    "ginger"
+   ],
+   "noMatch": [
+    "shot",
+    "tee",
+    "kandiert"
+   ]
+  },
+  {
+   "id": "zitrone",
+   "name": "Zitronen",
+   "one": "Zitrone",
+   "bls": "F601100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 100
+   },
+   "pack": {
+    "g": 500,
+    "label": "500-g-Netz",
+    "price": 1.49
+   },
+   "match": [
+    "zitrone",
+    "limette",
+    "lemon",
+    "lime"
+   ],
+   "noMatch": [
+    "limonade",
+    "saft",
+    "kuchen",
+    "tee"
+   ]
+  },
+  {
+   "id": "apfel",
+   "name": "Äpfel",
+   "one": "Apfel",
+   "bls": "F110100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 150
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 1.99
+   },
+   "match": [
+    "apfel",
+    "äpfel",
+    "elstar",
+    "jonagold",
+    "braeburn",
+    "gala",
+    "pink lady",
+    "apples"
+   ],
+   "noMatch": [
+    "saft",
+    "mus",
+    "kuchen",
+    "schorle",
+    "essig",
+    "chips",
+    "strudel",
+    "tasche",
+    "granatapfel"
+   ]
+  },
+  {
+   "id": "avocado",
+   "name": "Avocado",
+   "bls": "F502100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 140
+   },
+   "pack": {
+    "g": 140,
+    "label": "1 Stück",
+    "price": 0.99
+   },
+   "match": [
+    "avocado"
+   ],
+   "noMatch": [
+    "creme",
+    "dip"
+   ]
+  },
+  {
+   "id": "petersilie",
+   "name": "Petersilie",
+   "bls": "G250100",
+   "aisle": "gemuese",
+   "units": {
+    "bund": 30,
+    "el": 4
+   },
+   "pack": {
+    "g": 30,
+    "label": "1 Bund",
+    "price": 0.89
+   },
+   "match": [
+    "petersilie",
+    "parsley"
+   ]
+  },
+  {
+   "id": "basilikum",
+   "name": "Basilikum",
+   "bls": "G061000",
+   "aisle": "gemuese",
+   "units": {
+    "topf": 25,
+    "bund": 25
+   },
+   "pack": {
+    "g": 25,
+    "label": "1 Topf",
+    "price": 1.49
+   },
+   "match": [
+    "basilikum",
+    "basil"
+   ],
+   "noMatch": [
+    "pesto"
+   ]
+  },
+  {
+   "id": "schnittlauch",
+   "name": "Schnittlauch",
+   "bls": "G081100",
+   "aisle": "gemuese",
+   "units": {
+    "bund": 25,
+    "el": 3
+   },
+   "pack": {
+    "g": 25,
+    "label": "1 Bund",
+    "price": 0.89
+   },
+   "match": [
+    "schnittlauch",
+    "chives"
+   ]
+  },
+  {
+   "id": "haehnchenbrust",
+   "name": "Hähnchenbrustfilet",
+   "bls": "V416100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 600,
+    "label": "600-g-Packung",
+    "price": 5.99
+   },
+   "animal": "meat",
+   "match": [
+    "hähnchenbrust",
+    "hähnchen-brust",
+    "hähnchenbrustfilet",
+    "hühnerbrust",
+    "chicken breast",
+    "pouletbrust",
+    "hähnchen-innenfilet",
+    "hähnchenfilet"
+   ],
+   "noMatch": [
+    "paniert",
+    "nuggets",
+    "aufschnitt",
+    "wurst"
+   ]
+  },
+  {
+   "id": "rinderhack",
+   "name": "Rinderhackfleisch",
+   "bls": "U010100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500-g-Packung",
+    "price": 4.49
+   },
+   "animal": "meat",
+   "match": [
+    "rinderhack",
+    "hackfleisch vom rind",
+    "rinderhackfleisch",
+    "ground beef",
+    "beef mince"
+   ]
+  },
+  {
+   "id": "hack_gemischt",
+   "name": "Hackfleisch gemischt",
+   "bls": "U050100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500-g-Packung",
+    "price": 3.79
+   },
+   "animal": "meat",
+   "match": [
+    "hackfleisch gemischt",
+    "gemischtes hackfleisch",
+    "hackfleisch",
+    "hack gemischt",
+    "schweine- und rinderhack"
+   ],
+   "noMatch": [
+    "vegan",
+    "vegetarisch",
+    "veggie"
+   ]
+  },
+  {
+   "id": "lachs",
+   "name": "Lachsfilet",
+   "bls": "T410100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 250,
+    "label": "2 Filets, 250 g",
+    "price": 4.49
+   },
+   "animal": "fish",
+   "allergens": [
+    "fisch"
+   ],
+   "match": [
+    "lachsfilet",
+    "lachs",
+    "salmon"
+   ],
+   "noMatch": [
+    "räucherlachs",
+    "geräuchert",
+    "lachsschinken",
+    "lachsersatz"
+   ]
+  },
+  {
+   "id": "seelachs",
+   "name": "Seelachsfilet (TK)",
+   "bls": "T207200",
+   "aisle": "tk",
+   "units": {},
+   "pack": {
+    "g": 400,
+    "label": "400-g-Packung",
+    "price": 3.49
+   },
+   "animal": "fish",
+   "allergens": [
+    "fisch"
+   ],
+   "match": [
+    "seelachs",
+    "alaska-seelachs",
+    "fischfilet",
+    "pollock"
+   ],
+   "noMatch": [
+    "fischstäbchen",
+    "schlemmerfilet",
+    "paniert",
+    "backfisch"
+   ]
+  },
+  {
+   "id": "eier",
+   "name": "Eier",
+   "one": "Ei",
+   "bls": "E111100",
+   "aisle": "kuehl",
+   "units": {
+    "stk": 55
+   },
+   "pack": {
+    "g": 550,
+    "label": "10 Stück (Freiland, M)",
+    "price": 2.99
+   },
+   "animal": "egg",
+   "allergens": [
+    "ei"
+   ],
+   "match": [
+    "eier",
+    "freilandeier",
+    "bio-eier",
+    "eggs"
+   ],
+   "noMatch": [
+    "eierlikör",
+    "eiernudeln",
+    "schokoeier",
+    "ostereier",
+    "eiersalat"
+   ]
+  },
+  {
+   "id": "tofu",
+   "name": "Tofu natur",
+   "bls": "H861000",
+   "aisle": "kuehl",
+   "units": {},
+   "pack": {
+    "g": 400,
+    "label": "400-g-Block",
+    "price": 2.49
+   },
+   "allergens": [
+    "soja"
+   ],
+   "match": [
+    "tofu"
+   ],
+   "noMatch": [
+    "seidentofu",
+    "würstchen",
+    "wurst"
+   ]
+  },
+  {
+   "id": "feta",
+   "name": "Feta",
+   "bls": "M012200",
+   "aisle": "kuehl",
+   "units": {
+    "pck": 200
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 1.79
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "feta",
+    "hirtenkäse",
+    "schafskäse",
+    "salatkäse"
+   ]
+  },
+  {
+   "id": "mozzarella",
+   "name": "Mozzarella",
+   "bls": "M032100",
+   "aisle": "kuehl",
+   "units": {
+    "kugel": 125
+   },
+   "pack": {
+    "g": 125,
+    "label": "125-g-Kugel",
+    "price": 0.79
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "mozzarella"
+   ],
+   "noMatch": [
+    "sticks",
+    "pizza",
+    "vegan"
+   ]
+  },
+  {
+   "id": "gouda",
+   "name": "Gouda (gerieben)",
+   "bls": "M402600",
+   "aisle": "kuehl",
+   "units": {},
+   "pack": {
+    "g": 250,
+    "label": "250-g-Beutel",
+    "price": 2.29
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "gouda",
+    "geriebener käse",
+    "reibekäse",
+    "pizzakäse",
+    "cheddar",
+    "cheese"
+   ],
+   "noMatch": [
+    "scheiben",
+    "frischkäse",
+    "leberkäse"
+   ]
+  },
+  {
+   "id": "parmesan",
+   "name": "Parmesan / Grana Padano",
+   "bls": "M306400",
+   "aisle": "kuehl",
+   "units": {
+    "el": 6
+   },
+   "pack": {
+    "g": 100,
+    "label": "100 g",
+    "price": 2.49
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "parmesan",
+    "grana padano",
+    "parmigiano",
+    "hartkäse"
+   ]
+  },
+  {
+   "id": "halloumi",
+   "name": "Halloumi",
+   "bls": "M524500",
+   "aisle": "kuehl",
+   "units": {
+    "pck": 225
+   },
+   "pack": {
+    "g": 225,
+    "label": "225 g",
+    "price": 2.99
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "halloumi",
+    "grillkäse",
+    "hellim"
+   ]
+  },
+  {
+   "id": "emmentaler",
+   "name": "Emmentaler (gerieben)",
+   "bls": "M304600",
+   "aisle": "kuehl",
+   "units": {},
+   "pack": {
+    "g": 200,
+    "label": "200-g-Beutel",
+    "price": 1.99
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "emmentaler",
+    "bergkäse",
+    "gruyère",
+    "allgäuer"
+   ]
+  },
+  {
+   "id": "milch",
+   "name": "Milch (1,5 %)",
+   "bls": "M111200",
+   "aisle": "kuehl",
+   "units": {
+    "ml": 1.03,
+    "l": 1030
+   },
+   "pack": {
+    "g": 1030,
+    "label": "1 Liter",
+    "price": 0.99
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "display": "ml",
+   "match": [
+    "milch",
+    "h-milch",
+    "frischmilch",
+    "fettarme milch",
+    "milk"
+   ],
+   "noMatch": [
+    "buttermilch",
+    "kokosmilch",
+    "milchreis",
+    "schokolade",
+    "hafermilch",
+    "sojamilch",
+    "mandelmilch",
+    "milchschnitte",
+    "kondensmilch"
+   ]
+  },
+  {
+   "id": "sahne",
+   "name": "Schlagsahne",
+   "bls": "M173800",
+   "aisle": "kuehl",
+   "units": {
+    "ml": 1.0,
+    "becher": 200
+   },
+   "pack": {
+    "g": 200,
+    "label": "200-g-Becher",
+    "price": 0.89
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "display": "ml",
+   "match": [
+    "schlagsahne",
+    "sahne",
+    "kochsahne",
+    "cream"
+   ],
+   "noMatch": [
+    "saure sahne",
+    "sprühsahne",
+    "sahnejoghurt",
+    "eis"
+   ]
+  },
+  {
+   "id": "saure_sahne",
+   "name": "Saure Sahne",
+   "bls": "M172500",
+   "aisle": "kuehl",
+   "units": {
+    "becher": 200,
+    "el": 15
+   },
+   "pack": {
+    "g": 200,
+    "label": "200-g-Becher",
+    "price": 0.59
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "saure sahne",
+    "sour cream"
+   ]
+  },
+  {
+   "id": "creme_fraiche",
+   "name": "Crème fraîche",
+   "bls": "M176800",
+   "aisle": "kuehl",
+   "units": {
+    "becher": 150,
+    "el": 15
+   },
+   "pack": {
+    "g": 150,
+    "label": "150-g-Becher",
+    "price": 0.99
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "crème fraîche",
+    "creme fraiche",
+    "crème légère"
+   ]
+  },
+  {
+   "id": "magerquark",
+   "name": "Magerquark",
+   "bls": "M713100",
+   "aisle": "kuehl",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500-g-Becher",
+    "price": 1.29
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "magerquark",
+    "speisequark",
+    "quark"
+   ],
+   "noMatch": [
+    "quarkspeise",
+    "frucht",
+    "vanille"
+   ]
+  },
+  {
+   "id": "joghurt",
+   "name": "Naturjoghurt (3,5 %)",
+   "bls": "M141300",
+   "aisle": "kuehl",
+   "units": {
+    "el": 20
+   },
+   "pack": {
+    "g": 500,
+    "label": "500-g-Becher",
+    "price": 0.79
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "naturjoghurt",
+    "joghurt natur",
+    "griechischer joghurt",
+    "plain yogurt",
+    "joghurt mild",
+    "plain greek yogurt",
+    "greek yogurt plain"
+   ],
+   "noMatch": [
+    "frucht",
+    "vanille",
+    "schoko",
+    "drink",
+    "trink"
+   ]
+  },
+  {
+   "id": "butter",
+   "name": "Butter",
+   "bls": "Q611000",
+   "aisle": "kuehl",
+   "units": {
+    "el": 12,
+    "tl": 5
+   },
+   "pack": {
+    "g": 250,
+    "label": "250 g",
+    "price": 2.19
+   },
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "match": [
+    "butter",
+    "deutsche markenbutter",
+    "süßrahmbutter"
+   ],
+   "noMatch": [
+    "butterkäse",
+    "buttermilch",
+    "erdnussbutter",
+    "kräuterbutter",
+    "butterkeks",
+    "butterschmalz",
+    "toast"
+   ]
+  },
+  {
+   "id": "spaghetti",
+   "name": "Spaghetti",
+   "bls": "E401000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 0.99
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "spaghetti",
+    "spaghettini",
+    "linguine"
+   ],
+   "noMatch": [
+    "sauce",
+    "fertig"
+   ]
+  },
+  {
+   "id": "nudeln",
+   "name": "Nudeln (Penne, Fusilli)",
+   "bls": "E401000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 0.99
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "penne",
+    "fusilli",
+    "farfalle",
+    "rigatoni",
+    "nudeln",
+    "pasta",
+    "makkaroni",
+    "hörnchen"
+   ],
+   "noMatch": [
+    "eiernudeln",
+    "mie",
+    "reisnudeln",
+    "glasnudeln",
+    "suppe",
+    "salat",
+    "fertig",
+    "tortellini"
+   ]
+  },
+  {
+   "id": "vollkornnudeln",
+   "name": "Vollkorn-Spaghetti",
+   "bls": "E510000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.19
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "vollkornnudeln",
+    "vollkorn-spaghetti",
+    "vollkornspaghetti",
+    "vollkorn pasta",
+    "whole wheat pasta"
+   ]
+  },
+  {
+   "id": "lasagneplatten",
+   "name": "Lasagneplatten",
+   "bls": "E401000",
+   "aisle": "trocken",
+   "units": {
+    "platte": 20
+   },
+   "pack": {
+    "g": 250,
+    "label": "250 g",
+    "price": 1.19
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "lasagneplatten",
+    "lasagne-platten",
+    "lasagna sheets"
+   ],
+   "noMatch": [
+    "fertig",
+    "tk"
+   ]
+  },
+  {
+   "id": "mie_nudeln",
+   "name": "Mie-Nudeln",
+   "bls": "E432000",
+   "aisle": "trocken",
+   "units": {
+    "nest": 62
+   },
+   "pack": {
+    "g": 250,
+    "label": "250 g",
+    "price": 1.29
+   },
+   "allergens": [
+    "gluten",
+    "ei"
+   ],
+   "animal": "egg",
+   "match": [
+    "mie-nudeln",
+    "mie nudeln",
+    "mienudeln",
+    "eiernudeln",
+    "egg noodles",
+    "ramen"
+   ]
+  },
+  {
+   "id": "reis",
+   "name": "Basmatireis",
+   "bls": "C352000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 2.29
+   },
+   "match": [
+    "basmati",
+    "langkornreis",
+    "jasminreis",
+    "reis",
+    "rice"
+   ],
+   "noMatch": [
+    "risotto",
+    "milchreis",
+    "reiswaffel",
+    "reisnudel",
+    "reisdrink",
+    "parboiled-kochbeutel"
+   ]
+  },
+  {
+   "id": "risottoreis",
+   "name": "Risottoreis",
+   "bls": "C352000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.69
+   },
+   "match": [
+    "risottoreis",
+    "arborio",
+    "carnaroli",
+    "risotto rice"
+   ]
+  },
+  {
+   "id": "couscous",
+   "name": "Couscous",
+   "bls": "C119200",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.29
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "couscous"
+   ]
+  },
+  {
+   "id": "gnocchi",
+   "name": "Gnocchi (Kühlregal)",
+   "bls": "K270000",
+   "aisle": "kuehl",
+   "units": {
+    "pck": 500
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.49
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "gnocchi"
+   ]
+  },
+  {
+   "id": "spaetzle",
+   "name": "Frische Spätzle",
+   "bls": "X711512",
+   "aisle": "kuehl",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.69
+   },
+   "allergens": [
+    "gluten",
+    "ei"
+   ],
+   "animal": "egg",
+   "match": [
+    "spätzle",
+    "knöpfle",
+    "spaetzle"
+   ]
+  },
+  {
+   "id": "tortillas",
+   "name": "Weizentortillas",
+   "bls": "B783012",
+   "aisle": "brot",
+   "units": {
+    "stk": 62
+   },
+   "pack": {
+    "g": 370,
+    "label": "6 Stück",
+    "price": 1.49
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "tortilla",
+    "wraps",
+    "wrap"
+   ],
+   "noMatch": [
+    "chips",
+    "nachos"
+   ]
+  },
+  {
+   "id": "vollkornbrot",
+   "name": "Vollkornbrot",
+   "bls": "B121000",
+   "aisle": "brot",
+   "units": {
+    "scheibe": 50
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.49
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "vollkornbrot",
+    "roggenvollkorn",
+    "brot",
+    "bread"
+   ],
+   "noMatch": [
+    "toast",
+    "knäcke",
+    "brötchen",
+    "aufstrich",
+    "brotchips",
+    "paniermehl"
+   ]
+  },
+  {
+   "id": "mehl",
+   "name": "Weizenmehl Type 405",
+   "bls": "C214100",
+   "aisle": "trocken",
+   "pantry": true,
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 0.89
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "weizenmehl",
+    "mehl type 405",
+    "mehl",
+    "flour"
+   ],
+   "noMatch": [
+    "maismehl",
+    "reismehl",
+    "kichererbsenmehl",
+    "vollkorn"
+   ]
+  },
+  {
+   "id": "trockenhefe",
+   "name": "Trockenhefe",
+   "bls": "R458000",
+   "aisle": "trocken",
+   "units": {
+    "pck": 7
+   },
+   "pack": {
+    "g": 21,
+    "label": "3 Päckchen",
+    "price": 0.49
+   },
+   "match": [
+    "trockenhefe",
+    "hefe",
+    "yeast"
+   ]
+  },
+  {
+   "id": "paniermehl",
+   "name": "Paniermehl",
+   "bls": "B821000",
+   "aisle": "trocken",
+   "pantry": true,
+   "units": {
+    "el": 8
+   },
+   "pack": {
+    "g": 400,
+    "label": "400 g",
+    "price": 0.79
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "paniermehl",
+    "semmelbrösel",
+    "panko",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "id": "olivenoel",
+   "name": "Olivenöl",
+   "bls": "Q120000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "el": 12,
+    "tl": 4,
+    "ml": 0.92
+   },
+   "pack": {
+    "g": 460,
+    "label": "500-ml-Flasche",
+    "price": 6.49
+   },
+   "match": [
+    "olivenöl",
+    "olive oil"
+   ]
+  },
+  {
+   "id": "rapsoel",
+   "name": "Rapsöl",
+   "bls": "Q180000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "el": 12,
+    "tl": 4,
+    "ml": 0.92
+   },
+   "pack": {
+    "g": 920,
+    "label": "1-Liter-Flasche",
+    "price": 1.99
+   },
+   "match": [
+    "rapsöl",
+    "sonnenblumenöl",
+    "pflanzenöl",
+    "canola oil",
+    "vegetable oil"
+   ]
+  },
+  {
+   "id": "gemuesebruehe",
+   "name": "Gemüsebrühe (Pulver)",
+   "bls": "R821000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "ml": 0.02,
+    "l": 20,
+    "tl": 5
+   },
+   "display": "ml",
+   "pack": {
+    "g": 200,
+    "label": "200-g-Glas",
+    "price": 1.49
+   },
+   "allergens": [
+    "sellerie"
+   ],
+   "match": [
+    "gemüsebrühe",
+    "gemüsebouillon",
+    "brühe",
+    "bouillon",
+    "vegetable broth"
+   ],
+   "noMatch": [
+    "hühnerbrühe",
+    "rinderbrühe",
+    "fond"
+   ]
+  },
+  {
+   "id": "salz",
+   "name": "Jodsalz",
+   "bls": "R114000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 6,
+    "prise": 0.4,
+    "el": 18
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 0.39
+   },
+   "match": [
+    "jodsalz",
+    "speisesalz",
+    "salz",
+    "salt"
+   ],
+   "noMatch": [
+    "salzstangen",
+    "salzbrezel",
+    "gesalzen",
+    "kräutersalz",
+    "salted",
+    "nüsse",
+    "nuss",
+    "erdnüsse",
+    "kerne",
+    "nuts",
+    "peanuts",
+    "chips",
+    "pretzel",
+    "butter",
+    "lachs",
+    "hering",
+    "karamell",
+    "mit meersalz",
+    "mit salz",
+    "fleur de sel",
+    "mandeln",
+    "pistazie",
+    "cashew",
+    "kartoffel"
+   ]
+  },
+  {
+   "id": "pfeffer",
+   "name": "Schwarzer Pfeffer",
+   "bls": "R258100",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "prise": 0.2,
+    "tl": 2.5
+   },
+   "pack": {
+    "g": 50,
+    "label": "Mühle",
+    "price": 1.79
+   },
+   "match": [
+    "pfeffer",
+    "pepper"
+   ],
+   "noMatch": [
+    "paprika",
+    "pfefferoni",
+    "pfeffersalami",
+    "cayenne"
+   ]
+  },
+  {
+   "id": "paprikapulver",
+   "name": "Paprikapulver (edelsüß)",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 2.5,
+    "el": 7
+   },
+   "pack": {
+    "g": 50,
+    "label": "Dose",
+    "price": 0.99
+   },
+   "match": [
+    "paprikapulver",
+    "paprika edelsüß",
+    "paprika geräuchert",
+    "paprika rosenscharf"
+   ]
+  },
+  {
+   "id": "currypulver",
+   "name": "Currypulver",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 2.5,
+    "el": 7
+   },
+   "pack": {
+    "g": 50,
+    "label": "Dose",
+    "price": 1.29
+   },
+   "match": [
+    "currypulver",
+    "curry pulver",
+    "curry powder",
+    "currypaste"
+   ]
+  },
+  {
+   "id": "kreuzkuemmel",
+   "name": "Kreuzkümmel (gemahlen)",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 2.5
+   },
+   "pack": {
+    "g": 40,
+    "label": "Dose",
+    "price": 1.29
+   },
+   "match": [
+    "kreuzkümmel",
+    "cumin"
+   ]
+  },
+  {
+   "id": "oregano",
+   "name": "Oregano (getrocknet)",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 1,
+    "el": 3
+   },
+   "pack": {
+    "g": 15,
+    "label": "Dose",
+    "price": 0.99
+   },
+   "match": [
+    "oregano",
+    "italienische kräuter",
+    "kräuter der provence"
+   ]
+  },
+  {
+   "id": "thymian",
+   "name": "Thymian (getrocknet)",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 1
+   },
+   "pack": {
+    "g": 15,
+    "label": "Dose",
+    "price": 0.99
+   },
+   "match": [
+    "thymian",
+    "thyme",
+    "majoran"
+   ]
+  },
+  {
+   "id": "chiliflocken",
+   "name": "Chiliflocken",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 1.5,
+    "prise": 0.2
+   },
+   "pack": {
+    "g": 30,
+    "label": "Dose",
+    "price": 1.19
+   },
+   "match": [
+    "chiliflocken",
+    "chili",
+    "cayennepfeffer",
+    "chili flakes"
+   ]
+  },
+  {
+   "id": "zimt",
+   "name": "Zimt",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 2.5
+   },
+   "pack": {
+    "g": 40,
+    "label": "Dose",
+    "price": 0.99
+   },
+   "match": [
+    "zimt",
+    "cinnamon"
+   ]
+  },
+  {
+   "id": "muskat",
+   "name": "Muskatnuss",
+   "bls": null,
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "prise": 0.2
+   },
+   "pack": {
+    "g": 20,
+    "label": "Dose",
+    "price": 1.49
+   },
+   "match": [
+    "muskat",
+    "nutmeg"
+   ]
+  },
+  {
+   "id": "zucker",
+   "name": "Zucker",
+   "bls": "S111000",
+   "aisle": "trocken",
+   "pantry": true,
+   "freeSugar": true,
+   "units": {
+    "tl": 4,
+    "el": 12,
+    "prise": 0.5
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 0.99
+   },
+   "match": [
+    "zucker",
+    "sugar"
+   ],
+   "noMatch": [
+    "puderzucker",
+    "zuckermais",
+    "zuckerschote",
+    "vanillezucker"
+   ]
+  },
+  {
+   "id": "honig",
+   "name": "Honig",
+   "bls": "S120000",
+   "aisle": "trocken",
+   "pantry": true,
+   "freeSugar": true,
+   "animal": "honey",
+   "units": {
+    "tl": 7,
+    "el": 20
+   },
+   "pack": {
+    "g": 500,
+    "label": "500-g-Glas",
+    "price": 3.49
+   },
+   "match": [
+    "honig",
+    "honey"
+   ]
+  },
+  {
+   "id": "sojasauce",
+   "name": "Sojasauce",
+   "bls": "R143000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "el": 16,
+    "tl": 5,
+    "ml": 1.1
+   },
+   "pack": {
+    "g": 275,
+    "label": "250-ml-Flasche",
+    "price": 1.79
+   },
+   "allergens": [
+    "soja",
+    "gluten"
+   ],
+   "match": [
+    "sojasauce",
+    "sojasoße",
+    "soy sauce",
+    "kikkoman"
+   ]
+  },
+  {
+   "id": "kokosmilch",
+   "name": "Kokosmilch",
+   "bls": "H154000",
+   "aisle": "trocken",
+   "units": {
+    "dose": 400,
+    "ml": 1.0
+   },
+   "pack": {
+    "g": 400,
+    "label": "400-ml-Dose",
+    "price": 1.29
+   },
+   "display": "ml",
+   "match": [
+    "kokosmilch",
+    "coconut milk",
+    "kokosnussmilch"
+   ],
+   "noMatch": [
+    "kokosdrink",
+    "kokoswasser"
+   ]
+  },
+  {
+   "id": "balsamico",
+   "name": "Balsamico-Essig",
+   "bls": "R125000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "el": 15,
+    "tl": 5
+   },
+   "pack": {
+    "g": 500,
+    "label": "500-ml-Flasche",
+    "price": 1.49
+   },
+   "match": [
+    "balsamico",
+    "aceto balsamico"
+   ]
+  },
+  {
+   "id": "essig",
+   "name": "Weißweinessig",
+   "bls": "R121000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "el": 15,
+    "tl": 5
+   },
+   "pack": {
+    "g": 750,
+    "label": "750-ml-Flasche",
+    "price": 0.79
+   },
+   "match": [
+    "weißweinessig",
+    "weinessig",
+    "kräuteressig",
+    "apfelessig",
+    "vinegar"
+   ]
+  },
+  {
+   "id": "senf",
+   "name": "Senf (mittelscharf)",
+   "bls": "R132000",
+   "aisle": "gewuerze",
+   "pantry": true,
+   "units": {
+    "tl": 5,
+    "el": 15
+   },
+   "pack": {
+    "g": 200,
+    "label": "200-ml-Tube",
+    "price": 0.69
+   },
+   "allergens": [
+    "senf"
+   ],
+   "match": [
+    "senf",
+    "mustard"
+   ],
+   "noMatch": [
+    "senfgurke"
+   ]
+  },
+  {
+   "id": "erdnussmus",
+   "name": "Erdnussmus / Erdnussbutter",
+   "bls": "H880200",
+   "aisle": "trocken",
+   "units": {
+    "el": 16,
+    "tl": 6
+   },
+   "pack": {
+    "g": 350,
+    "label": "350-g-Glas",
+    "price": 2.49
+   },
+   "allergens": [
+    "erdnuss"
+   ],
+   "match": [
+    "erdnussbutter",
+    "erdnussmus",
+    "erdnusscreme",
+    "peanut butter"
+   ]
+  },
+  {
+   "id": "sesam",
+   "name": "Sesam",
+   "bls": "H420100",
+   "aisle": "trocken",
+   "units": {
+    "el": 8,
+    "tl": 3
+   },
+   "pack": {
+    "g": 100,
+    "label": "100 g",
+    "price": 0.99
+   },
+   "allergens": [
+    "sesam"
+   ],
+   "match": [
+    "sesam",
+    "sesame"
+   ],
+   "noMatch": [
+    "sesamöl",
+    "brötchen"
+   ]
+  },
+  {
+   "id": "sonnenblumenkerne",
+   "name": "Sonnenblumenkerne",
+   "bls": "H430100",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 0.99
+   },
+   "match": [
+    "sonnenblumenkerne",
+    "sunflower seeds"
+   ],
+   "noMatch": [
+    "brot",
+    "brötchen",
+    "öl",
+    "gesalzen",
+    "salted",
+    "salz",
+    "knäcke",
+    "cracker",
+    "riegel"
+   ]
+  },
+  {
+   "id": "kochschinken",
+   "name": "Kochschinken",
+   "bls": "W424000",
+   "aisle": "kuehl",
+   "units": {
+    "scheibe": 25
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 1.79
+   },
+   "animal": "meat",
+   "match": [
+    "kochschinken",
+    "hinterschinken",
+    "schinken gekocht",
+    "ham"
+   ],
+   "noMatch": [
+    "roh",
+    "serrano",
+    "schwarzwälder",
+    "nudeln"
+   ]
+  },
+  {
+   "id": "schweinefilet",
+   "name": "Schweinefilet",
+   "bls": "U611100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 6.99
+   },
+   "match": [
+    "schweinefilet",
+    "schweinelende",
+    "schweine-filet",
+    "pork tenderloin"
+   ],
+   "animal": "meat"
+  },
+  {
+   "id": "schweineschnitzel",
+   "name": "Schweineschnitzel",
+   "bls": "U541100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 4.49
+   },
+   "match": [
+    "schweineschnitzel",
+    "schnitzel vom schwein",
+    "minutensteak",
+    "schweine-minutensteak",
+    "pork cutlet"
+   ],
+   "animal": "meat",
+   "noMatch": [
+    "paniert",
+    "cordon"
+   ]
+  },
+  {
+   "id": "putenbrust",
+   "name": "Putenbrust",
+   "bls": "V486100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 6.49
+   },
+   "match": [
+    "putenbrust",
+    "putenschnitzel",
+    "puten-brust",
+    "putengeschnetzeltes",
+    "turkey breast"
+   ],
+   "animal": "meat"
+  },
+  {
+   "id": "haehnchenschenkel",
+   "name": "Hähnchenschenkel",
+   "bls": "V4A5100",
+   "aisle": "fleisch",
+   "units": {
+    "stk": 250
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 4.99
+   },
+   "match": [
+    "hähnchenschenkel",
+    "hähnchenkeule",
+    "hähnchen-unterschenkel",
+    "hähnchen-oberschenkel",
+    "chicken thighs",
+    "drumsticks"
+   ],
+   "animal": "meat",
+   "one": "Hähnchenschenkel"
+  },
+  {
+   "id": "rindersteak",
+   "name": "Rinderhüftsteak",
+   "bls": "U284100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 400,
+    "label": "2 Steaks, 400 g",
+    "price": 7.99
+   },
+   "match": [
+    "hüftsteak",
+    "rumpsteak",
+    "rindersteak",
+    "rinderhüfte",
+    "beef steak",
+    "sirloin"
+   ],
+   "animal": "meat"
+  },
+  {
+   "id": "rindergulasch",
+   "name": "Rindergulasch",
+   "bls": "U151100",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 5.99
+   },
+   "match": [
+    "rindergulasch",
+    "gulasch vom rind",
+    "beef stew",
+    "gulasch"
+   ],
+   "animal": "meat",
+   "noMatch": [
+    "suppe",
+    "dose"
+   ]
+  },
+  {
+   "id": "bratwurst",
+   "name": "Bratwurst",
+   "bls": "W222600",
+   "aisle": "fleisch",
+   "units": {
+    "stk": 100
+   },
+   "pack": {
+    "g": 400,
+    "label": "4 Stück, 400 g",
+    "price": 2.99
+   },
+   "match": [
+    "bratwurst",
+    "rostbratwurst",
+    "grobe bratwurst",
+    "nürnberger",
+    "thüringer",
+    "sausages"
+   ],
+   "animal": "meat",
+   "allergens": [
+    "senf"
+   ],
+   "noMatch": [
+    "vegetarisch",
+    "vegan"
+   ]
+  },
+  {
+   "id": "wiener",
+   "name": "Wiener Würstchen",
+   "bls": "W211200",
+   "aisle": "fleisch",
+   "units": {
+    "stk": 50
+   },
+   "pack": {
+    "g": 400,
+    "label": "8 Stück, 400 g",
+    "price": 2.49
+   },
+   "match": [
+    "wiener",
+    "würstchen",
+    "wienerle",
+    "frankfurter",
+    "hot dog"
+   ],
+   "animal": "meat",
+   "noMatch": [
+    "vegan",
+    "vegetarisch",
+    "cocktail"
+   ]
+  },
+  {
+   "id": "speckwuerfel",
+   "name": "Speckwürfel",
+   "bls": "W415000",
+   "aisle": "fleisch",
+   "units": {},
+   "pack": {
+    "g": 125,
+    "label": "125 g",
+    "price": 1.29
+   },
+   "match": [
+    "speckwürfel",
+    "speck",
+    "bacon",
+    "schinkenwürfel",
+    "katenspeck"
+   ],
+   "animal": "meat",
+   "noMatch": [
+    "speckbohnen"
+   ]
+  },
+  {
+   "id": "kabeljau",
+   "name": "Kabeljaufilet (TK)",
+   "bls": "T204200",
+   "aisle": "tk",
+   "units": {},
+   "pack": {
+    "g": 400,
+    "label": "400 g",
+    "price": 4.99
+   },
+   "match": [
+    "kabeljau",
+    "dorsch",
+    "skrei",
+    "cod"
+   ],
+   "animal": "fish",
+   "allergens": [
+    "fisch"
+   ]
+  },
+  {
+   "id": "garnelen",
+   "name": "Garnelen (TK)",
+   "bls": "T753200",
+   "aisle": "tk",
+   "units": {},
+   "pack": {
+    "g": 250,
+    "label": "250 g",
+    "price": 4.99
+   },
+   "match": [
+    "garnelen",
+    "shrimps",
+    "scampi",
+    "riesengarnelen",
+    "king prawns",
+    "prawns"
+   ],
+   "animal": "fish",
+   "allergens": [
+    "krebstiere"
+   ]
+  },
+  {
+   "id": "thunfisch",
+   "name": "Thunfisch (Dose)",
+   "bls": "T121902",
+   "aisle": "trocken",
+   "units": {
+    "dose": 150
+   },
+   "pack": {
+    "g": 150,
+    "label": "Dose, 150 g abgetropft",
+    "price": 1.49
+   },
+   "match": [
+    "thunfisch",
+    "tuna"
+   ],
+   "animal": "fish",
+   "allergens": [
+    "fisch"
+   ],
+   "noMatch": [
+    "steak",
+    "pizza",
+    "salat"
+   ]
+  },
+  {
+   "id": "fischstaebchen",
+   "name": "Fischstäbchen (TK)",
+   "bls": "T930100",
+   "aisle": "tk",
+   "units": {
+    "stk": 30
+   },
+   "pack": {
+    "g": 450,
+    "label": "15 Stück, 450 g",
+    "price": 1.99
+   },
+   "match": [
+    "fischstäbchen",
+    "fish fingers",
+    "fish sticks"
+   ],
+   "animal": "fish",
+   "allergens": [
+    "fisch",
+    "gluten"
+   ]
+  },
+  {
+   "id": "spitzkohl",
+   "name": "Spitzkohl",
+   "bls": "G344100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 800
+   },
+   "pack": {
+    "g": 800,
+    "label": "1 Kopf",
+    "price": 1.49
+   },
+   "match": [
+    "spitzkohl"
+   ]
+  },
+  {
+   "id": "weisskohl",
+   "name": "Weißkohl",
+   "bls": "G342100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 1500
+   },
+   "pack": {
+    "g": 1500,
+    "label": "1 Kopf",
+    "price": 1.49
+   },
+   "match": [
+    "weißkohl",
+    "weisskohl",
+    "krautkopf",
+    "kohlkopf",
+    "cabbage"
+   ]
+  },
+  {
+   "id": "rotkohl",
+   "name": "Rotkohl",
+   "bls": "G341100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 1000
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 Kopf",
+    "price": 1.29
+   },
+   "match": [
+    "rotkohl",
+    "blaukraut",
+    "rotkraut",
+    "red cabbage"
+   ],
+   "noMatch": [
+    "glas",
+    "fertig"
+   ]
+  },
+  {
+   "id": "wirsing",
+   "name": "Wirsing",
+   "bls": "G343100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 800
+   },
+   "pack": {
+    "g": 800,
+    "label": "1 Kopf",
+    "price": 1.49
+   },
+   "match": [
+    "wirsing",
+    "savoy"
+   ]
+  },
+  {
+   "id": "rosenkohl",
+   "name": "Rosenkohl",
+   "bls": "G332100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.99
+   },
+   "match": [
+    "rosenkohl",
+    "brussels sprouts"
+   ]
+  },
+  {
+   "id": "gruenkohl",
+   "name": "Grünkohl",
+   "bls": "G322100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 2.49
+   },
+   "match": [
+    "grünkohl",
+    "kale"
+   ]
+  },
+  {
+   "id": "rote_bete",
+   "name": "Rote Bete",
+   "bls": "G613100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 150
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.29
+   },
+   "match": [
+    "rote bete",
+    "rote beete",
+    "rote rüben",
+    "beetroot",
+    "beets"
+   ]
+  },
+  {
+   "id": "pastinake",
+   "name": "Pastinaken",
+   "bls": "G640100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 150
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.79
+   },
+   "match": [
+    "pastinake",
+    "pastinaken",
+    "parsnip"
+   ],
+   "one": "Pastinake"
+  },
+  {
+   "id": "sellerie",
+   "name": "Knollensellerie",
+   "bls": "G660100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 600
+   },
+   "pack": {
+    "g": 600,
+    "label": "1 Knolle",
+    "price": 1.29
+   },
+   "match": [
+    "knollensellerie",
+    "sellerie",
+    "celeriac"
+   ],
+   "allergens": [
+    "sellerie"
+   ],
+   "noMatch": [
+    "stangensellerie",
+    "salz"
+   ]
+  },
+  {
+   "id": "kohlrabi",
+   "name": "Kohlrabi",
+   "bls": "G331100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 300
+   },
+   "pack": {
+    "g": 300,
+    "label": "1 Stück",
+    "price": 0.79
+   },
+   "match": [
+    "kohlrabi"
+   ]
+  },
+  {
+   "id": "gruene_bohnen",
+   "name": "Grüne Bohnen (TK)",
+   "bls": "G710200",
+   "aisle": "tk",
+   "units": {},
+   "pack": {
+    "g": 750,
+    "label": "750 g",
+    "price": 1.79
+   },
+   "match": [
+    "grüne bohnen",
+    "prinzessbohnen",
+    "brechbohnen",
+    "buschbohnen",
+    "green beans"
+   ]
+  },
+  {
+   "id": "aubergine",
+   "name": "Aubergine",
+   "bls": "G510100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 300
+   },
+   "pack": {
+    "g": 300,
+    "label": "1 Stück",
+    "price": 0.99
+   },
+   "match": [
+    "aubergine",
+    "eggplant"
+   ]
+  },
+  {
+   "id": "fenchel",
+   "name": "Fenchel",
+   "bls": "G430100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 300
+   },
+   "pack": {
+    "g": 300,
+    "label": "1 Knolle",
+    "price": 1.29
+   },
+   "match": [
+    "fenchel",
+    "fennel"
+   ],
+   "noMatch": [
+    "tee",
+    "samen"
+   ]
+  },
+  {
+   "id": "babyspinat",
+   "name": "Babyspinat (frisch)",
+   "bls": "G211100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 150,
+    "label": "150-g-Beutel",
+    "price": 1.49
+   },
+   "match": [
+    "babyspinat",
+    "spinat frisch",
+    "baby spinach"
+   ]
+  },
+  {
+   "id": "maronen",
+   "name": "Maronen (vorgegart)",
+   "bls": "H230100",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 2.49
+   },
+   "match": [
+    "maronen",
+    "esskastanien",
+    "chestnuts"
+   ]
+  },
+  {
+   "id": "birne",
+   "name": "Birnen",
+   "bls": "F130100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 180
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 2.49
+   },
+   "match": [
+    "birne",
+    "birnen",
+    "conference",
+    "williams",
+    "pears"
+   ],
+   "one": "Birne",
+   "noMatch": [
+    "saft",
+    "dicksaft"
+   ]
+  },
+  {
+   "id": "banane",
+   "name": "Bananen",
+   "bls": "F503100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 120
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 1.29
+   },
+   "match": [
+    "banane",
+    "bananen",
+    "bananas"
+   ],
+   "one": "Banane",
+   "noMatch": [
+    "chips",
+    "getrocknet"
+   ]
+  },
+  {
+   "id": "orange",
+   "name": "Orangen",
+   "bls": "F603100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 200
+   },
+   "pack": {
+    "g": 1500,
+    "label": "1,5-kg-Netz",
+    "price": 2.49
+   },
+   "match": [
+    "orange",
+    "orangen",
+    "navel",
+    "oranges"
+   ],
+   "one": "Orange",
+   "noMatch": [
+    "saft",
+    "limonade",
+    "orangeat"
+   ]
+  },
+  {
+   "id": "clementine",
+   "name": "Clementinen",
+   "bls": "F607100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 70
+   },
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 2.49
+   },
+   "match": [
+    "clementine",
+    "clementinen",
+    "mandarine",
+    "satsuma"
+   ],
+   "one": "Clementine"
+  },
+  {
+   "id": "trauben",
+   "name": "Weintrauben",
+   "bls": "F310100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.99
+   },
+   "match": [
+    "trauben",
+    "weintrauben",
+    "grapes"
+   ]
+  },
+  {
+   "id": "beeren_tk",
+   "name": "Beerenmischung (TK)",
+   "bls": "F302100",
+   "aisle": "tk",
+   "units": {},
+   "pack": {
+    "g": 300,
+    "label": "300 g",
+    "price": 1.99
+   },
+   "match": [
+    "himbeeren",
+    "beerenmischung",
+    "heidelbeeren",
+    "blaubeeren",
+    "beeren",
+    "berries"
+   ]
+  },
+  {
+   "id": "weisse_bohnen",
+   "name": "Weiße Bohnen (Dose)",
+   "bls": "H740902",
+   "aisle": "trocken",
+   "units": {
+    "dose": 250
+   },
+   "pack": {
+    "g": 250,
+    "label": "Dose, 250 g abgetropft",
+    "price": 0.79
+   },
+   "match": [
+    "weiße bohnen",
+    "cannellini",
+    "bohnenkerne",
+    "white beans"
+   ]
+  },
+  {
+   "id": "linsen_braun",
+   "name": "Tellerlinsen",
+   "bls": "H725100",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.79
+   },
+   "match": [
+    "tellerlinsen",
+    "berglinsen",
+    "braune linsen",
+    "grüne linsen",
+    "lentils"
+   ]
+  },
+  {
+   "id": "quinoa",
+   "name": "Quinoa",
+   "bls": "C118000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 2.99
+   },
+   "match": [
+    "quinoa"
+   ]
+  },
+  {
+   "id": "bulgur",
+   "name": "Bulgur",
+   "bls": "C119100",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.49
+   },
+   "match": [
+    "bulgur"
+   ],
+   "allergens": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "polenta",
+   "name": "Polenta (Maisgrieß)",
+   "bls": "C346000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.29
+   },
+   "match": [
+    "polenta",
+    "maisgrieß"
+   ]
+  },
+  {
+   "id": "vollkornreis",
+   "name": "Vollkornreis",
+   "bls": "C351000",
+   "aisle": "trocken",
+   "units": {},
+   "pack": {
+    "g": 1000,
+    "label": "1 kg",
+    "price": 2.49
+   },
+   "match": [
+    "vollkornreis",
+    "naturreis",
+    "brown rice"
+   ]
+  },
+  {
+   "id": "haferflocken",
+   "name": "Haferflocken",
+   "bls": "C133000",
+   "aisle": "trocken",
+   "units": {
+    "el": 8
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 0.89
+   },
+   "match": [
+    "haferflocken",
+    "oats",
+    "porridge"
+   ],
+   "allergens": [
+    "gluten"
+   ],
+   "noMatch": [
+    "riegel",
+    "keks",
+    "cookies",
+    "drink",
+    "porridge-becher"
+   ]
+  },
+  {
+   "id": "blaetterteig",
+   "name": "Blätterteig (Kühlregal)",
+   "bls": "D072000",
+   "aisle": "kuehl",
+   "units": {
+    "rolle": 275
+   },
+   "pack": {
+    "g": 275,
+    "label": "1 Rolle, 275 g",
+    "price": 1.29
+   },
+   "match": [
+    "blätterteig",
+    "puff pastry"
+   ],
+   "allergens": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "tortelloni",
+   "name": "Tortelloni Ricotta-Spinat",
+   "bls": "E609100",
+   "aisle": "kuehl",
+   "units": {},
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 2.29
+   },
+   "match": [
+    "tortelloni",
+    "tortellini",
+    "ravioli"
+   ],
+   "allergens": [
+    "gluten",
+    "ei",
+    "milch"
+   ],
+   "animal": "dairy"
+  },
+  {
+   "id": "ricotta",
+   "name": "Ricotta",
+   "bls": "M741600",
+   "aisle": "kuehl",
+   "units": {},
+   "pack": {
+    "g": 250,
+    "label": "250 g",
+    "price": 1.29
+   },
+   "match": [
+    "ricotta"
+   ],
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ]
+  },
+  {
+   "id": "frischkaese",
+   "name": "Frischkäse",
+   "bls": "M710800",
+   "aisle": "kuehl",
+   "units": {
+    "el": 20
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 1.19
+   },
+   "match": [
+    "frischkäse",
+    "doppelrahm",
+    "philadelphia",
+    "cream cheese"
+   ],
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ],
+   "noMatch": [
+    "ziegen",
+    "kräuter"
+   ]
+  },
+  {
+   "id": "schmand",
+   "name": "Schmand",
+   "bls": "M172700",
+   "aisle": "kuehl",
+   "units": {
+    "becher": 200,
+    "el": 15
+   },
+   "pack": {
+    "g": 200,
+    "label": "200-g-Becher",
+    "price": 0.79
+   },
+   "match": [
+    "schmand",
+    "crème légère"
+   ],
+   "animal": "dairy",
+   "allergens": [
+    "milch"
+   ]
+  },
+  {
+   "id": "pesto",
+   "name": "Pesto verde",
+   "bls": "X372012",
+   "aisle": "trocken",
+   "units": {
+    "el": 15,
+    "glas": 190
+   },
+   "pack": {
+    "g": 190,
+    "label": "190-g-Glas",
+    "price": 1.99
+   },
+   "match": [
+    "pesto",
+    "pesto verde",
+    "pesto genovese"
+   ],
+   "animal": "dairy",
+   "allergens": [
+    "milch",
+    "schalenfruechte"
+   ]
+  },
+  {
+   "id": "oliven",
+   "name": "Oliven (abgetropft)",
+   "bls": "H520800",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 150,
+    "label": "Glas, 150 g abgetropft",
+    "price": 1.49
+   },
+   "match": [
+    "oliven",
+    "olives"
+   ]
+  },
+  {
+   "id": "mandeln",
+   "name": "Mandeln",
+   "bls": "H210100",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 2.49
+   },
+   "match": [
+    "mandeln",
+    "mandelstifte",
+    "mandelblättchen",
+    "almonds"
+   ],
+   "allergens": [
+    "schalenfruechte"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "honig",
+    "honey",
+    "chili",
+    "paprika",
+    "schoko",
+    "wasabi",
+    "überzogen",
+    "dragiert",
+    "gebrannt",
+    "karamell",
+    "krokant",
+    "nougat",
+    "creme",
+    "mus",
+    "öl",
+    "butter",
+    "kuchen",
+    "brot",
+    "riegel",
+    "aufstrich",
+    "drink",
+    "milch",
+    "joghurt",
+    "schnitte",
+    "waffel"
+   ]
+  },
+  {
+   "id": "walnuesse",
+   "name": "Walnüsse",
+   "bls": "H120100",
+   "aisle": "trocken",
+   "units": {
+    "el": 8
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 2.79
+   },
+   "match": [
+    "walnüsse",
+    "walnusskerne",
+    "walnuts"
+   ],
+   "allergens": [
+    "schalenfruechte"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "honig",
+    "honey",
+    "chili",
+    "paprika",
+    "schoko",
+    "wasabi",
+    "überzogen",
+    "dragiert",
+    "gebrannt",
+    "karamell",
+    "krokant",
+    "nougat",
+    "creme",
+    "mus",
+    "öl",
+    "butter",
+    "kuchen",
+    "brot",
+    "riegel",
+    "aufstrich",
+    "drink",
+    "milch",
+    "joghurt",
+    "schnitte",
+    "waffel"
+   ]
+  },
+  {
+   "id": "kuerbiskerne",
+   "name": "Kürbiskerne",
+   "bls": "H310100",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 1.99
+   },
+   "match": [
+    "kürbiskerne",
+    "pumpkin seeds"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "brot",
+    "brötchen",
+    "öl",
+    "knäcke",
+    "cracker",
+    "riegel"
+   ]
+  },
+  {
+   "id": "ahornsirup",
+   "name": "Ahornsirup",
+   "bls": "S151100",
+   "aisle": "trocken",
+   "units": {
+    "el": 20,
+    "tl": 7
+   },
+   "pack": {
+    "g": 250,
+    "label": "250-ml-Flasche",
+    "price": 3.99
+   },
+   "match": [
+    "ahornsirup",
+    "maple syrup"
+   ],
+   "freeSugar": true
+  },
+  {
+   "id": "haselnuesse",
+   "name": "Haselnusskerne",
+   "bls": "H130100",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 2.49
+   },
+   "allergens": [
+    "schalenfruechte"
+   ],
+   "match": [
+    "haselnüsse",
+    "haselnusskerne",
+    "haselnuss",
+    "hazelnuts"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "honig",
+    "honey",
+    "chili",
+    "paprika",
+    "schoko",
+    "wasabi",
+    "überzogen",
+    "dragiert",
+    "gebrannt",
+    "karamell",
+    "krokant",
+    "nougat",
+    "creme",
+    "mus",
+    "öl",
+    "butter",
+    "kuchen",
+    "brot",
+    "riegel",
+    "aufstrich",
+    "drink",
+    "milch",
+    "joghurt",
+    "schnitte",
+    "waffel"
+   ]
+  },
+  {
+   "id": "cashews",
+   "name": "Cashewkerne",
+   "bls": "H170100",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 2.99
+   },
+   "allergens": [
+    "schalenfruechte"
+   ],
+   "match": [
+    "cashewkerne",
+    "cashewnüsse",
+    "cashews",
+    "cashew"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "honig",
+    "honey",
+    "chili",
+    "paprika",
+    "schoko",
+    "wasabi",
+    "überzogen",
+    "dragiert",
+    "gebrannt",
+    "karamell",
+    "krokant",
+    "nougat",
+    "creme",
+    "mus",
+    "öl",
+    "butter",
+    "kuchen",
+    "brot",
+    "riegel",
+    "aufstrich",
+    "drink",
+    "milch",
+    "joghurt",
+    "schnitte",
+    "waffel"
+   ]
+  },
+  {
+   "id": "erdnuesse",
+   "name": "Erdnusskerne (ungesalzen)",
+   "bls": "H110600",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 1.29
+   },
+   "allergens": [
+    "erdnuss"
+   ],
+   "match": [
+    "erdnüsse",
+    "erdnusskerne",
+    "peanuts"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "honig",
+    "honey",
+    "chili",
+    "paprika",
+    "schoko",
+    "wasabi",
+    "überzogen",
+    "dragiert",
+    "gebrannt",
+    "karamell",
+    "krokant",
+    "nougat",
+    "creme",
+    "mus",
+    "öl",
+    "butter",
+    "kuchen",
+    "brot",
+    "riegel",
+    "aufstrich",
+    "drink",
+    "milch",
+    "joghurt",
+    "schnitte",
+    "waffel",
+    "flips",
+    "im teigmantel"
+   ]
+  },
+  {
+   "id": "nussmischung",
+   "name": "Nusskernmischung (ungesalzen)",
+   "bls": null,
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 2.79
+   },
+   "allergens": [
+    "schalenfruechte"
+   ],
+   "match": [
+    "nusskernmischung",
+    "nussmischung",
+    "nuss-mix",
+    "nussmix",
+    "studentenfutter",
+    "mixed nuts",
+    "trail mix"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "honig",
+    "honey",
+    "chili",
+    "paprika",
+    "schoko",
+    "wasabi",
+    "überzogen",
+    "dragiert",
+    "gebrannt",
+    "karamell",
+    "krokant",
+    "nougat",
+    "creme",
+    "mus",
+    "öl",
+    "butter",
+    "kuchen",
+    "brot",
+    "riegel",
+    "aufstrich",
+    "drink",
+    "milch",
+    "joghurt",
+    "schnitte",
+    "waffel"
+   ]
+  },
+  {
+   "id": "leinsamen",
+   "name": "Leinsamen (geschrotet)",
+   "bls": "H410400",
+   "aisle": "trocken",
+   "units": {
+    "el": 10,
+    "tl": 4
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.49
+   },
+   "match": [
+    "leinsamen",
+    "flaxseed",
+    "flax seed",
+    "linseed"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "brot",
+    "brötchen",
+    "öl",
+    "knäcke",
+    "cracker",
+    "riegel"
+   ]
+  },
+  {
+   "id": "chiasamen",
+   "name": "Chiasamen",
+   "bls": "H480100",
+   "aisle": "trocken",
+   "units": {
+    "el": 12,
+    "tl": 4
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 2.29
+   },
+   "match": [
+    "chiasamen",
+    "chia-samen",
+    "chia samen",
+    "chia seeds"
+   ],
+   "noMatch": [
+    "gesalzen",
+    "salted",
+    "salz",
+    "brot",
+    "brötchen",
+    "öl",
+    "knäcke",
+    "cracker",
+    "riegel",
+    "pudding"
+   ]
+  },
+  {
+   "id": "dinkelflocken",
+   "name": "Dinkelflocken",
+   "bls": "C236100",
+   "aisle": "trocken",
+   "units": {
+    "el": 8
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.29
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "dinkelflocken",
+    "spelt flakes"
+   ]
+  },
+  {
+   "id": "basismuesli",
+   "name": "Basis-Müsli (ohne Zuckerzusatz)",
+   "bls": "C512600",
+   "aisle": "trocken",
+   "units": {
+    "el": 10
+   },
+   "pack": {
+    "g": 750,
+    "label": "750 g",
+    "price": 1.99
+   },
+   "allergens": [
+    "gluten",
+    "schalenfruechte"
+   ],
+   "match": [
+    "basismüsli",
+    "basis-müsli",
+    "basis müsli",
+    "bircher-müsli",
+    "bircher müsli",
+    "bircher muesli",
+    "muesli original"
+   ],
+   "noMatch": [
+    "knusper",
+    "crunchy",
+    "schoko",
+    "granola",
+    "riegel",
+    "gezuckert",
+    "gesüßt",
+    "zucker",
+    "honig",
+    "keks"
+   ]
+  },
+  {
+   "id": "rosinen",
+   "name": "Rosinen",
+   "bls": "F840100",
+   "aisle": "trocken",
+   "units": {
+    "el": 12
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.99
+   },
+   "match": [
+    "rosinen",
+    "sultaninen",
+    "raisins"
+   ],
+   "noMatch": [
+    "brot",
+    "brötchen",
+    "schnecke",
+    "kuchen",
+    "schokolade",
+    "stuten"
+   ]
+  },
+  {
+   "id": "aprikosen_getr",
+   "name": "Aprikosen (getrocknet)",
+   "one": "Trockenaprikose",
+   "bls": "F201400",
+   "aisle": "trocken",
+   "units": {
+    "stk": 8
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 1.99
+   },
+   "match": [
+    "softaprikosen",
+    "soft-aprikosen",
+    "getrocknete aprikosen",
+    "aprikosen getrocknet",
+    "dried apricots"
+   ],
+   "noMatch": [
+    "konfitüre",
+    "marmelade",
+    "joghurt"
+   ]
+  },
+  {
+   "id": "datteln",
+   "name": "Datteln (getrocknet)",
+   "one": "Dattel",
+   "bls": "F504400",
+   "aisle": "trocken",
+   "units": {
+    "stk": 8
+   },
+   "pack": {
+    "g": 200,
+    "label": "200 g",
+    "price": 1.79
+   },
+   "match": [
+    "datteln",
+    "medjool",
+    "dates"
+   ],
+   "noMatch": [
+    "tomate",
+    "sirup",
+    "creme",
+    "riegel"
+   ]
+  },
+  {
+   "id": "kiwi",
+   "name": "Kiwis",
+   "one": "Kiwi",
+   "bls": "F514100",
+   "aisle": "gemuese",
+   "units": {
+    "stk": 75
+   },
+   "pack": {
+    "g": 500,
+    "label": "500 g",
+    "price": 1.49
+   },
+   "match": [
+    "kiwi",
+    "kiwis",
+    "kiwifruit"
+   ],
+   "noMatch": [
+    "saft",
+    "smoothie"
+   ]
+  },
+  {
+   "id": "heidelbeeren",
+   "name": "Heidelbeeren (frisch)",
+   "bls": "F304100",
+   "aisle": "gemuese",
+   "units": {},
+   "pack": {
+    "g": 250,
+    "label": "250-g-Schale",
+    "price": 2.49
+   },
+   "match": [
+    "heidelbeeren",
+    "blaubeeren",
+    "kulturheidelbeeren",
+    "blueberries"
+   ],
+   "noMatch": [
+    "konfitüre",
+    "marmelade",
+    "saft",
+    "muffin",
+    "joghurt",
+    "getrocknet",
+    "dried"
+   ]
+  },
+  {
+   "id": "haferdrink",
+   "name": "Haferdrink (ungesüßt)",
+   "bls": "C660000",
+   "aisle": "kuehl",
+   "units": {
+    "ml": 1.0,
+    "l": 1000
+   },
+   "display": "ml",
+   "pack": {
+    "g": 1000,
+    "label": "1 Liter",
+    "price": 0.99
+   },
+   "allergens": [
+    "gluten"
+   ],
+   "match": [
+    "haferdrink",
+    "hafer drink",
+    "hafer-drink",
+    "oat milk",
+    "oatmilk",
+    "oat beverage"
+   ],
+   "noMatch": [
+    "schoko",
+    "kakao",
+    "vanille",
+    "gesüßt",
+    "sweetened",
+    "eis"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2297 @@
+{
+  "_info": "Grundrezepte mit austauschbarer Hauptzutat. Die App rollt jede Option als eigenes Rezept aus und zeigt die Variante, deren Zutat gerade im Angebot ist. {v} = Bezeichnung der Option.",
+  "recipes": [
+    {
+      "id": "fam-ofengemuese",
+      "title": "Ofengemüse mit {v} und Kräuterquark",
+      "category": "ofen",
+      "teaser": "Knusprig geröstet mit Kartoffeln, dazu frischer Kräuterquark – diese Woche mit {v}.",
+      "time": 45,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "ofen",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1761315414257-e402bedaa43e",
+      "ingredients": [
+        {
+          "i": "kuerbis",
+          "q": 800,
+          "u": "g"
+        },
+        {
+          "i": "kartoffel",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "rote_zwiebel",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "olivenoel",
+          "q": 3,
+          "u": "el"
+        },
+        {
+          "i": "paprikapulver",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "thymian",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "magerquark",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "joghurt",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "schnittlauch",
+          "q": 1,
+          "u": "bund"
+        },
+        {
+          "i": "knoblauch",
+          "q": 1,
+          "u": "zehe"
+        },
+        {
+          "i": "kuerbiskerne",
+          "q": 30,
+          "u": "g"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Gemüse",
+        "options": [
+          {
+            "key": "kuerbis",
+            "label": "Kürbis",
+            "i": "kuerbis",
+            "q": 800,
+            "u": "g"
+          },
+          {
+            "key": "suesskartoffel",
+            "label": "Süßkartoffeln",
+            "i": "suesskartoffel",
+            "q": 800,
+            "u": "g"
+          },
+          {
+            "key": "rosenkohl",
+            "label": "Rosenkohl",
+            "i": "rosenkohl",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "rote-bete",
+            "label": "Rote Bete",
+            "i": "rote_bete",
+            "q": 700,
+            "u": "g",
+            "extraMin": 10
+          },
+          {
+            "key": "pastinake",
+            "label": "Pastinaken",
+            "i": "pastinake",
+            "q": 700,
+            "u": "g"
+          },
+          {
+            "key": "blumenkohl",
+            "label": "Blumenkohl",
+            "i": "blumenkohl",
+            "q": 800,
+            "u": "g"
+          },
+          {
+            "key": "brokkoli",
+            "label": "Brokkoli",
+            "i": "brokkoli",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "moehre",
+            "label": "Möhren",
+            "i": "moehre",
+            "q": 800,
+            "u": "g"
+          },
+          {
+            "key": "zucchini",
+            "label": "Zucchini",
+            "i": "zucchini",
+            "q": 700,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Ofen auf 220 °C Umluft vorheizen. Gemüse ({v}) und Kartoffeln waschen bzw. schälen und in mundgerechte Stücke schneiden, Zwiebeln achteln."
+        },
+        {
+          "t": "Alles mit Öl, Paprikapulver, Thymian, Salz und Pfeffer mischen und auf einem Blech mit Backpapier verteilen."
+        },
+        {
+          "t": "Im Ofen rösten, nach der Hälfte der Zeit wenden.",
+          "min": 30
+        },
+        {
+          "t": "Quark mit Joghurt glatt rühren, Schnittlauch fein schneiden und mit gepresstem Knoblauch unterrühren, salzen."
+        },
+        {
+          "t": "Kürbiskerne ohne Fett rösten, über das Gemüse streuen und mit dem Kräuterquark servieren.",
+          "min": 3
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-pasta-gemuese",
+      "title": "Pasta mit {v}, Knoblauch und Parmesan",
+      "category": "pasta",
+      "teaser": "Schnelle Feierabend-Pasta: knackiges Gemüse, viel Knoblauch, Zitrone und Parmesan.",
+      "time": 25,
+      "active": 20,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "schnell",
+        "italienisch",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1647782180635-53abbb1e2ec4",
+      "ingredients": [
+        {
+          "i": "brokkoli",
+          "q": 600,
+          "u": "g"
+        },
+        {
+          "i": "nudeln",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "knoblauch",
+          "q": 3,
+          "u": "zehe"
+        },
+        {
+          "i": "olivenoel",
+          "q": 4,
+          "u": "el"
+        },
+        {
+          "i": "parmesan",
+          "q": 50,
+          "u": "g"
+        },
+        {
+          "i": "zitrone",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "chiliflocken",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Gemüse",
+        "options": [
+          {
+            "key": "brokkoli",
+            "label": "Brokkoli",
+            "i": "brokkoli",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "zucchini",
+            "label": "Zucchini",
+            "i": "zucchini",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "champignons",
+            "label": "Champignons",
+            "i": "champignons",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "rosenkohl",
+            "label": "Rosenkohl",
+            "i": "rosenkohl",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "spitzkohl",
+            "label": "Spitzkohl",
+            "i": "spitzkohl",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "kirschtomaten",
+            "label": "Kirschtomaten",
+            "i": "kirschtomaten",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "spinat",
+            "label": "Spinat",
+            "i": "babyspinat",
+            "q": 250,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Nudelwasser aufsetzen und salzen. Gemüse ({v}) putzen und klein schneiden, Knoblauch in dünne Scheiben schneiden."
+        },
+        {
+          "t": "Öl in einer großen Pfanne erhitzen, das Gemüse darin kräftig anbraten, Knoblauch in den letzten Minuten mitbraten.",
+          "min": 7
+        },
+        {
+          "t": "Nudeln nach Packungsangabe bissfest kochen und eine Tasse Nudelwasser auffangen.",
+          "min": 10
+        },
+        {
+          "t": "Nudeln mit dem Gemüse, etwas Nudelwasser, Zitronenabrieb und -saft mischen. Mit Chili, Salz und Pfeffer abschmecken."
+        },
+        {
+          "t": "Mit frisch geriebenem Parmesan servieren."
+        }
+      ]
+    },
+    {
+      "id": "fam-gemuese-curry",
+      "title": "Gemüse-Curry mit {v} und Kichererbsen",
+      "category": "curry",
+      "teaser": "Cremig mit Kokosmilch, mild gewürzt und komplett pflanzlich – diese Woche mit {v}.",
+      "time": 35,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "indisch",
+        "mealprep",
+        "onepot"
+      ],
+      "image": "https://images.unsplash.com/photo-1788602564560-9bcbf0f9acb6",
+      "ingredients": [
+        {
+          "i": "kuerbis",
+          "q": 700,
+          "u": "g"
+        },
+        {
+          "i": "kichererbsen",
+          "q": 1,
+          "u": "dose"
+        },
+        {
+          "i": "kokosmilch",
+          "q": 1,
+          "u": "dose"
+        },
+        {
+          "i": "tomaten_dose",
+          "q": 1,
+          "u": "dose"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "knoblauch",
+          "q": 2,
+          "u": "zehe"
+        },
+        {
+          "i": "ingwer",
+          "q": 20,
+          "u": "g"
+        },
+        {
+          "i": "currypulver",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "rapsoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "reis",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "zitrone",
+          "q": 0.5,
+          "u": "stk"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Gemüse",
+        "options": [
+          {
+            "key": "kuerbis",
+            "label": "Kürbis",
+            "i": "kuerbis",
+            "q": 700,
+            "u": "g"
+          },
+          {
+            "key": "suesskartoffel",
+            "label": "Süßkartoffeln",
+            "i": "suesskartoffel",
+            "q": 700,
+            "u": "g"
+          },
+          {
+            "key": "brokkoli",
+            "label": "Brokkoli",
+            "i": "brokkoli",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "aubergine",
+            "label": "Aubergine",
+            "i": "aubergine",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "zucchini",
+            "label": "Zucchini",
+            "i": "zucchini",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "spinat",
+            "label": "Spinat",
+            "i": "spinat_tk",
+            "q": 450,
+            "u": "g"
+          },
+          {
+            "key": "bohnen",
+            "label": "grünen Bohnen",
+            "i": "gruene_bohnen",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "moehre",
+            "label": "Möhren",
+            "i": "moehre",
+            "q": 600,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Reis nach Packungsangabe garen. Zwiebel, Knoblauch und Ingwer fein hacken, das Gemüse ({v}) in mundgerechte Stücke schneiden.",
+          "min": 15
+        },
+        {
+          "t": "Zwiebel, Knoblauch und Ingwer im Öl andünsten, Currypulver kurz mitrösten.",
+          "min": 3
+        },
+        {
+          "t": "Gemüse, Tomaten und Kokosmilch zugeben und zugedeckt köcheln lassen, bis das Gemüse gar ist.",
+          "min": 15
+        },
+        {
+          "t": "Kichererbsen abspülen, unterrühren und erhitzen. Mit Zitronensaft und Salz abschmecken.",
+          "min": 3
+        },
+        {
+          "t": "Mit Reis servieren."
+        }
+      ]
+    },
+    {
+      "id": "fam-wok-pfanne",
+      "title": "{v}-Gemüse-Pfanne mit Reis",
+      "category": "pfanne",
+      "teaser": "Schnell aus dem Wok: {v}, buntes Gemüse und eine würzige Ingwer-Soja-Sauce.",
+      "time": 30,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "asiatisch",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+      "ingredients": [
+        {
+          "i": "haehnchenbrust",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "reis",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "paprika_rot",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "zucchini",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "moehre",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "fruehlingszwiebel",
+          "q": 4,
+          "u": "stk"
+        },
+        {
+          "i": "sojasauce",
+          "q": 4,
+          "u": "el"
+        },
+        {
+          "i": "ingwer",
+          "q": 15,
+          "u": "g"
+        },
+        {
+          "i": "knoblauch",
+          "q": 2,
+          "u": "zehe"
+        },
+        {
+          "i": "rapsoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "sesam",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "zucker",
+          "q": 1,
+          "u": "tl"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Eiweiß",
+        "options": [
+          {
+            "key": "haehnchen",
+            "label": "Hähnchen",
+            "i": "haehnchenbrust",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "pute",
+            "label": "Puten",
+            "i": "putenbrust",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "schweinefilet",
+            "label": "Schweinefilet",
+            "i": "schweinefilet",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "rind",
+            "label": "Rindfleisch",
+            "i": "rindersteak",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "garnelen",
+            "label": "Garnelen",
+            "i": "garnelen",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "tofu",
+            "label": "Tofu",
+            "i": "tofu",
+            "q": 400,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Reis nach Packungsangabe garen.",
+          "min": 15
+        },
+        {
+          "t": "{v} in Streifen bzw. mundgerechte Stücke schneiden. Paprika, Zucchini und Möhren in feine Streifen, Frühlingszwiebeln in Ringe schneiden, Ingwer und Knoblauch fein hacken."
+        },
+        {
+          "t": "1 EL Öl im Wok stark erhitzen, {v} darin rundherum anbraten und herausnehmen.",
+          "min": 4
+        },
+        {
+          "t": "Restliches Öl erhitzen, das Gemüse unter Rühren bissfest braten, Ingwer und Knoblauch zugeben.",
+          "min": 4
+        },
+        {
+          "t": "{v} zurück in den Wok geben, mit Sojasauce und Zucker ablöschen und durchschwenken. Mit Sesam und Frühlingszwiebeln auf dem Reis servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-geschnetzeltes",
+      "title": "{v}-Geschnetzeltes mit Spätzle",
+      "category": "hausmannskost",
+      "teaser": "Zart in cremiger Champignon-Rahmsauce – dazu Spätzle. Ein Familienklassiker.",
+      "time": 30,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "kinder",
+        "hausmannskost"
+      ],
+      "image": "https://images.unsplash.com/photo-1788462612914-44793f2980f2",
+      "ingredients": [
+        {
+          "i": "haehnchenbrust",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "spaetzle",
+          "q": 600,
+          "u": "g"
+        },
+        {
+          "i": "champignons",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "sahne",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "senf",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "paprikapulver",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "rapsoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "petersilie",
+          "q": 0.5,
+          "u": "bund"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Fleisch",
+        "options": [
+          {
+            "key": "haehnchen",
+            "label": "Hähnchen",
+            "i": "haehnchenbrust",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "pute",
+            "label": "Puten",
+            "i": "putenbrust",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "schwein",
+            "label": "Schweine",
+            "i": "schweineschnitzel",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "schweinefilet",
+            "label": "Schweinefilet",
+            "i": "schweinefilet",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "pilz",
+            "label": "Pilz",
+            "i": "champignons",
+            "q": 400,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Fleisch bzw. Pilze ({v}) in feine Streifen oder Scheiben schneiden, Champignons in Scheiben, Zwiebel fein würfeln."
+        },
+        {
+          "t": "1 EL Öl stark erhitzen, Fleisch bzw. Pilze portionsweise scharf anbraten, mit Paprikapulver, Salz und Pfeffer würzen und herausnehmen.",
+          "min": 5
+        },
+        {
+          "t": "Restliches Öl in die Pfanne geben, Zwiebel und Champignons anbraten.",
+          "min": 4
+        },
+        {
+          "t": "Mit Brühe und Sahne ablöschen, Senf einrühren und sämig einköcheln lassen.",
+          "min": 5
+        },
+        {
+          "t": "Fleisch bzw. Pilze zurückgeben und nur noch erhitzen. Spätzle in einer zweiten Pfanne erwärmen.",
+          "min": 3
+        },
+        {
+          "t": "Mit gehackter Petersilie bestreut servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-cremesuppe",
+      "title": "Cremige {v}suppe",
+      "category": "suppe",
+      "teaser": "Samtig püriert, mit gerösteten Kernen und Vollkornbrot – wärmt an kalten Tagen.",
+      "time": 35,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "suppe",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1616501268826-ee9731c915d4",
+      "ingredients": [
+        {
+          "i": "brokkoli",
+          "q": 700,
+          "u": "g"
+        },
+        {
+          "i": "kartoffel",
+          "q": 300,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 1000,
+          "u": "ml"
+        },
+        {
+          "i": "sahne",
+          "q": 100,
+          "u": "ml"
+        },
+        {
+          "i": "rapsoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "muskat",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "vollkornbrot",
+          "q": 4,
+          "u": "scheibe"
+        },
+        {
+          "i": "kuerbiskerne",
+          "q": 30,
+          "u": "g"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Gemüse",
+        "options": [
+          {
+            "key": "brokkoli",
+            "label": "Brokkoli",
+            "i": "brokkoli",
+            "q": 700,
+            "u": "g"
+          },
+          {
+            "key": "blumenkohl",
+            "label": "Blumenkohl",
+            "i": "blumenkohl",
+            "q": 800,
+            "u": "g"
+          },
+          {
+            "key": "moehre",
+            "label": "Möhren",
+            "i": "moehre",
+            "q": 800,
+            "u": "g"
+          },
+          {
+            "key": "pastinake",
+            "label": "Pastinaken",
+            "i": "pastinake",
+            "q": 700,
+            "u": "g"
+          },
+          {
+            "key": "suesskartoffel",
+            "label": "Süßkartoffel",
+            "i": "suesskartoffel",
+            "q": 700,
+            "u": "g"
+          },
+          {
+            "key": "erbsen",
+            "label": "Erbsen",
+            "i": "erbsen_tk",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "lauch",
+            "label": "Lauch",
+            "i": "lauch",
+            "q": 600,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Gemüse ({v}), Kartoffeln und Zwiebel putzen bzw. schälen und grob würfeln."
+        },
+        {
+          "t": "Zwiebel im Öl glasig dünsten, Gemüse und Kartoffeln kurz mitdünsten.",
+          "min": 4
+        },
+        {
+          "t": "Mit Brühe aufgießen und zugedeckt weich kochen.",
+          "min": 20
+        },
+        {
+          "t": "Sahne zugeben, alles fein pürieren und mit Muskat, Salz und Pfeffer abschmecken."
+        },
+        {
+          "t": "Kürbiskerne ohne Fett rösten, über die Suppe streuen und Brot dazu reichen.",
+          "min": 3
+        }
+      ]
+    },
+    {
+      "id": "fam-bowl",
+      "title": "Bunte Bowl mit {v} und Quinoa",
+      "category": "curry",
+      "teaser": "Quinoa, knackiges Gemüse, Rotkohl und ein Zitronen-Joghurt-Dressing – frisch und sättigend.",
+      "time": 30,
+      "active": 20,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "mealprep"
+      ],
+      "image": "https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f",
+      "ingredients": [
+        {
+          "i": "lachs",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "quinoa",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "gurke",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "tomate",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "rotkohl",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "moehre",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "joghurt",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "zitrone",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "olivenoel",
+          "q": 3,
+          "u": "el"
+        },
+        {
+          "i": "kreuzkuemmel",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "kuerbiskerne",
+          "q": 30,
+          "u": "g"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Topping",
+        "options": [
+          {
+            "key": "lachs",
+            "label": "Lachs",
+            "i": "lachs",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "haehnchen",
+            "label": "Hähnchen",
+            "i": "haehnchenbrust",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "halloumi",
+            "label": "Halloumi",
+            "i": "halloumi",
+            "q": 225,
+            "u": "g"
+          },
+          {
+            "key": "kichererbsen",
+            "label": "Kichererbsen",
+            "i": "kichererbsen",
+            "q": 2,
+            "u": "dose"
+          },
+          {
+            "key": "tofu",
+            "label": "Tofu",
+            "i": "tofu",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "thunfisch",
+            "label": "Thunfisch",
+            "i": "thunfisch",
+            "q": 2,
+            "u": "dose"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Quinoa in einem Sieb abspülen und nach Packungsangabe garen.",
+          "min": 15
+        },
+        {
+          "t": "{v} je nach Sorte in Stücke schneiden und in 1 EL Öl braten bzw. abtropfen lassen; mit Kreuzkümmel und Salz würzen.",
+          "min": 6
+        },
+        {
+          "t": "Gurke und Tomaten würfeln, Rotkohl fein hobeln, Möhren raspeln."
+        },
+        {
+          "t": "Joghurt mit Zitronensaft, restlichem Öl und einer Prise Salz verrühren."
+        },
+        {
+          "t": "Quinoa, Gemüse und {v} in Schüsseln anrichten, Dressing darüber geben und mit Kürbiskernen bestreuen."
+        }
+      ]
+    },
+    {
+      "id": "fam-eintopf",
+      "title": "{v}-Eintopf mit Kartoffeln",
+      "category": "suppe",
+      "teaser": "Deftig, günstig und am nächsten Tag noch besser – mit viel Gemüse.",
+      "time": 50,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "suppe",
+        "mealprep",
+        "onepot",
+        "hausmannskost"
+      ],
+      "image": "https://images.unsplash.com/photo-1648455320791-a667c8aab7e4",
+      "ingredients": [
+        {
+          "i": "linsen_braun",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "kartoffel",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "moehre",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "lauch",
+          "q": 1,
+          "u": "stange"
+        },
+        {
+          "i": "sellerie",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 1200,
+          "u": "ml"
+        },
+        {
+          "i": "tomatenmark",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "thymian",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "rapsoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "petersilie",
+          "q": 0.5,
+          "u": "bund"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "essig",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "vollkornbrot",
+          "q": 4,
+          "u": "scheibe"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Hauptzutat",
+        "options": [
+          {
+            "key": "linsen",
+            "label": "Linsen",
+            "i": "linsen_braun",
+            "q": 250,
+            "u": "g"
+          },
+          {
+            "key": "bohnen",
+            "label": "Bohnen",
+            "i": "weisse_bohnen",
+            "q": 2,
+            "u": "dose"
+          },
+          {
+            "key": "kichererbsen",
+            "label": "Kichererbsen",
+            "i": "kichererbsen",
+            "q": 2,
+            "u": "dose"
+          },
+          {
+            "key": "wirsing",
+            "label": "Wirsing",
+            "i": "wirsing",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "weisskohl",
+            "label": "Weißkohl",
+            "i": "weisskohl",
+            "q": 600,
+            "u": "g"
+          },
+          {
+            "key": "gruene-bohnen",
+            "label": "Grüne-Bohnen",
+            "i": "gruene_bohnen",
+            "q": 500,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Kartoffeln, Möhren und Sellerie schälen und würfeln, Lauch in Ringe schneiden, Zwiebel würfeln. Die Hauptzutat ({v}) vorbereiten: Kohl in Streifen schneiden, Dosen abspülen, Linsen abspülen."
+        },
+        {
+          "t": "Zwiebel und Lauch im Öl andünsten, Tomatenmark kurz mitrösten.",
+          "min": 4
+        },
+        {
+          "t": "Gemüse, Kartoffeln, Thymian und Brühe zugeben; Linsen bzw. Kohl gleich mitkochen.",
+          "min": 25
+        },
+        {
+          "t": "Bohnen bzw. Kichererbsen aus der Dose erst jetzt zugeben und erhitzen.",
+          "min": 5
+        },
+        {
+          "t": "Mit Essig, Salz und Pfeffer abschmecken, mit Petersilie bestreuen und Vollkornbrot dazu reichen."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-tarte",
+      "title": "Blätterteig-Tarte mit {v} und Feta",
+      "category": "ofen",
+      "teaser": "Knuspriger Blätterteig, cremiger Guss aus Eiern und Schmand – dazu ein kleiner Salat.",
+      "time": 45,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "ofen"
+      ],
+      "image": "https://images.unsplash.com/photo-1646579933415-92109f9805df",
+      "ingredients": [
+        {
+          "i": "spinat_tk",
+          "q": 450,
+          "u": "g"
+        },
+        {
+          "i": "blaetterteig",
+          "q": 1,
+          "u": "rolle"
+        },
+        {
+          "i": "eier",
+          "q": 3,
+          "u": "stk"
+        },
+        {
+          "i": "schmand",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "feta",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "muskat",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "feldsalat",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "olivenoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "balsamico",
+          "q": 1,
+          "u": "el"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Gemüse",
+        "options": [
+          {
+            "key": "spinat",
+            "label": "Spinat",
+            "i": "spinat_tk",
+            "q": 450,
+            "u": "g"
+          },
+          {
+            "key": "lauch",
+            "label": "Lauch",
+            "i": "lauch",
+            "q": 450,
+            "u": "g"
+          },
+          {
+            "key": "kuerbis",
+            "label": "Kürbis",
+            "i": "kuerbis",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "zucchini",
+            "label": "Zucchini",
+            "i": "zucchini",
+            "q": 450,
+            "u": "g"
+          },
+          {
+            "key": "champignons",
+            "label": "Champignons",
+            "i": "champignons",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "brokkoli",
+            "label": "Brokkoli",
+            "i": "brokkoli",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "paprika",
+            "label": "Paprika",
+            "i": "paprika_rot",
+            "q": 400,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Ofen auf 200 °C Ober-/Unterhitze vorheizen. Blätterteig mit dem Backpapier in eine Form oder auf ein Blech legen."
+        },
+        {
+          "t": "Zwiebel würfeln, das Gemüse ({v}) klein schneiden bzw. Spinat auftauen und gut ausdrücken. Zwiebel und Gemüse in einer Pfanne kurz andünsten.",
+          "min": 5
+        },
+        {
+          "t": "Eier mit Schmand, Salz, Pfeffer und Muskat verquirlen."
+        },
+        {
+          "t": "Gemüse auf dem Teig verteilen, Guss darübergießen und Feta darüberbröseln."
+        },
+        {
+          "t": "Goldbraun backen.",
+          "min": 25
+        },
+        {
+          "t": "Feldsalat mit Öl, Balsamico und einer Prise Salz anmachen und zur Tarte servieren."
+        }
+      ]
+    },
+    {
+      "id": "fam-nudelauflauf",
+      "title": "Nudelauflauf mit {v}",
+      "category": "ofen",
+      "teaser": "Mit cremiger Eier-Sahne und goldbrauner Käsekruste – der Liebling vieler Kinder.",
+      "time": 45,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "ofen",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1673960729830-76830e8b3db4",
+      "ingredients": [
+        {
+          "i": "brokkoli",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "nudeln",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "sahne",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "milch",
+          "q": 250,
+          "u": "ml"
+        },
+        {
+          "i": "eier",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "gouda",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "muskat",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "butter",
+          "q": 1,
+          "u": "el"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Zutat",
+        "options": [
+          {
+            "key": "brokkoli",
+            "label": "Brokkoli",
+            "i": "brokkoli",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "spinat",
+            "label": "Spinat",
+            "i": "spinat_tk",
+            "q": 450,
+            "u": "g"
+          },
+          {
+            "key": "zucchini",
+            "label": "Zucchini",
+            "i": "zucchini",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "champignons",
+            "label": "Champignons",
+            "i": "champignons",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "schinken",
+            "label": "Schinken",
+            "i": "kochschinken",
+            "q": 200,
+            "u": "g"
+          },
+          {
+            "key": "paprika",
+            "label": "Paprika",
+            "i": "paprika_rot",
+            "q": 400,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Ofen auf 200 °C Ober-/Unterhitze vorheizen. Nudeln 3 Minuten kürzer als angegeben kochen.",
+          "min": 7
+        },
+        {
+          "t": "Zwiebel würfeln, die Zutat ({v}) klein schneiden und mit der Zwiebel in Butter andünsten (Spinat vorher auftauen).",
+          "min": 5
+        },
+        {
+          "t": "Sahne, Milch und Eier mit Salz, Pfeffer und Muskat verquirlen."
+        },
+        {
+          "t": "Nudeln und Gemüse in einer Auflaufform mischen, Guss darübergießen und mit Käse bestreuen."
+        },
+        {
+          "t": "Goldbraun überbacken.",
+          "min": 25
+        }
+      ]
+    },
+    {
+      "id": "fam-risotto",
+      "title": "{v}-Risotto mit Parmesan",
+      "category": "curry",
+      "teaser": "Cremig gerührtes Risotto mit Parmesan und frischem Rucola – diese Woche mit {v}.",
+      "time": 40,
+      "active": 30,
+      "difficulty": "mittel",
+      "servings": 4,
+      "tags": [
+        "italienisch"
+      ],
+      "image": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9",
+      "ingredients": [
+        {
+          "i": "kuerbis",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "risottoreis",
+          "q": 300,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "knoblauch",
+          "q": 1,
+          "u": "zehe"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 1000,
+          "u": "ml"
+        },
+        {
+          "i": "parmesan",
+          "q": 50,
+          "u": "g"
+        },
+        {
+          "i": "butter",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "olivenoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "rucola",
+          "q": 80,
+          "u": "g"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Gemüse",
+        "options": [
+          {
+            "key": "kuerbis",
+            "label": "Kürbis",
+            "i": "kuerbis",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "rote-bete",
+            "label": "Rote-Bete",
+            "i": "rote_bete",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "erbsen",
+            "label": "Erbsen",
+            "i": "erbsen_tk",
+            "q": 300,
+            "u": "g"
+          },
+          {
+            "key": "spinat",
+            "label": "Spinat",
+            "i": "babyspinat",
+            "q": 200,
+            "u": "g"
+          },
+          {
+            "key": "zucchini",
+            "label": "Zucchini",
+            "i": "zucchini",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "lauch",
+            "label": "Lauch",
+            "i": "lauch",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "pilz",
+            "label": "Champignon",
+            "i": "champignons",
+            "q": 400,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Brühe erhitzen und warm halten. Zwiebel und Knoblauch fein würfeln, das Gemüse ({v}) klein würfeln."
+        },
+        {
+          "t": "Zwiebel und Knoblauch im Öl glasig dünsten, Reis und Gemüse zugeben und unter Rühren glasig werden lassen.",
+          "min": 3
+        },
+        {
+          "t": "Nach und nach heiße Brühe angießen und unter häufigem Rühren garen, bis der Reis cremig, aber noch bissfest ist (Spinat erst am Ende unterheben).",
+          "min": 20
+        },
+        {
+          "t": "Butter und geriebenen Parmesan unterrühren, mit Salz und Pfeffer abschmecken.",
+          "min": 2
+        },
+        {
+          "t": "Mit Rucola servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-fisch-blech",
+      "title": "{v} vom Blech mit Kartoffeln und Tomaten",
+      "category": "fleisch",
+      "teaser": "Alles auf einem Blech: zarter Fisch, Rosmarinkartoffeln, Zucchini und Kirschtomaten.",
+      "time": 45,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "ofen",
+        "fisch",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2",
+      "ingredients": [
+        {
+          "i": "lachs",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "kartoffel",
+          "q": 800,
+          "u": "g"
+        },
+        {
+          "i": "zucchini",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "kirschtomaten",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "zitrone",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "olivenoel",
+          "q": 3,
+          "u": "el"
+        },
+        {
+          "i": "knoblauch",
+          "q": 2,
+          "u": "zehe"
+        },
+        {
+          "i": "thymian",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "petersilie",
+          "q": 0.5,
+          "u": "bund"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Fisch",
+        "options": [
+          {
+            "key": "lachs",
+            "label": "Lachs",
+            "i": "lachs",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "seelachs",
+            "label": "Seelachs",
+            "i": "seelachs",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "kabeljau",
+            "label": "Kabeljau",
+            "i": "kabeljau",
+            "q": 500,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Ofen auf 200 °C Umluft vorheizen. Kartoffeln waschen und vierteln, mit 2 EL Öl, Thymian und Salz auf einem Blech verteilen und vorgaren.",
+          "min": 20
+        },
+        {
+          "t": "Zucchini in Scheiben schneiden, Tomaten halbieren und zu den Kartoffeln geben."
+        },
+        {
+          "t": "Fisch ({v}) trocken tupfen, salzen, pfeffern, mit Zitronenscheiben und gepresstem Knoblauch belegen und auf das Gemüse legen."
+        },
+        {
+          "t": "Mit restlichem Öl beträufeln und garen, bis der Fisch sich leicht zerteilen lässt.",
+          "min": 15
+        },
+        {
+          "t": "Mit gehackter Petersilie bestreuen und servieren."
+        }
+      ]
+    },
+    {
+      "id": "fam-pueree",
+      "title": "{v} mit Kartoffelpüree und Möhren-Erbsen",
+      "category": "hausmannskost",
+      "teaser": "Wie früher bei Oma: goldbraun gebraten, cremiges Püree und Buttergemüse.",
+      "time": 40,
+      "active": 30,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "kinder",
+        "hausmannskost"
+      ],
+      "image": "https://images.unsplash.com/photo-1633436375153-d7045cb93e38",
+      "ingredients": [
+        {
+          "i": "schweineschnitzel",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "kartoffel",
+          "q": 1000,
+          "u": "g"
+        },
+        {
+          "i": "milch",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "butter",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "moehre",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "erbsen_tk",
+          "q": 300,
+          "u": "g"
+        },
+        {
+          "i": "rapsoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "mehl",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "muskat",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "petersilie",
+          "q": 0.5,
+          "u": "bund"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Hauptsache",
+        "options": [
+          {
+            "key": "schweineschnitzel",
+            "label": "Schweineschnitzel",
+            "i": "schweineschnitzel",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "putenschnitzel",
+            "label": "Putenschnitzel",
+            "i": "putenbrust",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "haehnchen",
+            "label": "Hähnchenschnitzel",
+            "i": "haehnchenbrust",
+            "q": 500,
+            "u": "g"
+          },
+          {
+            "key": "bratwurst",
+            "label": "Bratwurst",
+            "i": "bratwurst",
+            "q": 4,
+            "u": "stk"
+          },
+          {
+            "key": "fischstaebchen",
+            "label": "Fischstäbchen",
+            "i": "fischstaebchen",
+            "q": 12,
+            "u": "stk"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Kartoffeln schälen, würfeln und in Salzwasser weich kochen.",
+          "min": 20
+        },
+        {
+          "t": "Möhren in Scheiben schneiden und mit den Erbsen in wenig Wasser und 1 EL Butter zugedeckt garen.",
+          "min": 8
+        },
+        {
+          "t": "Schnitzel trocken tupfen, salzen, pfeffern und dünn in Mehl wenden (Bratwurst und Fischstäbchen brauchen das nicht)."
+        },
+        {
+          "t": "{v} im Öl von beiden Seiten goldbraun und durchbraten.",
+          "min": 8
+        },
+        {
+          "t": "Kartoffeln abgießen und mit warmer Milch, restlicher Butter und Muskat zu Püree stampfen."
+        },
+        {
+          "t": "Alles anrichten und das Gemüse mit Petersilie bestreuen."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-kohlpfanne",
+      "title": "Spitzkohl-Kartoffel-Pfanne mit {v}",
+      "category": "pfanne",
+      "teaser": "Herbstliches Pfannengericht: Spitzkohl und Bratkartoffeln, würzig abgeschmeckt mit Senf.",
+      "time": 35,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "hausmannskost",
+        "saisonal"
+      ],
+      "image": "https://images.unsplash.com/photo-1698843813577-db28459556b0",
+      "ingredients": [
+        {
+          "i": "bratwurst",
+          "q": 4,
+          "u": "stk"
+        },
+        {
+          "i": "spitzkohl",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "kartoffel",
+          "q": 800,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "rapsoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 150,
+          "u": "ml"
+        },
+        {
+          "i": "senf",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "paprikapulver",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "schnittlauch",
+          "q": 0.5,
+          "u": "bund"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Dazu",
+        "options": [
+          {
+            "key": "bratwurst",
+            "label": "Bratwurst",
+            "i": "bratwurst",
+            "q": 4,
+            "u": "stk"
+          },
+          {
+            "key": "speck",
+            "label": "Speck",
+            "i": "speckwuerfel",
+            "q": 125,
+            "u": "g"
+          },
+          {
+            "key": "hack",
+            "label": "Hackfleisch",
+            "i": "hack_gemischt",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "kichererbsen",
+            "label": "Kichererbsen",
+            "i": "kichererbsen",
+            "q": 2,
+            "u": "dose"
+          },
+          {
+            "key": "tofu",
+            "label": "Tofu",
+            "i": "tofu",
+            "q": 400,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Kartoffeln schälen, in kleine Würfel schneiden und in Salzwasser 8 Minuten vorgaren.",
+          "min": 8
+        },
+        {
+          "t": "Spitzkohl vierteln, Strunk entfernen und in Streifen schneiden. Zwiebel würfeln. {v} in mundgerechte Stücke schneiden bzw. abtropfen lassen."
+        },
+        {
+          "t": "Öl in einer großen Pfanne erhitzen, {v} darin kräftig anbraten und herausnehmen.",
+          "min": 5
+        },
+        {
+          "t": "Kartoffeln im Bratfett knusprig braten, Zwiebel und Kohl zugeben und mitbraten.",
+          "min": 10
+        },
+        {
+          "t": "Mit Brühe und Senf ablöschen, {v} zurückgeben und mit Paprika, Salz und Pfeffer würzen. Mit Schnittlauch servieren.",
+          "min": 3
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-burrito-bowl",
+      "title": "Burrito-Bowl mit {v}",
+      "category": "curry",
+      "teaser": "Mexikanisch gewürzt: Reis, Bohnen, Mais, Avocado und saure Sahne – jeder stellt sich seine Schüssel selbst zusammen.",
+      "time": 30,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "mexikanisch",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1668665771757-4d42737d295a",
+      "ingredients": [
+        {
+          "i": "rinderhack",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "reis",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "kidneybohnen",
+          "q": 1,
+          "u": "dose"
+        },
+        {
+          "i": "mais",
+          "q": 1,
+          "u": "dose"
+        },
+        {
+          "i": "tomate",
+          "q": 3,
+          "u": "stk"
+        },
+        {
+          "i": "eisberg",
+          "q": 0.5,
+          "u": "stk"
+        },
+        {
+          "i": "avocado",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "saure_sahne",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "zitrone",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "kreuzkuemmel",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "paprikapulver",
+          "q": 2,
+          "u": "tl"
+        },
+        {
+          "i": "rapsoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Füllung",
+        "options": [
+          {
+            "key": "rinderhack",
+            "label": "Rinderhack",
+            "i": "rinderhack",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "haehnchen",
+            "label": "Hähnchen",
+            "i": "haehnchenbrust",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "pute",
+            "label": "Pute",
+            "i": "putenbrust",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "tofu",
+            "label": "Tofu",
+            "i": "tofu",
+            "q": 400,
+            "u": "g"
+          },
+          {
+            "key": "halloumi",
+            "label": "Halloumi",
+            "i": "halloumi",
+            "q": 225,
+            "u": "g"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Reis nach Packungsangabe garen.",
+          "min": 15
+        },
+        {
+          "t": "{v} anbraten (Hack krümelig, Fleisch und Tofu in Würfeln, Halloumi in Scheiben) und mit Kreuzkümmel, Paprikapulver und Salz würzen.",
+          "min": 7
+        },
+        {
+          "t": "Bohnen und Mais abspülen und kurz in der Pfanne mit erhitzen.",
+          "min": 2
+        },
+        {
+          "t": "Tomaten würfeln, Salat in Streifen schneiden, Avocado in Spalten schneiden und mit Zitronensaft beträufeln."
+        },
+        {
+          "t": "Alles mit saurer Sahne in Schüsseln anrichten."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fam-pfannkuchen",
+      "title": "Fluffige Pfannkuchen mit {v}",
+      "category": "suess",
+      "teaser": "Goldbraune Pfannkuchen mit Obst und Joghurt – das süße Hauptgericht, das alle Kinder lieben.",
+      "time": 30,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "kinder",
+        "suess"
+      ],
+      "image": "https://images.unsplash.com/photo-1547318643-84d5cec56519",
+      "ingredients": [
+        {
+          "i": "banane",
+          "q": 3,
+          "u": "stk"
+        },
+        {
+          "i": "mehl",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "milch",
+          "q": 500,
+          "u": "ml"
+        },
+        {
+          "i": "eier",
+          "q": 3,
+          "u": "stk"
+        },
+        {
+          "i": "butter",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "zucker",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "joghurt",
+          "q": 250,
+          "u": "g"
+        }
+      ],
+      "variants": {
+        "slot": 0,
+        "label": "Obst",
+        "options": [
+          {
+            "key": "banane",
+            "label": "Bananen",
+            "i": "banane",
+            "q": 3,
+            "u": "stk"
+          },
+          {
+            "key": "beeren",
+            "label": "Beeren",
+            "i": "beeren_tk",
+            "q": 300,
+            "u": "g"
+          },
+          {
+            "key": "birne",
+            "label": "Birnen",
+            "i": "birne",
+            "q": 3,
+            "u": "stk"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "t": "Mehl, Milch, Eier, Zucker und Salz zu einem glatten Teig verrühren und kurz quellen lassen.",
+          "min": 10
+        },
+        {
+          "t": "Obst ({v}) in Scheiben schneiden bzw. Beeren auftauen lassen."
+        },
+        {
+          "t": "Wenig Butter in einer Pfanne erhitzen, eine Kelle Teig hineingeben und von beiden Seiten goldbraun backen.",
+          "min": 3
+        },
+        {
+          "t": "So fortfahren, bis der Teig verbraucht ist. Pfannkuchen mit Obst und Joghurt servieren."
+        }
+      ]
+    }
+  ]
+}

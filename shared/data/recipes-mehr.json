@@ -1,0 +1,1682 @@
+{
+  "_info": "Weitere Grundrezepte (4 Erwachsenenportionen), vor allem für Zutaten, die oft im Angebot sind.",
+  "recipes": [
+    {
+      "id": "rindergulasch-spaetzle",
+      "title": "Rindergulasch mit Spätzle",
+      "category": "hausmannskost",
+      "teaser": "Lange geschmort, mit viel Zwiebeln und Paprika – zart, würzig und perfekt zum Vorkochen.",
+      "time": 120,
+      "active": 25,
+      "difficulty": "mittel",
+      "servings": 4,
+      "tags": [
+        "hausmannskost",
+        "wochenende",
+        "mealprep"
+      ],
+      "image": "https://images.unsplash.com/photo-1783684539282-cc34b91ed983",
+      "ingredients": [
+        {
+          "i": "rindergulasch",
+          "q": 800,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 4,
+          "u": "stk"
+        },
+        {
+          "i": "paprika_rot",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "tomatenmark",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "paprikapulver",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 600,
+          "u": "ml"
+        },
+        {
+          "i": "rapsoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "spaetzle",
+          "q": 600,
+          "u": "g"
+        },
+        {
+          "i": "saure_sahne",
+          "q": 100,
+          "u": "g"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Fleisch trocken tupfen, Zwiebeln in Streifen, Paprika in Würfel schneiden."
+        },
+        {
+          "t": "Öl in einem Bräter stark erhitzen und das Fleisch portionsweise kräftig anbraten.",
+          "min": 8
+        },
+        {
+          "t": "Zwiebeln zugeben und goldbraun braten, Tomatenmark und Paprikapulver kurz mitrösten.",
+          "min": 8
+        },
+        {
+          "t": "Mit Brühe ablöschen, salzen und zugedeckt bei kleiner Hitze schmoren lassen.",
+          "min": 75
+        },
+        {
+          "t": "Paprika zugeben und weiter schmoren, bis das Fleisch ganz zart ist. Abschmecken.",
+          "min": 20
+        },
+        {
+          "t": "Spätzle in einer Pfanne erwärmen und mit Gulasch und einem Klecks saurer Sahne servieren.",
+          "min": 4
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "haehnchenschenkel-blech",
+      "title": "Knusprige Hähnchenschenkel vom Blech",
+      "category": "fleisch",
+      "teaser": "Mit Ofenkartoffeln, Paprika und Zitrone – ein Blech, kaum Abwasch.",
+      "time": 55,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "ofen",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f",
+      "ingredients": [
+        {
+          "i": "haehnchenschenkel",
+          "q": 4,
+          "u": "stk"
+        },
+        {
+          "i": "kartoffel",
+          "q": 800,
+          "u": "g"
+        },
+        {
+          "i": "paprika_rot",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "zucchini",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "rote_zwiebel",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "knoblauch",
+          "q": 4,
+          "u": "zehe"
+        },
+        {
+          "i": "olivenoel",
+          "q": 3,
+          "u": "el"
+        },
+        {
+          "i": "paprikapulver",
+          "q": 2,
+          "u": "tl"
+        },
+        {
+          "i": "thymian",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "zitrone",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Ofen auf 200 °C Umluft vorheizen. Kartoffeln vierteln, Paprika und Zucchini in grobe Stücke, Zwiebeln in Spalten schneiden."
+        },
+        {
+          "t": "Öl mit Paprikapulver, Thymian, Salz, Zitronenabrieb und gepresstem Knoblauch verrühren."
+        },
+        {
+          "t": "Gemüse mit der Hälfte der Marinade mischen und auf einem Blech verteilen. Schenkel mit dem Rest einreiben und obenauf legen."
+        },
+        {
+          "t": "Backen, bis die Haut knusprig und das Fleisch durchgegart ist (am Knochen kein rosa Saft mehr).",
+          "min": 45
+        },
+        {
+          "t": "Mit Zitronenspalten servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "wiener-kartoffelsalat",
+      "title": "Wiener Würstchen mit schwäbischem Kartoffelsalat",
+      "category": "hausmannskost",
+      "teaser": "Lauwarmer Kartoffelsalat mit Brühe, Essig und Gurke – ganz ohne Mayonnaise.",
+      "time": 40,
+      "active": 20,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "kinder",
+        "hausmannskost"
+      ],
+      "image": "https://images.unsplash.com/photo-1552913903-2cffa1962dc7",
+      "ingredients": [
+        {
+          "i": "wiener",
+          "q": 8,
+          "u": "stk"
+        },
+        {
+          "i": "kartoffel",
+          "q": 1000,
+          "u": "g"
+        },
+        {
+          "i": "gurke",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "essig",
+          "q": 3,
+          "u": "el"
+        },
+        {
+          "i": "rapsoel",
+          "q": 4,
+          "u": "el"
+        },
+        {
+          "i": "senf",
+          "q": 2,
+          "u": "tl"
+        },
+        {
+          "i": "schnittlauch",
+          "q": 1,
+          "u": "bund"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Kartoffeln mit Schale in Salzwasser gar kochen.",
+          "min": 20
+        },
+        {
+          "t": "Zwiebel fein würfeln und mit Brühe aufkochen, Essig, Senf, Salz und Pfeffer einrühren.",
+          "min": 2
+        },
+        {
+          "t": "Kartoffeln pellen, noch warm in Scheiben schneiden und mit der heißen Marinade übergießen. Ziehen lassen.",
+          "min": 10
+        },
+        {
+          "t": "Gurke hobeln, mit Öl und Schnittlauch unter den Salat heben und abschmecken."
+        },
+        {
+          "t": "Würstchen in heißem, nicht kochendem Wasser erwärmen und mit dem Salat servieren.",
+          "min": 6
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "gruenkohl-bratwurst",
+      "title": "Grünkohl mit Bratwurst und Kartoffeln",
+      "category": "hausmannskost",
+      "teaser": "Der norddeutsche Winterklassiker – herzhaft geschmort und reich an Vitamin C.",
+      "time": 70,
+      "active": 20,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "hausmannskost",
+        "saisonal"
+      ],
+      "image": "https://images.unsplash.com/photo-1608500218861-01091cdc501e",
+      "ingredients": [
+        {
+          "i": "gruenkohl",
+          "q": 800,
+          "u": "g"
+        },
+        {
+          "i": "bratwurst",
+          "q": 4,
+          "u": "stk"
+        },
+        {
+          "i": "kartoffel",
+          "q": 800,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 400,
+          "u": "ml"
+        },
+        {
+          "i": "senf",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "haferflocken",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "rapsoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "muskat",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Grünkohl von den Stielen zupfen, gründlich waschen und grob hacken. Zwiebeln würfeln."
+        },
+        {
+          "t": "Zwiebeln in 1 EL Öl andünsten, Grünkohl zugeben und zusammenfallen lassen.",
+          "min": 5
+        },
+        {
+          "t": "Brühe angießen und zugedeckt schmoren lassen.",
+          "min": 40
+        },
+        {
+          "t": "Inzwischen Kartoffeln schälen und in Salzwasser kochen; Bratwürste im restlichen Öl braten.",
+          "min": 20
+        },
+        {
+          "t": "Haferflocken unter den Grünkohl rühren, damit er bindet, mit Senf, Muskat, Salz und Pfeffer abschmecken.",
+          "min": 5
+        },
+        {
+          "t": "Mit Kartoffeln und Bratwurst servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "linsensalat-rote-bete",
+      "title": "Linsensalat mit Roter Bete und Feta",
+      "category": "salat",
+      "teaser": "Erdige Linsen, süße Rote Bete, salziger Feta und knackige Walnüsse – hält im Kühlschrank 2 Tage.",
+      "time": 40,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "mealprep",
+        "saisonal"
+      ],
+      "image": "https://images.unsplash.com/photo-1702650657375-934239d8b472",
+      "ingredients": [
+        {
+          "i": "linsen_braun",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "rote_bete",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "feta",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "rucola",
+          "q": 100,
+          "u": "g"
+        },
+        {
+          "i": "rote_zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "walnuesse",
+          "q": 50,
+          "u": "g"
+        },
+        {
+          "i": "olivenoel",
+          "q": 4,
+          "u": "el"
+        },
+        {
+          "i": "balsamico",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "senf",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "honig",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Linsen in reichlich Wasser bissfest kochen und abgießen.",
+          "min": 25
+        },
+        {
+          "t": "Rote Bete schälen (Handschuhe!) und in kleine Würfel schneiden, Zwiebel fein würfeln."
+        },
+        {
+          "t": "Öl, Balsamico, Senf, Honig, Salz und Pfeffer zu einem Dressing verrühren."
+        },
+        {
+          "t": "Walnüsse ohne Fett rösten und grob hacken.",
+          "min": 3
+        },
+        {
+          "t": "Linsen, Rote Bete und Zwiebel mit dem Dressing mischen, Rucola unterheben, mit Feta und Walnüssen servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "title": "Spaghetti Carbonara",
+      "category": "pasta",
+      "teaser": "Original ohne Sahne: Eier, Parmesan, Speck und viel schwarzer Pfeffer – in 20 Minuten.",
+      "time": 20,
+      "active": 20,
+      "difficulty": "mittel",
+      "servings": 4,
+      "tags": [
+        "schnell",
+        "italienisch",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1588013273468-315fd88ea34c",
+      "ingredients": [
+        {
+          "i": "spaghetti",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "speckwuerfel",
+          "q": 125,
+          "u": "g"
+        },
+        {
+          "i": "eier",
+          "q": 3,
+          "u": "stk"
+        },
+        {
+          "i": "parmesan",
+          "q": 60,
+          "u": "g"
+        },
+        {
+          "i": "knoblauch",
+          "q": 1,
+          "u": "zehe"
+        },
+        {
+          "i": "olivenoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Spaghetti in gesalzenem Wasser bissfest kochen.",
+          "min": 9
+        },
+        {
+          "t": "Eier mit fein geriebenem Parmesan und reichlich Pfeffer verquirlen."
+        },
+        {
+          "t": "Speck mit der angedrückten Knoblauchzehe im Öl knusprig braten, Knoblauch entfernen.",
+          "min": 5
+        },
+        {
+          "t": "Spaghetti abgießen (eine Tasse Nudelwasser auffangen) und in der Pfanne mit dem Speck schwenken. Pfanne vom Herd nehmen."
+        },
+        {
+          "t": "Eiermasse und einen Schuss Nudelwasser zügig unterrühren, bis eine cremige Sauce entsteht – nicht mehr erhitzen, sonst stockt das Ei."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "thunfisch-pasta",
+      "title": "Pasta mit Thunfisch-Tomatensauce",
+      "category": "pasta",
+      "teaser": "Vorratsküche at its best: Thunfisch, Tomaten, Oliven und Oregano – schnell und eiweißreich.",
+      "time": 20,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "schnell",
+        "italienisch"
+      ],
+      "image": "https://images.unsplash.com/photo-1651012833081-495a627c6ceb",
+      "ingredients": [
+        {
+          "i": "nudeln",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "thunfisch",
+          "q": 2,
+          "u": "dose"
+        },
+        {
+          "i": "tomaten_dose",
+          "q": 2,
+          "u": "dose"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "knoblauch",
+          "q": 2,
+          "u": "zehe"
+        },
+        {
+          "i": "oliven",
+          "q": 60,
+          "u": "g"
+        },
+        {
+          "i": "oregano",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "olivenoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "petersilie",
+          "q": 0.5,
+          "u": "bund"
+        },
+        {
+          "i": "chiliflocken",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Nudelwasser aufsetzen. Zwiebel und Knoblauch fein würfeln, Oliven halbieren."
+        },
+        {
+          "t": "Zwiebel und Knoblauch im Öl andünsten, Tomaten und Oregano zugeben und einköcheln lassen.",
+          "min": 10
+        },
+        {
+          "t": "Nudeln nach Packungsangabe kochen.",
+          "min": 10
+        },
+        {
+          "t": "Thunfisch abtropfen lassen, zerpflücken und mit den Oliven in der Sauce erwärmen. Mit Chili und Salz abschmecken.",
+          "min": 2
+        },
+        {
+          "t": "Mit den Nudeln mischen und mit Petersilie bestreuen."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "garnelen-pasta",
+      "title": "Spaghetti mit Garnelen, Zitrone und Knoblauch",
+      "category": "pasta",
+      "teaser": "Wie im Urlaub: saftige Garnelen, Kirschtomaten, Knoblauch und frische Petersilie.",
+      "time": 20,
+      "active": 20,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "schnell",
+        "italienisch",
+        "fisch"
+      ],
+      "image": "https://images.unsplash.com/photo-1677681483419-e18aa1376db7",
+      "ingredients": [
+        {
+          "i": "spaghetti",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "garnelen",
+          "q": 400,
+          "u": "g"
+        },
+        {
+          "i": "kirschtomaten",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "knoblauch",
+          "q": 3,
+          "u": "zehe"
+        },
+        {
+          "i": "zitrone",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "olivenoel",
+          "q": 4,
+          "u": "el"
+        },
+        {
+          "i": "chiliflocken",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "petersilie",
+          "q": 1,
+          "u": "bund"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Garnelen auftauen lassen und trocken tupfen. Knoblauch in Scheiben schneiden, Tomaten halbieren, Petersilie hacken."
+        },
+        {
+          "t": "Spaghetti in Salzwasser bissfest kochen.",
+          "min": 9
+        },
+        {
+          "t": "Öl erhitzen, Garnelen darin von jeder Seite kurz braten, bis sie rosa sind, und herausnehmen.",
+          "min": 3
+        },
+        {
+          "t": "Knoblauch, Chili und Tomaten im Bratöl kurz schmoren.",
+          "min": 2
+        },
+        {
+          "t": "Spaghetti mit etwas Nudelwasser, Garnelen, Zitronensaft und -abrieb sowie Petersilie in der Pfanne mischen."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "polenta-pilzragout",
+      "title": "Cremige Polenta mit Pilzragout",
+      "category": "sonstiges",
+      "teaser": "Weiche Parmesan-Polenta mit gebratenen Champignons in Rahmsauce – vegetarisches Soulfood.",
+      "time": 30,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "italienisch"
+      ],
+      "image": "https://images.unsplash.com/photo-1778851182989-ea3f9d2d280b",
+      "ingredients": [
+        {
+          "i": "polenta",
+          "q": 250,
+          "u": "g"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 1000,
+          "u": "ml"
+        },
+        {
+          "i": "champignons",
+          "q": 600,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "knoblauch",
+          "q": 2,
+          "u": "zehe"
+        },
+        {
+          "i": "sahne",
+          "q": 150,
+          "u": "ml"
+        },
+        {
+          "i": "parmesan",
+          "q": 50,
+          "u": "g"
+        },
+        {
+          "i": "butter",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "thymian",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "petersilie",
+          "q": 0.5,
+          "u": "bund"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Brühe aufkochen, Polenta unter Rühren einrieseln lassen und bei kleiner Hitze quellen lassen, dabei öfter rühren.",
+          "min": 15
+        },
+        {
+          "t": "Pilze in Scheiben schneiden, Zwiebel und Knoblauch würfeln."
+        },
+        {
+          "t": "Pilze in 1 EL Butter kräftig anbraten, Zwiebel, Knoblauch und Thymian zugeben.",
+          "min": 6
+        },
+        {
+          "t": "Sahne zugießen, einköcheln lassen, salzen und pfeffern.",
+          "min": 3
+        },
+        {
+          "t": "Restliche Butter und Parmesan unter die Polenta rühren. Mit dem Pilzragout und Petersilie servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "tortelloni-tomatensahne",
+      "title": "Tortelloni in Tomaten-Sahne-Sauce",
+      "category": "pasta",
+      "teaser": "Schneller geht’s kaum: gefüllte Tortelloni, cremige Tomatensauce und frischer Spinat.",
+      "time": 15,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "schnell",
+        "kinder",
+        "italienisch"
+      ],
+      "image": "https://images.unsplash.com/photo-1758524152745-bcb26ffb14a5",
+      "ingredients": [
+        {
+          "i": "tortelloni",
+          "q": 750,
+          "u": "g"
+        },
+        {
+          "i": "passierte_tomaten",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "sahne",
+          "q": 100,
+          "u": "ml"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "knoblauch",
+          "q": 1,
+          "u": "zehe"
+        },
+        {
+          "i": "olivenoel",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "babyspinat",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "basilikum",
+          "q": 10,
+          "u": "g"
+        },
+        {
+          "i": "parmesan",
+          "q": 30,
+          "u": "g"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Zwiebel und Knoblauch würfeln und im Öl andünsten.",
+          "min": 3
+        },
+        {
+          "t": "Passierte Tomaten und Sahne zugeben und köcheln lassen. Salzen und pfeffern.",
+          "min": 6
+        },
+        {
+          "t": "Inzwischen die Tortelloni nach Packungsangabe garen.",
+          "min": 4
+        },
+        {
+          "t": "Spinat unter die Sauce heben, bis er zusammenfällt, Tortelloni untermischen."
+        },
+        {
+          "t": "Mit Basilikum und Parmesan servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "gefuellte-aubergine",
+      "title": "Gefüllte Auberginen mit Couscous und Feta",
+      "category": "ofen",
+      "teaser": "Im Ofen geschmort, mit würzigem Couscous, Tomaten und Feta gefüllt – dazu Joghurt-Dip.",
+      "time": 50,
+      "active": 20,
+      "difficulty": "mittel",
+      "servings": 4,
+      "tags": [
+        "ofen",
+        "orientalisch"
+      ],
+      "image": "https://images.unsplash.com/photo-1782878906030-a1c4b89aefab",
+      "ingredients": [
+        {
+          "i": "aubergine",
+          "q": 4,
+          "u": "stk"
+        },
+        {
+          "i": "couscous",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "tomate",
+          "q": 3,
+          "u": "stk"
+        },
+        {
+          "i": "feta",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "knoblauch",
+          "q": 2,
+          "u": "zehe"
+        },
+        {
+          "i": "petersilie",
+          "q": 1,
+          "u": "bund"
+        },
+        {
+          "i": "kreuzkuemmel",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "olivenoel",
+          "q": 3,
+          "u": "el"
+        },
+        {
+          "i": "joghurt",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Ofen auf 200 °C Umluft vorheizen. Auberginen längs halbieren, das Fruchtfleisch rautenförmig einschneiden, mit 2 EL Öl bestreichen und salzen."
+        },
+        {
+          "t": "Mit der Schnittfläche nach oben vorbacken.",
+          "min": 20
+        },
+        {
+          "t": "Couscous mit heißer Brühe übergießen und quellen lassen. Zwiebel, Knoblauch und Tomaten würfeln und im restlichen Öl mit Kreuzkümmel andünsten.",
+          "min": 5
+        },
+        {
+          "t": "Fruchtfleisch der Auberginen mit einem Löffel herauslösen, hacken und mit Couscous, Tomatenmischung und Petersilie mischen."
+        },
+        {
+          "t": "Füllung in die Auberginenhälften geben, Feta darüberbröseln und überbacken.",
+          "min": 15
+        },
+        {
+          "t": "Mit Joghurt servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "fenchel-orangen-quinoa",
+      "title": "Fenchel-Orangen-Salat mit Quinoa und Walnüssen",
+      "category": "salat",
+      "teaser": "Frisch, knackig und sonnig: Fenchel, Orange, Rucola und geröstete Walnüsse.",
+      "time": 25,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "mealprep"
+      ],
+      "image": "https://images.unsplash.com/photo-1691749123977-0701680083b8",
+      "ingredients": [
+        {
+          "i": "quinoa",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "fenchel",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "orange",
+          "q": 3,
+          "u": "stk"
+        },
+        {
+          "i": "rucola",
+          "q": 100,
+          "u": "g"
+        },
+        {
+          "i": "walnuesse",
+          "q": 60,
+          "u": "g"
+        },
+        {
+          "i": "feta",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "olivenoel",
+          "q": 4,
+          "u": "el"
+        },
+        {
+          "i": "essig",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "honig",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Quinoa abspülen und nach Packungsangabe garen, abkühlen lassen.",
+          "min": 15
+        },
+        {
+          "t": "Fenchel sehr fein hobeln. Orangen schälen, filetieren und den Saft dabei auffangen."
+        },
+        {
+          "t": "Orangensaft mit Öl, Essig, Honig, Salz und Pfeffer verrühren."
+        },
+        {
+          "t": "Walnüsse ohne Fett rösten.",
+          "min": 3
+        },
+        {
+          "t": "Quinoa, Fenchel, Orangen und Rucola mit dem Dressing mischen, mit Feta und Walnüssen bestreuen."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "overnight-oats-beeren",
+      "title": "Overnight Oats mit Beeren",
+      "category": "suess",
+      "teaser": "Abends in 10 Minuten vorbereitet, morgens fertig: cremige Haferflocken mit Beeren und Mandeln.",
+      "time": 10,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "fruehstueck",
+        "mealprep",
+        "suess",
+        "schnell"
+      ],
+      "image": "https://images.unsplash.com/photo-1490371475955-4cb3bfc72f71",
+      "ingredients": [
+        {
+          "i": "haferflocken",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "milch",
+          "q": 400,
+          "u": "ml"
+        },
+        {
+          "i": "joghurt",
+          "q": 300,
+          "u": "g"
+        },
+        {
+          "i": "beeren_tk",
+          "q": 300,
+          "u": "g"
+        },
+        {
+          "i": "apfel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "mandeln",
+          "q": 40,
+          "u": "g"
+        },
+        {
+          "i": "ahornsirup",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "zimt",
+          "q": 1,
+          "u": "tl"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Haferflocken mit Milch, Joghurt, Zimt und Ahornsirup verrühren."
+        },
+        {
+          "t": "Apfel grob raspeln und unterheben. Auf 4 Gläser verteilen."
+        },
+        {
+          "t": "Gefrorene Beeren darauf geben und über Nacht abgedeckt im Kühlschrank ziehen lassen."
+        },
+        {
+          "t": "Morgens mit gehackten Mandeln bestreuen."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "feldsalat-birne-walnuss",
+      "title": "Feldsalat mit Birne, Walnüssen und Frischkäse-Brot",
+      "category": "salat",
+      "teaser": "Herbstsalat mit süßer Birne, gerösteten Walnüssen und Senf-Honig-Dressing.",
+      "time": 15,
+      "active": 15,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "schnell",
+        "saisonal"
+      ],
+      "image": "https://images.unsplash.com/photo-1675718341696-552a278c0934",
+      "ingredients": [
+        {
+          "i": "feldsalat",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "birne",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "walnuesse",
+          "q": 60,
+          "u": "g"
+        },
+        {
+          "i": "frischkaese",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "vollkornbrot",
+          "q": 8,
+          "u": "scheibe"
+        },
+        {
+          "i": "olivenoel",
+          "q": 3,
+          "u": "el"
+        },
+        {
+          "i": "balsamico",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "honig",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "senf",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Feldsalat waschen und trocken schleudern. Birnen entkernen und in dünne Spalten schneiden."
+        },
+        {
+          "t": "Walnüsse ohne Fett rösten.",
+          "min": 3
+        },
+        {
+          "t": "Öl, Balsamico, Honig, Senf und Salz verrühren."
+        },
+        {
+          "t": "Brot toasten und mit Frischkäse bestreichen.",
+          "min": 3
+        },
+        {
+          "t": "Salat mit Birne und Dressing mischen, Walnüsse darüberstreuen und mit dem Brot servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "kabeljau-senfsauce",
+      "title": "Kabeljau in Senfsauce mit Salzkartoffeln",
+      "category": "fleisch",
+      "teaser": "Zarter Fisch in cremiger Senfsauce, dazu Salzkartoffeln und Gurkensalat.",
+      "time": 35,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "fisch",
+        "hausmannskost"
+      ],
+      "image": "https://images.unsplash.com/photo-1776097633704-6666ffafc58d",
+      "ingredients": [
+        {
+          "i": "kabeljau",
+          "q": 600,
+          "u": "g"
+        },
+        {
+          "i": "kartoffel",
+          "q": 1000,
+          "u": "g"
+        },
+        {
+          "i": "sahne",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "gemuesebruehe",
+          "q": 150,
+          "u": "ml"
+        },
+        {
+          "i": "senf",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "mehl",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "butter",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "zitrone",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "petersilie",
+          "q": 1,
+          "u": "bund"
+        },
+        {
+          "i": "gurke",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "essig",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Fisch auftauen lassen. Kartoffeln schälen und in Salzwasser gar kochen.",
+          "min": 20
+        },
+        {
+          "t": "Gurke hobeln, mit Essig, Salz und Pfeffer anmachen."
+        },
+        {
+          "t": "Butter schmelzen, Mehl einrühren, mit Brühe und Sahne ablöschen und sämig kochen. Senf einrühren.",
+          "min": 4
+        },
+        {
+          "t": "Fisch in Stücke schneiden, mit Zitronensaft beträufeln, salzen und in der Sauce bei kleiner Hitze gar ziehen lassen.",
+          "min": 8
+        },
+        {
+          "t": "Mit Petersilie bestreuen und mit Kartoffeln und Gurkensalat servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "maronen-rosenkohl-spaetzle",
+      "title": "Spätzle mit Rosenkohl und Maronen",
+      "category": "pfanne",
+      "teaser": "Herbst auf dem Teller: gebratener Rosenkohl, nussige Maronen und Bergkäse.",
+      "time": 30,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "saisonal"
+      ],
+      "image": "https://images.unsplash.com/photo-1576749872435-ff88a71c1ae2",
+      "ingredients": [
+        {
+          "i": "spaetzle",
+          "q": 600,
+          "u": "g"
+        },
+        {
+          "i": "rosenkohl",
+          "q": 600,
+          "u": "g"
+        },
+        {
+          "i": "maronen",
+          "q": 200,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "butter",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "sahne",
+          "q": 100,
+          "u": "ml"
+        },
+        {
+          "i": "emmentaler",
+          "q": 80,
+          "u": "g"
+        },
+        {
+          "i": "schnittlauch",
+          "q": 0.5,
+          "u": "bund"
+        },
+        {
+          "i": "muskat",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "salz",
+          "q": 0.5,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Rosenkohl putzen, halbieren und in Salzwasser bissfest vorgaren.",
+          "min": 6
+        },
+        {
+          "t": "Zwiebel würfeln, Maronen halbieren."
+        },
+        {
+          "t": "Butter erhitzen, Rosenkohl mit der Schnittfläche nach unten goldbraun braten, Zwiebel und Maronen zugeben.",
+          "min": 6
+        },
+        {
+          "t": "Spätzle zugeben und mitbraten, mit Sahne ablöschen.",
+          "min": 4
+        },
+        {
+          "t": "Käse unterheben, mit Muskat, Salz und Pfeffer abschmecken und mit Schnittlauch servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "hackbaellchen-tomatensauce",
+      "title": "Hackbällchen in Tomatensauce mit Reis",
+      "category": "hausmannskost",
+      "teaser": "Kleine, saftige Bällchen in fruchtiger Tomatensauce – Kinder lieben sie.",
+      "time": 40,
+      "active": 25,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "kinder",
+        "italienisch"
+      ],
+      "image": "https://images.unsplash.com/photo-1515516969-d4008cc6241a",
+      "ingredients": [
+        {
+          "i": "hack_gemischt",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "eier",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "paniermehl",
+          "q": 40,
+          "u": "g"
+        },
+        {
+          "i": "zwiebel",
+          "q": 1,
+          "u": "stk"
+        },
+        {
+          "i": "passierte_tomaten",
+          "q": 500,
+          "u": "g"
+        },
+        {
+          "i": "tomaten_dose",
+          "q": 1,
+          "u": "dose"
+        },
+        {
+          "i": "knoblauch",
+          "q": 2,
+          "u": "zehe"
+        },
+        {
+          "i": "oregano",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "olivenoel",
+          "q": 2,
+          "u": "el"
+        },
+        {
+          "i": "reis",
+          "q": 300,
+          "u": "g"
+        },
+        {
+          "i": "basilikum",
+          "q": 10,
+          "u": "g"
+        },
+        {
+          "i": "parmesan",
+          "q": 30,
+          "u": "g"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Reis nach Packungsangabe garen.",
+          "min": 15
+        },
+        {
+          "t": "Zwiebel fein würfeln. Hack mit Ei, Paniermehl, der Hälfte der Zwiebel, Salz und Pfeffer verkneten und walnussgroße Bällchen formen."
+        },
+        {
+          "t": "Bällchen im Öl rundherum anbraten und herausnehmen.",
+          "min": 6
+        },
+        {
+          "t": "Restliche Zwiebel und Knoblauch im Bratfett andünsten, Tomaten und Oregano zugeben.",
+          "min": 3
+        },
+        {
+          "t": "Bällchen in die Sauce legen und zugedeckt gar ziehen lassen.",
+          "min": 12
+        },
+        {
+          "t": "Mit Reis, Basilikum und Parmesan servieren."
+        }
+      ],
+      "imageCredit": "Unsplash"
+    },
+    {
+      "id": "kartoffel-lauch-auflauf",
+      "title": "Kartoffel-Lauch-Auflauf mit Schinken",
+      "category": "ofen",
+      "teaser": "Cremig, käsig und herzhaft – ein Auflauf, der die ganze Familie satt macht.",
+      "time": 60,
+      "active": 20,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": [
+        "ofen",
+        "kinder"
+      ],
+      "image": "https://images.unsplash.com/photo-1750772386927-4bd2547f6fd3",
+      "ingredients": [
+        {
+          "i": "kartoffel",
+          "q": 1000,
+          "u": "g"
+        },
+        {
+          "i": "lauch",
+          "q": 2,
+          "u": "stange"
+        },
+        {
+          "i": "kochschinken",
+          "q": 150,
+          "u": "g"
+        },
+        {
+          "i": "sahne",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "milch",
+          "q": 200,
+          "u": "ml"
+        },
+        {
+          "i": "eier",
+          "q": 2,
+          "u": "stk"
+        },
+        {
+          "i": "gouda",
+          "q": 120,
+          "u": "g"
+        },
+        {
+          "i": "butter",
+          "q": 1,
+          "u": "el"
+        },
+        {
+          "i": "muskat",
+          "q": 1,
+          "u": "prise"
+        },
+        {
+          "i": "salz",
+          "q": 1,
+          "u": "tl"
+        },
+        {
+          "i": "pfeffer",
+          "q": 1,
+          "u": "prise"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Ofen auf 180 °C Umluft vorheizen. Kartoffeln schälen, in dünne Scheiben schneiden und 5 Minuten in Salzwasser vorgaren.",
+          "min": 5
+        },
+        {
+          "t": "Lauch in Ringe schneiden und waschen, Schinken in Streifen schneiden. Lauch in Butter andünsten.",
+          "min": 4
+        },
+        {
+          "t": "Kartoffeln, Lauch und Schinken in eine gefettete Form schichten."
+        },
+        {
+          "t": "Sahne, Milch und Eier mit Muskat, Salz und Pfeffer verquirlen, darübergießen und mit Käse bestreuen."
+        },
+        {
+          "t": "Goldbraun backen.",
+          "min": 40
+        }
+      ],
+      "imageCredit": "Unsplash"
+    }
+  ]
+}

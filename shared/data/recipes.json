@@ -1,0 +1,3520 @@
+{
+ "_info": "Grundrezepte für 4 Standardportionen (Erwachsene). Mengen roh/ungekocht. Steps: t = Text, min = optionaler Timer in Minuten.",
+ "recipes": [
+  {
+   "id": "spaghetti-paprika-tomate",
+   "title": "Spaghetti mit Paprika-Tomatensauce",
+   "teaser": "Fruchtige Sauce aus Paprika und Tomaten, frischer Basilikum, ein Hauch Parmesan.",
+   "time": 25,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "schnell",
+    "italienisch"
+   ],
+   "ingredients": [
+    {
+     "i": "spaghetti",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 2,
+     "u": "dose"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "oregano",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "parmesan",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "i": "basilikum",
+     "q": 10,
+     "u": "g"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Reichlich Wasser für die Nudeln aufsetzen und salzen."
+    },
+    {
+     "t": "Zwiebel und Knoblauch fein würfeln, Paprika entkernen und in kleine Würfel schneiden."
+    },
+    {
+     "t": "Öl in einer Pfanne erhitzen, Zwiebel und Paprika darin anbraten. Knoblauch in der letzten Minute dazugeben.",
+     "min": 5
+    },
+    {
+     "t": "Tomaten und Oregano zugeben und offen köcheln lassen. Mit Salz und Pfeffer abschmecken.",
+     "min": 12
+    },
+    {
+     "t": "Spaghetti nach Packungsangabe bissfest kochen und abgießen.",
+     "min": 9
+    },
+    {
+     "t": "Nudeln mit der Sauce mischen, mit geriebenem Parmesan und Basilikumblättern servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1626844131082-256783844137",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "ruehrei-spinat",
+   "title": "Cremiges Rührei mit Spinat",
+   "teaser": "Weiches Rührei mit Blattspinat auf kräftigem Vollkornbrot – fertig in 15 Minuten.",
+   "time": 15,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "schnell",
+    "fruehstueck"
+   ],
+   "ingredients": [
+    {
+     "i": "eier",
+     "q": 8,
+     "u": "stk"
+    },
+    {
+     "i": "spinat_tk",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "i": "fruehlingszwiebel",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "milch",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "i": "butter",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "muskat",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "vollkornbrot",
+     "q": 8,
+     "u": "scheibe"
+    },
+    {
+     "i": "tomate",
+     "q": 2,
+     "u": "stk"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Spinat in einem Topf bei mittlerer Hitze auftauen lassen und gut ausdrücken.",
+     "min": 5
+    },
+    {
+     "t": "Frühlingszwiebeln in Ringe schneiden. Eier mit Milch, Salz, Pfeffer und Muskat verquirlen."
+    },
+    {
+     "t": "Butter in einer Pfanne schmelzen, Frühlingszwiebeln kurz andünsten, Spinat zugeben."
+    },
+    {
+     "t": "Eiermasse dazugießen und bei kleiner Hitze unter langsamem Rühren stocken lassen – so bleibt es cremig.",
+     "min": 4
+    },
+    {
+     "t": "Mit Vollkornbrot und Tomatenscheiben servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1687630433865-f86f07be989a",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "ofen-frittata",
+   "title": "Ofen-Frittata mit Kartoffeln und Paprika",
+   "teaser": "Saftige Eier-Kartoffel-Tarte vom Blech, dazu knackige Gurke.",
+   "time": 40,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "ofen",
+    "mealprep"
+   ],
+   "ingredients": [
+    {
+     "i": "eier",
+     "q": 8,
+     "u": "stk"
+    },
+    {
+     "i": "kartoffel",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "fruehlingszwiebel",
+     "q": 3,
+     "u": "stk"
+    },
+    {
+     "i": "gouda",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "i": "milch",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "gurke",
+     "q": 1,
+     "u": "stk"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Ofen auf 200 °C Ober-/Unterhitze vorheizen. Kartoffeln schälen, in dünne Scheiben schneiden und in Salzwasser vorgaren.",
+     "min": 8
+    },
+    {
+     "t": "Paprika würfeln, Frühlingszwiebeln in Ringe schneiden."
+    },
+    {
+     "t": "Öl in einer ofenfesten Pfanne erhitzen, Kartoffeln und Paprika darin anbraten.",
+     "min": 5
+    },
+    {
+     "t": "Eier mit Milch, Salz und Pfeffer verquirlen, Frühlingszwiebeln unterrühren und über das Gemüse gießen. Mit Käse bestreuen."
+    },
+    {
+     "t": "Im Ofen goldbraun stocken lassen.",
+     "min": 18
+    },
+    {
+     "t": "In Stücke schneiden und mit Gurkenscheiben servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "haehnchen-wraps",
+   "title": "Hähnchen-Wraps mit Joghurt-Dip",
+   "teaser": "Würziges Hähnchen, knackiges Gemüse und ein frischer Knoblauch-Joghurt – zum Selberrollen.",
+   "time": 25,
+   "active": 25,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "schnell"
+   ],
+   "ingredients": [
+    {
+     "i": "tortillas",
+     "q": 8,
+     "u": "stk"
+    },
+    {
+     "i": "haehnchenbrust",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "gurke",
+     "q": 0.5,
+     "u": "stk"
+    },
+    {
+     "i": "eisberg",
+     "q": 0.5,
+     "u": "stk"
+    },
+    {
+     "i": "mais",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "joghurt",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "knoblauch",
+     "q": 1,
+     "u": "zehe"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 2,
+     "u": "tl"
+    },
+    {
+     "i": "rapsoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "zitrone",
+     "q": 0.5,
+     "u": "stk"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Joghurt mit gepresstem Knoblauch, etwas Zitronensaft und einer Prise Salz verrühren."
+    },
+    {
+     "t": "Hähnchen in Streifen schneiden, mit Paprikapulver und Salz würzen."
+    },
+    {
+     "t": "Öl erhitzen und das Hähnchen rundherum durchbraten.",
+     "min": 7
+    },
+    {
+     "t": "Paprika und Gurke in Streifen schneiden, Salat in feine Streifen, Mais abtropfen lassen."
+    },
+    {
+     "t": "Tortillas in einer trockenen Pfanne kurz erwärmen.",
+     "min": 1
+    },
+    {
+     "t": "Alles auf den Tisch stellen: Dip auf die Tortilla streichen, füllen, einrollen."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "penne-brokkoli-feta",
+   "title": "Penne mit Brokkoli, Feta und Zitrone",
+   "teaser": "Leicht, frisch und in 20 Minuten fertig – Brokkoli kocht einfach mit den Nudeln.",
+   "time": 20,
+   "active": 10,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "schnell",
+    "italienisch"
+   ],
+   "ingredients": [
+    {
+     "i": "nudeln",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "brokkoli",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "feta",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "olivenoel",
+     "q": 3,
+     "u": "el"
+    },
+    {
+     "i": "zitrone",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "chiliflocken",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Nudelwasser aufsetzen und salzen. Brokkoli in kleine Röschen teilen, den Strunk schälen und würfeln."
+    },
+    {
+     "t": "Penne ins kochende Wasser geben. 4 Minuten vor Ende der Garzeit den Brokkoli dazugeben.",
+     "min": 10
+    },
+    {
+     "t": "Inzwischen Knoblauch in dünne Scheiben schneiden und im Olivenöl bei kleiner Hitze goldgelb werden lassen.",
+     "min": 3
+    },
+    {
+     "t": "Nudeln und Brokkoli abgießen, eine Tasse Nudelwasser auffangen."
+    },
+    {
+     "t": "Alles mit dem Knoblauchöl, etwas Nudelwasser, Zitronenabrieb und -saft mischen. Feta darüberbröseln, mit Chili und Pfeffer abschmecken."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1607118750694-1469a22ef45d",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "mie-nudeln-gemuese",
+   "title": "Gebratene Mie-Nudeln mit Gemüse und Ei",
+   "teaser": "Bunte Wok-Nudeln mit Möhren, Paprika und Ei – mild genug für Kinder.",
+   "time": 25,
+   "active": 25,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "asiatisch"
+   ],
+   "ingredients": [
+    {
+     "i": "mie_nudeln",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "eier",
+     "q": 4,
+     "u": "stk"
+    },
+    {
+     "i": "moehre",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "erbsen_tk",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "fruehlingszwiebel",
+     "q": 4,
+     "u": "stk"
+    },
+    {
+     "i": "ingwer",
+     "q": 15,
+     "u": "g"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "sojasauce",
+     "q": 4,
+     "u": "el"
+    },
+    {
+     "i": "rapsoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "sesam",
+     "q": 1,
+     "u": "el"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Mie-Nudeln nach Packungsangabe garen, abgießen und kalt abschrecken.",
+     "min": 4
+    },
+    {
+     "t": "Möhren und Paprika in feine Streifen schneiden, Frühlingszwiebeln in Ringe. Ingwer und Knoblauch fein hacken."
+    },
+    {
+     "t": "Öl in Wok oder großer Pfanne stark erhitzen. Möhren und Paprika unter Rühren anbraten, Erbsen, Ingwer und Knoblauch dazugeben.",
+     "min": 4
+    },
+    {
+     "t": "Gemüse an den Rand schieben, Eier in die Mitte schlagen und unter Rühren stocken lassen.",
+     "min": 2
+    },
+    {
+     "t": "Nudeln und Sojasauce zugeben, alles gut durchschwenken.",
+     "min": 2
+    },
+    {
+     "t": "Mit Frühlingszwiebeln und Sesam bestreut servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1565976469782-7c92daebc42e",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "couscous-kichererbsen-salat",
+   "title": "Couscous-Salat mit Kichererbsen",
+   "teaser": "Orientalisch gewürzt, mit viel Petersilie und Zitrone – ideal auch fürs Büro.",
+   "time": 15,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "schnell",
+    "mealprep",
+    "orientalisch"
+   ],
+   "ingredients": [
+    {
+     "i": "couscous",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 300,
+     "u": "ml"
+    },
+    {
+     "i": "kichererbsen",
+     "q": 2,
+     "u": "dose"
+    },
+    {
+     "i": "gurke",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "tomate",
+     "q": 3,
+     "u": "stk"
+    },
+    {
+     "i": "paprika_gelb",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "petersilie",
+     "q": 1,
+     "u": "bund"
+    },
+    {
+     "i": "zitrone",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "olivenoel",
+     "q": 4,
+     "u": "el"
+    },
+    {
+     "i": "kreuzkuemmel",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Couscous mit kochender Gemüsebrühe übergießen, abdecken und quellen lassen.",
+     "min": 5
+    },
+    {
+     "t": "Gurke, Tomaten und Paprika würfeln. Petersilie hacken. Kichererbsen abspülen."
+    },
+    {
+     "t": "Zitronensaft mit Olivenöl, Kreuzkümmel und Salz verrühren."
+    },
+    {
+     "t": "Couscous mit einer Gabel auflockern, mit Gemüse, Kichererbsen, Petersilie und Dressing mischen. Hält im Kühlschrank 2 Tage."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1656853834420-51980b12a920",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "bohnen-quesadillas",
+   "title": "Bohnen-Mais-Quesadillas mit Tomatensalsa",
+   "teaser": "Knusprig gefüllte Tortillas mit geschmolzenem Käse – ein Familienliebling.",
+   "time": 25,
+   "active": 25,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "mexikanisch"
+   ],
+   "ingredients": [
+    {
+     "i": "tortillas",
+     "q": 8,
+     "u": "stk"
+    },
+    {
+     "i": "kidneybohnen",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "mais",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "gouda",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "rote_zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "tomate",
+     "q": 3,
+     "u": "stk"
+    },
+    {
+     "i": "zitrone",
+     "q": 0.5,
+     "u": "stk"
+    },
+    {
+     "i": "kreuzkuemmel",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "saure_sahne",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Für die Salsa Tomaten und die Hälfte der Zwiebel fein würfeln, mit Zitronensaft und Salz mischen."
+    },
+    {
+     "t": "Bohnen und Mais abspülen. Bohnen mit einer Gabel grob zerdrücken, mit Mais, gewürfelter Paprika, restlicher Zwiebel, Kreuzkümmel und Paprikapulver mischen."
+    },
+    {
+     "t": "Füllung auf 4 Tortillas verteilen, mit Käse bestreuen und je eine zweite Tortilla darauflegen."
+    },
+    {
+     "t": "In einer Pfanne ohne Fett von beiden Seiten knusprig braten, bis der Käse schmilzt.",
+     "min": 6
+    },
+    {
+     "t": "In Ecken schneiden und mit Salsa und saurer Sahne servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1673990349292-ed2dfa7988c9",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "tomatensuppe",
+   "title": "Samtige Tomatensuppe mit Kokos",
+   "teaser": "Aromatische Suppe aus Tomaten und Möhren, cremig durch Kokosmilch – dazu Vollkornbrot.",
+   "time": 30,
+   "active": 10,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "suppe"
+   ],
+   "ingredients": [
+    {
+     "i": "tomaten_dose",
+     "q": 2,
+     "u": "dose"
+    },
+    {
+     "i": "passierte_tomaten",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "moehre",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "i": "kokosmilch",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "basilikum",
+     "q": 10,
+     "u": "g"
+    },
+    {
+     "i": "vollkornbrot",
+     "q": 8,
+     "u": "scheibe"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebel, Knoblauch und Möhre klein würfeln."
+    },
+    {
+     "t": "Im Olivenöl andünsten, ohne dass etwas braun wird.",
+     "min": 5
+    },
+    {
+     "t": "Tomaten, passierte Tomaten und Brühe zugeben und köcheln lassen.",
+     "min": 15
+    },
+    {
+     "t": "Kokosmilch einrühren und alles fein pürieren. Mit Salz und Pfeffer abschmecken."
+    },
+    {
+     "t": "Mit Basilikum bestreuen, Vollkornbrot dazu reichen."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1620791144170-8a443bf37a33",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "haehnchen-curry",
+   "title": "Mildes Hähnchen-Curry mit Reis",
+   "teaser": "Zartes Hähnchen in cremiger Kokos-Currysauce mit Paprika und Zucchini.",
+   "time": 30,
+   "active": 20,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "asiatisch"
+   ],
+   "ingredients": [
+    {
+     "i": "haehnchenbrust",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "reis",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "i": "kokosmilch",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "ingwer",
+     "q": 15,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "zucchini",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "currypulver",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "tomatenmark",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "rapsoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Reis nach Packungsangabe garen.",
+     "min": 15
+    },
+    {
+     "t": "Hähnchen in mundgerechte Stücke schneiden. Zwiebel, Knoblauch und Ingwer fein hacken, Paprika und Zucchini würfeln."
+    },
+    {
+     "t": "Öl erhitzen, Hähnchen rundherum anbraten und herausnehmen.",
+     "min": 5
+    },
+    {
+     "t": "Zwiebel, Knoblauch, Ingwer, Currypulver und Tomatenmark kurz anschwitzen. Gemüse zugeben.",
+     "min": 3
+    },
+    {
+     "t": "Mit Kokosmilch ablöschen, Hähnchen zurückgeben und sanft köcheln lassen, bis alles gar ist. Mit Salz abschmecken.",
+     "min": 8
+    },
+    {
+     "t": "Mit dem Reis servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1631292784640-2b24be784d5d",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "chili-sin-carne",
+   "title": "Chili sin Carne",
+   "teaser": "Herzhaft, sättigend und komplett pflanzlich – mit Bohnen, Mais und roten Linsen.",
+   "time": 40,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "mealprep",
+    "mexikanisch",
+    "onepot"
+   ],
+   "ingredients": [
+    {
+     "i": "kidneybohnen",
+     "q": 2,
+     "u": "dose"
+    },
+    {
+     "i": "mais",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 2,
+     "u": "dose"
+    },
+    {
+     "i": "rote_linsen",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "zwiebel",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 3,
+     "u": "zehe"
+    },
+    {
+     "i": "tomatenmark",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 300,
+     "u": "ml"
+    },
+    {
+     "i": "kreuzkuemmel",
+     "q": 2,
+     "u": "tl"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 2,
+     "u": "tl"
+    },
+    {
+     "i": "chiliflocken",
+     "q": 0.5,
+     "u": "tl"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "reis",
+     "q": 250,
+     "u": "g"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebeln, Knoblauch und Paprika würfeln."
+    },
+    {
+     "t": "Im Öl anbraten, Tomatenmark und Gewürze kurz mitrösten.",
+     "min": 5
+    },
+    {
+     "t": "Tomaten, Brühe und rote Linsen zugeben und köcheln lassen.",
+     "min": 15
+    },
+    {
+     "t": "Inzwischen den Reis garen.",
+     "min": 15
+    },
+    {
+     "t": "Bohnen und Mais abspülen, unterheben und noch kurz mitköcheln. Mit Salz abschmecken.",
+     "min": 5
+    },
+    {
+     "t": "Mit Reis servieren. Schmeckt aufgewärmt am nächsten Tag noch besser."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1790701909034-6c7b45c7b58a",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "spaghetti-bolognese",
+   "title": "Spaghetti Bolognese",
+   "teaser": "Der Klassiker mit viel Gemüse in der Sauce – lange geschmort, voller Geschmack.",
+   "time": 45,
+   "active": 20,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "italienisch",
+    "mealprep"
+   ],
+   "ingredients": [
+    {
+     "i": "spaghetti",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "rinderhack",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "moehre",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "passierte_tomaten",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "tomatenmark",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "olivenoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "oregano",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "parmesan",
+     "q": 40,
+     "u": "g"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebel, Möhren und Knoblauch sehr fein würfeln."
+    },
+    {
+     "t": "Öl erhitzen und das Hackfleisch krümelig anbraten.",
+     "min": 6
+    },
+    {
+     "t": "Gemüse und Tomatenmark zugeben und mitbraten.",
+     "min": 4
+    },
+    {
+     "t": "Passierte und stückige Tomaten sowie Oregano zugeben. Zugedeckt bei kleiner Hitze schmoren lassen.",
+     "min": 25
+    },
+    {
+     "t": "In den letzten Minuten die Spaghetti bissfest kochen.",
+     "min": 9
+    },
+    {
+     "t": "Sauce mit Salz und Pfeffer abschmecken, mit den Spaghetti und Parmesan servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1785396347369-b5e70e3f3af3",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "gnocchi-pfanne",
+   "title": "Gnocchi-Pfanne mit Zucchini und Mozzarella",
+   "teaser": "Goldbraun gebratene Gnocchi, Kirschtomaten und schmelzender Mozzarella.",
+   "time": 25,
+   "active": 25,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "schnell",
+    "italienisch"
+   ],
+   "ingredients": [
+    {
+     "i": "gnocchi",
+     "q": 800,
+     "u": "g"
+    },
+    {
+     "i": "zucchini",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "kirschtomaten",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "mozzarella",
+     "q": 2,
+     "u": "kugel"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "basilikum",
+     "q": 10,
+     "u": "g"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zucchini in Halbmonde schneiden, Kirschtomaten halbieren, Knoblauch fein hacken."
+    },
+    {
+     "t": "Öl in einer großen Pfanne erhitzen und die Gnocchi darin rundherum goldbraun braten.",
+     "min": 8
+    },
+    {
+     "t": "Zucchini und Knoblauch zugeben und mitbraten.",
+     "min": 4
+    },
+    {
+     "t": "Tomaten untermischen, salzen und pfeffern."
+    },
+    {
+     "t": "Mozzarella zerzupfen, darauf verteilen und zugedeckt schmelzen lassen.",
+     "min": 3
+    },
+    {
+     "t": "Mit Basilikum servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1778837224450-aae9742193ad",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "linsen-dal",
+   "title": "Rote-Linsen-Dal mit Spinat",
+   "teaser": "Wärmendes Linsencurry mit Kokosmilch, Ingwer und Spinat – reich an Eisen und Ballaststoffen.",
+   "time": 30,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "indisch",
+    "mealprep",
+    "onepot"
+   ],
+   "ingredients": [
+    {
+     "i": "rote_linsen",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "reis",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "kokosmilch",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "spinat_tk",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 3,
+     "u": "zehe"
+    },
+    {
+     "i": "ingwer",
+     "q": 20,
+     "u": "g"
+    },
+    {
+     "i": "currypulver",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "kreuzkuemmel",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "rapsoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "i": "zitrone",
+     "q": 0.5,
+     "u": "stk"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebel, Knoblauch und Ingwer fein hacken, im Öl glasig dünsten. Curry und Kreuzkümmel kurz mitrösten.",
+     "min": 5
+    },
+    {
+     "t": "Linsen abspülen und mit Tomaten, Kokosmilch und Brühe zugeben. Köcheln lassen, bis die Linsen zerfallen.",
+     "min": 18
+    },
+    {
+     "t": "Parallel den Reis garen.",
+     "min": 15
+    },
+    {
+     "t": "Spinat unterrühren und erhitzen.",
+     "min": 4
+    },
+    {
+     "t": "Mit Zitronensaft und Salz abschmecken, mit Reis servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1668236534990-73c4ed23043c",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "kartoffel-gemuese-pfanne",
+   "title": "Kartoffel-Gemüse-Pfanne mit Spiegelei",
+   "teaser": "Knusprige Bratkartoffeln mit Paprika und Zucchini, obendrauf ein Spiegelei.",
+   "time": 35,
+   "active": 25,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "hausmannskost"
+   ],
+   "ingredients": [
+    {
+     "i": "kartoffel",
+     "q": 1000,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "zucchini",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "eier",
+     "q": 4,
+     "u": "stk"
+    },
+    {
+     "i": "rapsoel",
+     "q": 3,
+     "u": "el"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "schnittlauch",
+     "q": 0.5,
+     "u": "bund"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Kartoffeln schälen, in Würfel schneiden und in Salzwasser 8 Minuten vorgaren, dann gut abtropfen lassen.",
+     "min": 8
+    },
+    {
+     "t": "Paprika, Zucchini und Zwiebel würfeln."
+    },
+    {
+     "t": "2 EL Öl in einer großen Pfanne erhitzen, Kartoffeln darin knusprig braten.",
+     "min": 10
+    },
+    {
+     "t": "Gemüse zugeben, mit Paprikapulver, Salz und Pfeffer würzen und weiterbraten.",
+     "min": 6
+    },
+    {
+     "t": "In einer zweiten Pfanne mit dem restlichen Öl vier Spiegeleier braten.",
+     "min": 4
+    },
+    {
+     "t": "Pfanne mit Spiegelei und Schnittlauch servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1606791422814-b32c705e3e2f",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "ofenlachs-brokkoli",
+   "title": "Ofenlachs mit Brokkoli und Zitronenreis",
+   "teaser": "Saftiger Lachs vom Blech mit Brokkoli – reich an Omega-3-Fettsäuren und Vitamin D.",
+   "time": 30,
+   "active": 10,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "ofen",
+    "fisch"
+   ],
+   "ingredients": [
+    {
+     "i": "lachs",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "brokkoli",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "reis",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "zitrone",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "knoblauch",
+     "q": 1,
+     "u": "zehe"
+    },
+    {
+     "i": "joghurt",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "petersilie",
+     "q": 0.5,
+     "u": "bund"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Ofen auf 200 °C Umluft vorheizen. Reis nach Packungsangabe garen.",
+     "min": 15
+    },
+    {
+     "t": "Brokkoli in Röschen teilen, mit 1 EL Öl und etwas Salz auf einem Blech verteilen und vorrösten.",
+     "min": 8
+    },
+    {
+     "t": "Lachs dazulegen, mit restlichem Öl, gepresstem Knoblauch, Salz, Pfeffer und Zitronenscheiben belegen.",
+     "min": 12
+    },
+    {
+     "t": "Joghurt mit gehackter Petersilie, etwas Zitronensaft und Salz verrühren."
+    },
+    {
+     "t": "Reis mit Zitronenabrieb mischen und alles zusammen servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1771384552858-feb0574f958d",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "haehnchen-reispfanne",
+   "title": "Hähnchen-Gemüse-Reispfanne",
+   "teaser": "Alles in einer Pfanne: Reis, Hähnchen, Erbsen und Möhren – unkompliziert und beliebt.",
+   "time": 35,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "onepot"
+   ],
+   "ingredients": [
+    {
+     "i": "haehnchenbrust",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "reis",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "erbsen_tk",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "moehre",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 600,
+     "u": "ml"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 2,
+     "u": "tl"
+    },
+    {
+     "i": "tomatenmark",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "rapsoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "petersilie",
+     "q": 0.5,
+     "u": "bund"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Hähnchen würfeln, Zwiebel, Möhren und Paprika klein schneiden."
+    },
+    {
+     "t": "Öl in einer großen Pfanne mit Deckel erhitzen, Hähnchen anbraten und mit Paprikapulver würzen.",
+     "min": 5
+    },
+    {
+     "t": "Zwiebel, Möhren, Paprika und Tomatenmark zugeben, kurz mitbraten.",
+     "min": 3
+    },
+    {
+     "t": "Reis einrühren, mit Brühe aufgießen und zugedeckt bei kleiner Hitze garen.",
+     "min": 15
+    },
+    {
+     "t": "Erbsen unterheben und weitere Minuten garen, bis der Reis weich ist.",
+     "min": 5
+    },
+    {
+     "t": "Mit Petersilie bestreuen und servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1772693471187-6e7d364f99ee",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "pilzrisotto",
+   "title": "Pilzrisotto mit Parmesan",
+   "teaser": "Cremiges Risotto mit gebratenen Champignons und Thymian, dazu Rucola.",
+   "time": 40,
+   "active": 30,
+   "difficulty": "mittel",
+   "servings": 4,
+   "tags": [
+    "italienisch"
+   ],
+   "ingredients": [
+    {
+     "i": "risottoreis",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "i": "champignons",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 1,
+     "u": "zehe"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 1000,
+     "u": "ml"
+    },
+    {
+     "i": "parmesan",
+     "q": 60,
+     "u": "g"
+    },
+    {
+     "i": "butter",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "thymian",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "rucola",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Brühe erhitzen und warm halten. Pilze in Scheiben schneiden, Zwiebel und Knoblauch fein würfeln."
+    },
+    {
+     "t": "Pilze in 1 EL Öl kräftig anbraten, mit Thymian, Salz und Pfeffer würzen und herausnehmen.",
+     "min": 6
+    },
+    {
+     "t": "Zwiebel und Knoblauch im restlichen Öl glasig dünsten, Reis zugeben und glasig rühren.",
+     "min": 3
+    },
+    {
+     "t": "Nach und nach heiße Brühe angießen und unter häufigem Rühren garen, bis der Reis cremig, aber noch bissfest ist.",
+     "min": 20
+    },
+    {
+     "t": "Pilze, Butter und geriebenen Parmesan unterrühren, kurz ziehen lassen.",
+     "min": 2
+    },
+    {
+     "t": "Mit Rucola servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1609770424775-39ec362f2d94",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "gefuellte-paprika",
+   "title": "Gefüllte Paprika mit Hack und Reis",
+   "teaser": "Bunte Paprikaschoten mit würziger Füllung, im Tomatensud geschmort und mit Käse überbacken.",
+   "time": 60,
+   "active": 20,
+   "difficulty": "mittel",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "ofen",
+    "hausmannskost"
+   ],
+   "ingredients": [
+    {
+     "i": "paprika_rot",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "paprika_gelb",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "hack_gemischt",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "reis",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "passierte_tomaten",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "tomatenmark",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "gouda",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "oregano",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "olivenoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Ofen auf 180 °C Umluft vorheizen. Reis 10 Minuten vorkochen und abgießen.",
+     "min": 10
+    },
+    {
+     "t": "Paprika einen Deckel abschneiden und entkernen. Zwiebel fein würfeln."
+    },
+    {
+     "t": "Hackfleisch mit Reis, Zwiebel, Tomatenmark, Paprikapulver, Salz und Pfeffer verkneten und in die Paprika füllen."
+    },
+    {
+     "t": "Passierte Tomaten mit Oregano und Öl in eine Auflaufform geben, Paprika hineinsetzen, Deckel auflegen."
+    },
+    {
+     "t": "Im Ofen schmoren.",
+     "min": 35
+    },
+    {
+     "t": "Deckel abnehmen, Käse auf die Füllung streuen und weitere Minuten überbacken.",
+     "min": 8
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1689012117967-433df843aa7a",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "ofengemuese-halloumi",
+   "title": "Ofengemüse mit Halloumi und Kichererbsen",
+   "teaser": "Geröstete Süßkartoffeln, Paprika und knuspriger Halloumi mit Knoblauch-Joghurt.",
+   "time": 40,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "ofen",
+    "orientalisch"
+   ],
+   "ingredients": [
+    {
+     "i": "halloumi",
+     "q": 225,
+     "u": "g"
+    },
+    {
+     "i": "kichererbsen",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "suesskartoffel",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "zucchini",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "rote_zwiebel",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "olivenoel",
+     "q": 3,
+     "u": "el"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 2,
+     "u": "tl"
+    },
+    {
+     "i": "kreuzkuemmel",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "joghurt",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "knoblauch",
+     "q": 1,
+     "u": "zehe"
+    },
+    {
+     "i": "zitrone",
+     "q": 0.5,
+     "u": "stk"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Ofen auf 220 °C Umluft vorheizen. Süßkartoffeln in Würfel, Paprika, Zucchini und Zwiebeln in grobe Stücke schneiden."
+    },
+    {
+     "t": "Gemüse und abgespülte Kichererbsen mit Öl, Paprikapulver, Kreuzkümmel und Salz mischen und auf einem Blech verteilen."
+    },
+    {
+     "t": "Im Ofen rösten.",
+     "min": 20
+    },
+    {
+     "t": "Halloumi in Scheiben schneiden, auf das Gemüse legen und weiter rösten, bis er goldbraun ist.",
+     "min": 10
+    },
+    {
+     "t": "Joghurt mit gepresstem Knoblauch, Zitronensaft und Salz verrühren und dazu servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1691199870081-c55001ae1846",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "kartoffelsuppe",
+   "title": "Kartoffelsuppe mit Möhren und Lauch",
+   "teaser": "Die gemütliche Suppe für kalte Tage – sämig, mild und mit frischer Petersilie.",
+   "time": 35,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "suppe",
+    "hausmannskost",
+    "mealprep"
+   ],
+   "ingredients": [
+    {
+     "i": "kartoffel",
+     "q": 800,
+     "u": "g"
+    },
+    {
+     "i": "moehre",
+     "q": 3,
+     "u": "stk"
+    },
+    {
+     "i": "lauch",
+     "q": 1,
+     "u": "stange"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 1200,
+     "u": "ml"
+    },
+    {
+     "i": "sahne",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "i": "butter",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "thymian",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "muskat",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "petersilie",
+     "q": 0.5,
+     "u": "bund"
+    },
+    {
+     "i": "vollkornbrot",
+     "q": 4,
+     "u": "scheibe"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Kartoffeln und Möhren schälen und würfeln. Lauch in Ringe schneiden und waschen, Zwiebel würfeln."
+    },
+    {
+     "t": "Butter im Topf schmelzen, Zwiebel und Lauch andünsten.",
+     "min": 4
+    },
+    {
+     "t": "Kartoffeln, Möhren, Thymian und Brühe zugeben und weich kochen.",
+     "min": 20
+    },
+    {
+     "t": "Etwa die Hälfte grob pürieren, sodass die Suppe sämig wird und noch Stücke hat. Sahne einrühren."
+    },
+    {
+     "t": "Mit Muskat, Salz und Pfeffer abschmecken, mit Petersilie und Brot servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1642463002619-f6e168821c56",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "shakshuka",
+   "title": "Shakshuka mit Feta",
+   "teaser": "In würziger Paprika-Tomatensauce pochierte Eier – direkt aus der Pfanne mit Brot.",
+   "time": 25,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "orientalisch",
+    "schnell"
+   ],
+   "ingredients": [
+    {
+     "i": "eier",
+     "q": 8,
+     "u": "stk"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 2,
+     "u": "dose"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "feta",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "i": "kreuzkuemmel",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    },
+    {
+     "i": "petersilie",
+     "q": 0.5,
+     "u": "bund"
+    },
+    {
+     "i": "vollkornbrot",
+     "q": 8,
+     "u": "scheibe"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebel, Knoblauch und Paprika würfeln und im Öl in einer großen Pfanne weich dünsten.",
+     "min": 6
+    },
+    {
+     "t": "Gewürze kurz mitrösten, Tomaten zugeben und einköcheln lassen. Salzen.",
+     "min": 8
+    },
+    {
+     "t": "Mit einem Löffel 8 Mulden formen und je ein Ei hineinschlagen."
+    },
+    {
+     "t": "Zugedeckt bei kleiner Hitze garen, bis das Eiweiß gestockt und das Eigelb noch weich ist.",
+     "min": 7
+    },
+    {
+     "t": "Mit zerbröseltem Feta und Petersilie bestreuen und mit Brot servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1590412200988-a436970781fa",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "linsen-bolognese",
+   "title": "Linsen-Bolognese mit Vollkornspaghetti",
+   "teaser": "Pflanzliche Bolognese, die Kinder nicht von der klassischen unterscheiden – voller Ballaststoffe.",
+   "time": 30,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "italienisch",
+    "mealprep"
+   ],
+   "ingredients": [
+    {
+     "i": "vollkornnudeln",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "rote_linsen",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "passierte_tomaten",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "moehre",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "tomatenmark",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 250,
+     "u": "ml"
+    },
+    {
+     "i": "oregano",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebel, Möhren und Knoblauch sehr fein würfeln und im Öl andünsten.",
+     "min": 5
+    },
+    {
+     "t": "Tomatenmark kurz mitrösten, dann Linsen, Tomaten, Brühe und Oregano zugeben.",
+     "min": 1
+    },
+    {
+     "t": "Köcheln lassen, bis die Linsen weich sind. Bei Bedarf etwas Wasser zugeben.",
+     "min": 18
+    },
+    {
+     "t": "Inzwischen die Vollkornspaghetti kochen.",
+     "min": 10
+    },
+    {
+     "t": "Sauce abschmecken und mit den Nudeln servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1600803907087-f56d462fd26b",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "apfelpfannkuchen",
+   "title": "Apfelpfannkuchen mit Zimt",
+   "teaser": "Fluffige Pfannkuchen mit karamellisierten Apfelscheiben – das süße Hauptgericht für Kinder.",
+   "time": 35,
+   "active": 30,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "suess"
+   ],
+   "ingredients": [
+    {
+     "i": "mehl",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "milch",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "i": "eier",
+     "q": 4,
+     "u": "stk"
+    },
+    {
+     "i": "apfel",
+     "q": 3,
+     "u": "stk"
+    },
+    {
+     "i": "butter",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "zucker",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "zimt",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "joghurt",
+     "q": 250,
+     "u": "g"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Mehl, Milch, Eier und Salz zu einem glatten Teig verrühren und kurz quellen lassen.",
+     "min": 10
+    },
+    {
+     "t": "Äpfel entkernen und in dünne Scheiben schneiden. Zucker mit Zimt mischen."
+    },
+    {
+     "t": "Wenig Butter in einer Pfanne erhitzen, einige Apfelscheiben hineinlegen und eine Kelle Teig darübergießen."
+    },
+    {
+     "t": "Pfannkuchen von beiden Seiten goldbraun backen. So fortfahren, bis Teig und Äpfel verbraucht sind.",
+     "min": 3
+    },
+    {
+     "t": "Mit Zimtzucker bestreuen und mit Joghurt servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1757450395707-fa831be8f86a",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "lasagne",
+   "title": "Lasagne al forno",
+   "teaser": "Schicht für Schicht: Hack-Tomatensauce, cremige Béchamel und goldbraune Käsekruste.",
+   "time": 85,
+   "active": 35,
+   "difficulty": "mittel",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "ofen",
+    "italienisch",
+    "wochenende"
+   ],
+   "ingredients": [
+    {
+     "i": "lasagneplatten",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "hack_gemischt",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "moehre",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "passierte_tomaten",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "tomatenmark",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "butter",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "i": "mehl",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "i": "milch",
+     "q": 600,
+     "u": "ml"
+    },
+    {
+     "i": "mozzarella",
+     "q": 1,
+     "u": "kugel"
+    },
+    {
+     "i": "parmesan",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "i": "oregano",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "muskat",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebel, Möhre und Knoblauch fein würfeln. Hack krümelig anbraten, Gemüse und Tomatenmark mitbraten.",
+     "min": 8
+    },
+    {
+     "t": "Tomaten und Oregano zugeben, salzen, pfeffern und köcheln lassen.",
+     "min": 15
+    },
+    {
+     "t": "Für die Béchamel Butter schmelzen, Mehl einrühren, nach und nach Milch zugießen und unter Rühren aufkochen. Mit Muskat und Salz würzen.",
+     "min": 6
+    },
+    {
+     "t": "Ofen auf 180 °C Umluft vorheizen. In einer Form abwechselnd Sauce, Platten und Béchamel schichten, mit Béchamel abschließen."
+    },
+    {
+     "t": "Mozzarella zerzupfen, mit Parmesan darüberstreuen und backen.",
+     "min": 35
+    },
+    {
+     "t": "Vor dem Anschneiden kurz ruhen lassen.",
+     "min": 10
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1709429790175-b02bb1b19207",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "kartoffelgratin",
+   "title": "Kartoffelgratin mit Feldsalat",
+   "teaser": "Hauchdünne Kartoffelscheiben in Sahne gebacken, dazu ein frischer Salat mit Senf-Vinaigrette.",
+   "time": 70,
+   "active": 20,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "ofen",
+    "wochenende"
+   ],
+   "ingredients": [
+    {
+     "i": "kartoffel",
+     "q": 1000,
+     "u": "g"
+    },
+    {
+     "i": "sahne",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "i": "milch",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "i": "gouda",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "i": "knoblauch",
+     "q": 1,
+     "u": "zehe"
+    },
+    {
+     "i": "butter",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "muskat",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "feldsalat",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "balsamico",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "senf",
+     "q": 1,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Ofen auf 180 °C Ober-/Unterhitze vorheizen. Auflaufform mit Knoblauch ausreiben und mit Butter fetten."
+    },
+    {
+     "t": "Kartoffeln schälen und in sehr dünne Scheiben hobeln, dachziegelartig in die Form schichten."
+    },
+    {
+     "t": "Sahne und Milch mit Salz, Pfeffer und Muskat verrühren und darübergießen. Mit Käse bestreuen."
+    },
+    {
+     "t": "Backen, bis die Kartoffeln weich sind und die Oberfläche goldbraun ist.",
+     "min": 50
+    },
+    {
+     "t": "Feldsalat waschen. Öl, Balsamico, Senf und etwas Salz verrühren und kurz vor dem Servieren untermischen."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1645453014403-4ad5170a386c",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "seelachs-pueree",
+   "title": "Seelachs mit Kartoffelpüree und Möhren",
+   "teaser": "Zart gebratenes Fischfilet, cremiges Püree und Buttermöhren – Wohlfühlessen für alle.",
+   "time": 35,
+   "active": 25,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "fisch",
+    "hausmannskost"
+   ],
+   "ingredients": [
+    {
+     "i": "seelachs",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "kartoffel",
+     "q": 1000,
+     "u": "g"
+    },
+    {
+     "i": "milch",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "i": "butter",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "moehre",
+     "q": 6,
+     "u": "stk"
+    },
+    {
+     "i": "mehl",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "rapsoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "zitrone",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "muskat",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "petersilie",
+     "q": 0.5,
+     "u": "bund"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Fisch auftauen lassen und trocken tupfen. Kartoffeln schälen, würfeln und in Salzwasser weich kochen.",
+     "min": 20
+    },
+    {
+     "t": "Möhren in Scheiben schneiden und in wenig Wasser mit 1 EL Butter zugedeckt garen.",
+     "min": 10
+    },
+    {
+     "t": "Fisch salzen, pfeffern, mit Zitronensaft beträufeln und in Mehl wenden."
+    },
+    {
+     "t": "Im Öl von jeder Seite goldbraun braten.",
+     "min": 6
+    },
+    {
+     "t": "Kartoffeln abgießen, mit warmer Milch, restlicher Butter, Muskat und Salz zu Püree stampfen."
+    },
+    {
+     "t": "Alles anrichten, Möhren mit Petersilie bestreuen, Zitronenspalten dazu."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1699616058328-d3b2625d0ecd",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "bauernsalat",
+   "title": "Griechischer Bauernsalat mit Kichererbsen",
+   "teaser": "Knackig, salzig, sonnig: Tomaten, Gurke, Paprika und Feta – mit Kichererbsen als Sattmacher.",
+   "time": 15,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "schnell",
+    "griechisch"
+   ],
+   "ingredients": [
+    {
+     "i": "tomate",
+     "q": 4,
+     "u": "stk"
+    },
+    {
+     "i": "gurke",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "paprika_gruen",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "rote_zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "feta",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "kichererbsen",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "olivenoel",
+     "q": 4,
+     "u": "el"
+    },
+    {
+     "i": "essig",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "oregano",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    },
+    {
+     "i": "vollkornbrot",
+     "q": 8,
+     "u": "scheibe"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Tomaten und Gurke in grobe Stücke, Paprika in Streifen, Zwiebel in feine Ringe schneiden."
+    },
+    {
+     "t": "Kichererbsen abspülen und mit dem Gemüse mischen."
+    },
+    {
+     "t": "Öl, Essig, Oregano und Salz verrühren und unterheben."
+    },
+    {
+     "t": "Feta in groben Stücken darauflegen und mit Brot servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1769481614068-47cfb4d1f125",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "gemuese-blechpizza",
+   "title": "Gemüse-Pizza vom Blech",
+   "teaser": "Selbstgemachter Hefeteig, bunt belegt – Kinder dürfen mitbelegen.",
+   "time": 75,
+   "active": 25,
+   "difficulty": "mittel",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "ofen",
+    "wochenende",
+    "italienisch"
+   ],
+   "ingredients": [
+    {
+     "i": "mehl",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "trockenhefe",
+     "q": 1,
+     "u": "pck"
+    },
+    {
+     "i": "olivenoel",
+     "q": 3,
+     "u": "el"
+    },
+    {
+     "i": "zucker",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "passierte_tomaten",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "i": "mozzarella",
+     "q": 2,
+     "u": "kugel"
+    },
+    {
+     "i": "gouda",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "i": "paprika_rot",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "champignons",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "mais",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "rote_zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "oregano",
+     "q": 1,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Mehl, Hefe, Zucker und Salz mischen, 300 ml lauwarmes Wasser und 2 EL Öl zugeben und zu einem glatten Teig kneten.",
+     "min": 5
+    },
+    {
+     "t": "Zugedeckt an einem warmen Ort gehen lassen.",
+     "min": 45
+    },
+    {
+     "t": "Ofen auf 230 °C Ober-/Unterhitze vorheizen. Gemüse in Streifen bzw. Scheiben schneiden, Mais abtropfen."
+    },
+    {
+     "t": "Teig auf einem geölten Blech ausrollen, mit passierten Tomaten bestreichen und mit Oregano würzen."
+    },
+    {
+     "t": "Mit Gemüse, zerzupftem Mozzarella und Gouda belegen und knusprig backen.",
+     "min": 15
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1625401514458-6c8a5e7d55da",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "frikadellen-pueree",
+   "title": "Frikadellen mit Kartoffelpüree und Erbsen",
+   "teaser": "Saftige Frikadellen wie bei Oma, dazu cremiges Püree und Erbsen.",
+   "time": 45,
+   "active": 30,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "hausmannskost"
+   ],
+   "ingredients": [
+    {
+     "i": "hack_gemischt",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "eier",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "paniermehl",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "senf",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "kartoffel",
+     "q": 1000,
+     "u": "g"
+    },
+    {
+     "i": "milch",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "i": "butter",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "erbsen_tk",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "rapsoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "muskat",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "petersilie",
+     "q": 0.5,
+     "u": "bund"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Kartoffeln schälen, würfeln und in Salzwasser weich kochen.",
+     "min": 20
+    },
+    {
+     "t": "Zwiebel fein würfeln. Hack mit Ei, Paniermehl, Zwiebel, Senf, Salz, Pfeffer und gehackter Petersilie verkneten und 8 flache Frikadellen formen."
+    },
+    {
+     "t": "Im Öl bei mittlerer Hitze von beiden Seiten braun und durchbraten.",
+     "min": 12
+    },
+    {
+     "t": "Erbsen in wenig Salzwasser garen.",
+     "min": 5
+    },
+    {
+     "t": "Kartoffeln abgießen und mit warmer Milch, Butter und Muskat zu Püree stampfen."
+    },
+    {
+     "t": "Alles zusammen anrichten."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1712594533988-13a401974b44",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "suesskartoffel-kraeuterquark",
+   "title": "Ofen-Süßkartoffeln mit Kräuterquark",
+   "teaser": "Außen knusprig, innen weich – mit eiweißreichem Schnittlauch-Quark und Gurke.",
+   "time": 45,
+   "active": 10,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "ofen",
+    "kinder"
+   ],
+   "ingredients": [
+    {
+     "i": "suesskartoffel",
+     "q": 4,
+     "u": "stk"
+    },
+    {
+     "i": "magerquark",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "i": "joghurt",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "schnittlauch",
+     "q": 1,
+     "u": "bund"
+    },
+    {
+     "i": "knoblauch",
+     "q": 1,
+     "u": "zehe"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "paprikapulver",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "gurke",
+     "q": 1,
+     "u": "stk"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Ofen auf 200 °C Umluft vorheizen. Süßkartoffeln gründlich waschen und längs in Spalten schneiden."
+    },
+    {
+     "t": "Mit Öl, Paprikapulver und Salz mischen und auf einem Blech mit Backpapier verteilen."
+    },
+    {
+     "t": "Backen, nach der Hälfte der Zeit wenden.",
+     "min": 30
+    },
+    {
+     "t": "Quark mit Joghurt glatt rühren, Schnittlauch und Knoblauch unterrühren, salzen und pfeffern."
+    },
+    {
+     "t": "Süßkartoffeln mit Kräuterquark und Gurkenscheiben servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1603481712606-08b5a2789816",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "haehnchen-nudelsuppe",
+   "title": "Hühnersuppe mit Nudeln und Gemüse",
+   "teaser": "Klare, kräftige Suppe mit zartem Hähnchen – tut gut, wenn die Erkältungszeit beginnt.",
+   "time": 40,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "suppe",
+    "onepot"
+   ],
+   "ingredients": [
+    {
+     "i": "haehnchenbrust",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "nudeln",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "moehre",
+     "q": 3,
+     "u": "stk"
+    },
+    {
+     "i": "lauch",
+     "q": 1,
+     "u": "stange"
+    },
+    {
+     "i": "erbsen_tk",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 1500,
+     "u": "ml"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "petersilie",
+     "q": 1,
+     "u": "bund"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Brühe aufkochen, Hähnchenbrust darin bei kleiner Hitze gar ziehen lassen.",
+     "min": 15
+    },
+    {
+     "t": "Inzwischen Möhren in Scheiben und Lauch in Ringe schneiden."
+    },
+    {
+     "t": "Hähnchen herausnehmen. Gemüse und Nudeln in die Brühe geben und garen.",
+     "min": 8
+    },
+    {
+     "t": "Fleisch in kleine Stücke zupfen, mit den Erbsen zurück in die Suppe geben.",
+     "min": 3
+    },
+    {
+     "t": "Mit Salz und Pfeffer abschmecken und reichlich Petersilie darüberstreuen."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1612966948332-81d747414a8f",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "kuerbissuppe",
+   "title": "Hokkaido-Kürbissuppe mit Ingwer",
+   "teaser": "Samtige Herbstsuppe – der Hokkaido muss nicht geschält werden. Mit gerösteten Kernen.",
+   "time": 35,
+   "active": 10,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "suppe",
+    "saisonal",
+    "kinder"
+   ],
+   "ingredients": [
+    {
+     "i": "kuerbis",
+     "q": 1000,
+     "u": "g"
+    },
+    {
+     "i": "kartoffel",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "ingwer",
+     "q": 20,
+     "u": "g"
+    },
+    {
+     "i": "kokosmilch",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "gemuesebruehe",
+     "q": 800,
+     "u": "ml"
+    },
+    {
+     "i": "rapsoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "currypulver",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "sonnenblumenkerne",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "i": "vollkornbrot",
+     "q": 4,
+     "u": "scheibe"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Kürbis waschen, entkernen und mit Schale würfeln. Kartoffel, Zwiebel und Ingwer schälen und würfeln."
+    },
+    {
+     "t": "Zwiebel und Ingwer im Öl andünsten, Curry kurz mitrösten.",
+     "min": 4
+    },
+    {
+     "t": "Kürbis, Kartoffel und Brühe zugeben und weich kochen.",
+     "min": 20
+    },
+    {
+     "t": "Kerne in einer trockenen Pfanne rösten.",
+     "min": 3
+    },
+    {
+     "t": "Kokosmilch zugeben, alles fein pürieren und abschmecken. Mit Kernen bestreut servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "kaesespaetzle",
+   "title": "Käsespätzle mit Röstzwiebeln",
+   "teaser": "Schwäbisch-alemannischer Klassiker mit würzigem Emmentaler und Feldsalat.",
+   "time": 30,
+   "active": 25,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "kinder",
+    "hausmannskost"
+   ],
+   "ingredients": [
+    {
+     "i": "spaetzle",
+     "q": 800,
+     "u": "g"
+    },
+    {
+     "i": "emmentaler",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 3,
+     "u": "stk"
+    },
+    {
+     "i": "butter",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "schnittlauch",
+     "q": 0.5,
+     "u": "bund"
+    },
+    {
+     "i": "muskat",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "pfeffer",
+     "q": 1,
+     "u": "prise"
+    },
+    {
+     "i": "feldsalat",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "i": "olivenoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "balsamico",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "senf",
+     "q": 1,
+     "u": "tl"
+    },
+    {
+     "i": "salz",
+     "q": 0.5,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Zwiebeln in feine Ringe schneiden und in 1 EL Butter langsam goldbraun braten. Herausnehmen.",
+     "min": 12
+    },
+    {
+     "t": "Restliche Butter in die Pfanne geben, Spätzle darin erhitzen.",
+     "min": 4
+    },
+    {
+     "t": "Käse portionsweise unterheben, bis er geschmolzen ist. Mit Muskat und Pfeffer würzen.",
+     "min": 3
+    },
+    {
+     "t": "Feldsalat waschen, Dressing aus Öl, Balsamico, Senf und Salz anrühren und untermischen."
+    },
+    {
+     "t": "Spätzle mit Röstzwiebeln und Schnittlauch bestreut servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1667499989723-c4ab9549d63c",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "erdnuss-tofu-bowl",
+   "title": "Erdnuss-Tofu-Bowl mit Reis und Gemüse",
+   "teaser": "Knuspriger Tofu, Brokkoli, Möhren und Gurke mit cremiger Erdnusssauce.",
+   "time": 30,
+   "active": 20,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "asiatisch",
+    "mealprep"
+   ],
+   "ingredients": [
+    {
+     "i": "tofu",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "i": "reis",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "brokkoli",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "moehre",
+     "q": 2,
+     "u": "stk"
+    },
+    {
+     "i": "gurke",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "erdnussmus",
+     "q": 3,
+     "u": "el"
+    },
+    {
+     "i": "sojasauce",
+     "q": 3,
+     "u": "el"
+    },
+    {
+     "i": "zitrone",
+     "q": 0.5,
+     "u": "stk"
+    },
+    {
+     "i": "ingwer",
+     "q": 10,
+     "u": "g"
+    },
+    {
+     "i": "knoblauch",
+     "q": 1,
+     "u": "zehe"
+    },
+    {
+     "i": "rapsoel",
+     "q": 2,
+     "u": "el"
+    },
+    {
+     "i": "sesam",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "fruehlingszwiebel",
+     "q": 2,
+     "u": "stk"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Reis garen. Tofu trocken tupfen und in Würfel schneiden.",
+     "min": 15
+    },
+    {
+     "t": "Tofu im Öl rundherum knusprig braten, mit 1 EL Sojasauce ablöschen.",
+     "min": 8
+    },
+    {
+     "t": "Brokkoli in Röschen in wenig Wasser bissfest dämpfen.",
+     "min": 5
+    },
+    {
+     "t": "Erdnussmus mit restlicher Sojasauce, Zitronensaft, geriebenem Ingwer, Knoblauch und etwas warmem Wasser zu einer cremigen Sauce rühren."
+    },
+    {
+     "t": "Möhren raspeln, Gurke in Scheiben schneiden. Alles in Schüsseln anrichten, Sauce darüber, mit Sesam und Frühlingszwiebeln bestreuen."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+   "imageCredit": "Unsplash"
+  },
+  {
+   "id": "blumenkohl-curry",
+   "title": "Blumenkohl-Kichererbsen-Curry",
+   "teaser": "Cremiges Gemüsecurry mit Kokosmilch, Tomaten und Spinat – pflanzlich und sättigend.",
+   "time": 35,
+   "active": 15,
+   "difficulty": "leicht",
+   "servings": 4,
+   "tags": [
+    "indisch",
+    "onepot",
+    "mealprep"
+   ],
+   "ingredients": [
+    {
+     "i": "blumenkohl",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "kichererbsen",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "kokosmilch",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "tomaten_dose",
+     "q": 1,
+     "u": "dose"
+    },
+    {
+     "i": "spinat_tk",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "i": "zwiebel",
+     "q": 1,
+     "u": "stk"
+    },
+    {
+     "i": "knoblauch",
+     "q": 2,
+     "u": "zehe"
+    },
+    {
+     "i": "ingwer",
+     "q": 15,
+     "u": "g"
+    },
+    {
+     "i": "currypulver",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "rapsoel",
+     "q": 1,
+     "u": "el"
+    },
+    {
+     "i": "reis",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "i": "salz",
+     "q": 1,
+     "u": "tl"
+    }
+   ],
+   "steps": [
+    {
+     "t": "Reis garen. Blumenkohl in kleine Röschen teilen, Zwiebel, Knoblauch und Ingwer fein hacken.",
+     "min": 15
+    },
+    {
+     "t": "Zwiebel, Knoblauch und Ingwer im Öl andünsten, Curry kurz mitrösten.",
+     "min": 4
+    },
+    {
+     "t": "Blumenkohl zugeben, mit Tomaten und Kokosmilch aufgießen und zugedeckt köcheln lassen.",
+     "min": 12
+    },
+    {
+     "t": "Kichererbsen und Spinat unterrühren und erhitzen. Mit Salz abschmecken.",
+     "min": 4
+    },
+    {
+     "t": "Mit Reis servieren."
+    }
+   ],
+   "image": "https://images.unsplash.com/photo-1654199903998-e49181b41a95",
+   "imageCredit": "Unsplash"
+  }
+ ]
+}

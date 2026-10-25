@@ -1,0 +1,237 @@
+{
+  "_info": "Frühstücksrezepte (Tag „fruehstueck“) mit Müsli-Bestandteilen. Nüsse und Kerne immer ungesalzen. Mengen für die angegebenen Erwachsenenportionen.",
+  "recipes": [
+    {
+      "id": "fam-muesli",
+      "title": "Nuss-Kern-Müsli mit {v}",
+      "category": "suess",
+      "teaser": "Haferflocken, ungesalzene Haselnüsse, Leinsamen, Kürbis- und Sonnenblumenkerne – mit {v} und kalter Milch in 5 Minuten fertig.",
+      "time": 5,
+      "active": 5,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": ["fruehstueck", "schnell", "kinder"],
+      "image": "https://images.unsplash.com/photo-1658402218013-18ccf3336bb5",
+      "imageCredit": "Unsplash",
+      "ingredients": [
+        { "i": "haferflocken", "q": 200, "u": "g" },
+        { "i": "apfel", "q": 2, "u": "stk" },
+        { "i": "haselnuesse", "q": 40, "u": "g" },
+        { "i": "leinsamen", "q": 20, "u": "g" },
+        { "i": "kuerbiskerne", "q": 20, "u": "g" },
+        { "i": "sonnenblumenkerne", "q": 20, "u": "g" },
+        { "i": "milch", "q": 600, "u": "ml" }
+      ],
+      "variants": {
+        "slot": 1,
+        "label": "Obst",
+        "options": [
+          { "key": "apfel", "label": "Apfel", "i": "apfel", "q": 2, "u": "stk" },
+          { "key": "banane", "label": "Banane", "i": "banane", "q": 2, "u": "stk" },
+          { "key": "birne", "label": "Birne", "i": "birne", "q": 2, "u": "stk" },
+          { "key": "heidelbeeren", "label": "Heidelbeeren", "i": "heidelbeeren", "q": 250, "u": "g" },
+          { "key": "kiwi", "label": "Kiwi", "i": "kiwi", "q": 3, "u": "stk" },
+          { "key": "trauben", "label": "Trauben", "i": "trauben", "q": 250, "u": "g" },
+          { "key": "clementine", "label": "Clementinen", "i": "clementine", "q": 4, "u": "stk" }
+        ]
+      },
+      "steps": [
+        { "t": "Haselnüsse grob hacken. Wer es knuspriger mag, röstet Nüsse und Kerne 2–3 Minuten ohne Fett in einer Pfanne.", "min": 3 },
+        { "t": "{v} waschen bzw. schälen und klein schneiden." },
+        { "t": "Haferflocken, Nüsse, Leinsamen, Kürbis- und Sonnenblumenkerne in Schalen verteilen und das Obst darauf geben." },
+        { "t": "Mit kalter Milch übergießen. Sofort essen oder 5 Minuten ziehen lassen, dann werden die Flocken weicher. Tipp: Die trockene Mischung gleich für die ganze Woche in ein Glas füllen." }
+      ]
+    },
+    {
+      "id": "fam-porridge",
+      "title": "Zimt-Porridge mit {v} und Walnüssen",
+      "category": "suess",
+      "teaser": "Warmer Haferbrei mit Haferdrink, Zimt und {v} – ohne Zucker, rein pflanzlich und lange sättigend.",
+      "time": 10,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": ["fruehstueck", "warm", "kinder"],
+      "image": "https://images.unsplash.com/photo-1559329607-43c470fd9aac",
+      "imageCredit": "Unsplash",
+      "ingredients": [
+        { "i": "haferflocken", "q": 200, "u": "g" },
+        { "i": "apfel", "q": 2, "u": "stk" },
+        { "i": "haferdrink", "q": 800, "u": "ml" },
+        { "i": "zimt", "q": 1, "u": "tl" },
+        { "i": "walnuesse", "q": 40, "u": "g" },
+        { "i": "leinsamen", "q": 20, "u": "g" }
+      ],
+      "variants": {
+        "slot": 1,
+        "label": "Obst",
+        "options": [
+          { "key": "apfel", "label": "Apfel", "i": "apfel", "q": 2, "u": "stk" },
+          { "key": "birne", "label": "Birne", "i": "birne", "q": 2, "u": "stk" },
+          { "key": "banane", "label": "Banane", "i": "banane", "q": 2, "u": "stk" },
+          { "key": "beeren", "label": "Beeren", "i": "beeren_tk", "q": 300, "u": "g" },
+          { "key": "heidelbeeren", "label": "Heidelbeeren", "i": "heidelbeeren", "q": 250, "u": "g" }
+        ]
+      },
+      "steps": [
+        { "t": "Haferflocken mit Haferdrink und Zimt in einem Topf aufkochen, dann bei kleiner Hitze unter Rühren etwa 5 Minuten quellen lassen.", "min": 5 },
+        { "t": "Inzwischen {v} klein schneiden (TK-Beeren nur kurz antauen lassen). Walnüsse grob hacken." },
+        { "t": "Die Hälfte des Obstes unter den Brei rühren und kurz mitziehen lassen. Ist er zu fest, einen Schluck Haferdrink oder Wasser zugeben." },
+        { "t": "In Schalen füllen, mit restlichem Obst, Walnüssen und Leinsamen bestreuen." }
+      ]
+    },
+    {
+      "id": "fam-joghurt-bowl",
+      "title": "Joghurt-Bowl mit Banane und {v}",
+      "category": "suess",
+      "teaser": "Cremiger Naturjoghurt, geröstete Dinkelflocken, Banane und ungesalzene {v} – eiweißreich und ohne Zuckerzusatz.",
+      "time": 10,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": ["fruehstueck", "schnell", "eiweissreich"],
+      "image": "https://images.unsplash.com/photo-1769479516223-e7209638915f",
+      "imageCredit": "Unsplash",
+      "ingredients": [
+        { "i": "joghurt", "q": 600, "u": "g" },
+        { "i": "dinkelflocken", "q": 80, "u": "g" },
+        { "i": "banane", "q": 2, "u": "stk" },
+        { "i": "haselnuesse", "q": 60, "u": "g" },
+        { "i": "leinsamen", "q": 20, "u": "g" },
+        { "i": "zimt", "q": 0.5, "u": "tl" }
+      ],
+      "variants": {
+        "slot": 3,
+        "label": "Nüsse & Kerne",
+        "options": [
+          { "key": "haselnuesse", "label": "Haselnüssen", "i": "haselnuesse", "q": 60, "u": "g" },
+          { "key": "mandeln", "label": "Mandeln", "i": "mandeln", "q": 60, "u": "g" },
+          { "key": "walnuesse", "label": "Walnüssen", "i": "walnuesse", "q": 60, "u": "g" },
+          { "key": "cashews", "label": "Cashewkernen", "i": "cashews", "q": 60, "u": "g" },
+          { "key": "erdnuesse", "label": "Erdnüssen", "i": "erdnuesse", "q": 60, "u": "g" },
+          { "key": "kuerbiskerne", "label": "Kürbiskernen", "i": "kuerbiskerne", "q": 60, "u": "g" }
+        ]
+      },
+      "steps": [
+        { "t": "{v} grob hacken und mit den Dinkelflocken ohne Fett in einer Pfanne 2–3 Minuten rösten, bis es duftet.", "min": 3 },
+        { "t": "Joghurt mit Zimt glatt rühren und in Schalen verteilen." },
+        { "t": "Bananen in Scheiben schneiden." },
+        { "t": "Banane, die geröstete Mischung und Leinsamen auf dem Joghurt verteilen und sofort essen." }
+      ]
+    },
+    {
+      "id": "bircher-muesli",
+      "title": "Bircher-Müsli mit Apfel und Haselnüssen",
+      "category": "suess",
+      "teaser": "Der Schweizer Klassiker: über Nacht eingeweichte Flocken, frisch geraspelter Apfel, Rosinen und Haselnüsse.",
+      "time": 10,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": ["fruehstueck", "vorbereiten", "mealprep"],
+      "image": "https://images.unsplash.com/photo-1603199477811-71c45c02f10d",
+      "imageCredit": "Unsplash",
+      "ingredients": [
+        { "i": "haferflocken", "q": 200, "u": "g" },
+        { "i": "milch", "q": 300, "u": "ml" },
+        { "i": "joghurt", "q": 300, "u": "g" },
+        { "i": "apfel", "q": 2, "u": "stk" },
+        { "i": "zitrone", "q": 0.5, "u": "stk" },
+        { "i": "rosinen", "q": 40, "u": "g" },
+        { "i": "haselnuesse", "q": 40, "u": "g" },
+        { "i": "leinsamen", "q": 20, "u": "g" }
+      ],
+      "steps": [
+        { "t": "Am Vorabend Haferflocken mit Milch und Joghurt verrühren und abgedeckt in den Kühlschrank stellen (mindestens 1 Stunde)." },
+        { "t": "Morgens die Äpfel mit Schale grob raspeln und sofort mit dem Saft der halben Zitrone mischen, damit sie hell bleiben." },
+        { "t": "Äpfel, Rosinen und Leinsamen unter die Flocken rühren. Ist das Müsli zu fest, etwas Milch zugeben." },
+        { "t": "Haselnüsse grob hacken und darüberstreuen." }
+      ]
+    },
+    {
+      "id": "granola-joghurt",
+      "title": "Knusper-Granola mit Joghurt und Beeren",
+      "category": "suess",
+      "teaser": "Selbst gebacken mit Mandeln, Kernen und nur wenig Ahornsirup – viel weniger Zucker als gekauftes Knuspermüsli.",
+      "time": 35,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 6,
+      "tags": ["fruehstueck", "ofen", "mealprep", "vorbereiten"],
+      "image": "https://images.unsplash.com/photo-1621470626764-0e8c9303800a",
+      "imageCredit": "Unsplash",
+      "ingredients": [
+        { "i": "haferflocken", "q": 240, "u": "g" },
+        { "i": "mandeln", "q": 60, "u": "g" },
+        { "i": "kuerbiskerne", "q": 40, "u": "g" },
+        { "i": "sonnenblumenkerne", "q": 40, "u": "g" },
+        { "i": "rapsoel", "q": 2, "u": "el" },
+        { "i": "ahornsirup", "q": 2, "u": "el" },
+        { "i": "zimt", "q": 1, "u": "tl" },
+        { "i": "joghurt", "q": 900, "u": "g" },
+        { "i": "beeren_tk", "q": 300, "u": "g" }
+      ],
+      "steps": [
+        { "t": "Backofen auf 160 °C Umluft vorheizen. Mandeln grob hacken." },
+        { "t": "Haferflocken, Mandeln, Kürbis- und Sonnenblumenkerne mit Öl, Ahornsirup und Zimt gut vermischen." },
+        { "t": "Auf einem Blech mit Backpapier verteilen und 20–25 Minuten goldbraun backen, nach der Hälfte einmal wenden.", "min": 22 },
+        { "t": "Vollständig abkühlen lassen – erst dann wird es knusprig. Im Schraubglas hält es etwa 2 Wochen." },
+        { "t": "Joghurt in Schalen geben, Granola und aufgetaute Beeren darauf verteilen." }
+      ]
+    },
+    {
+      "id": "chia-hafer-pudding",
+      "title": "Chia-Hafer-Pudding mit Beeren",
+      "category": "suess",
+      "teaser": "Über Nacht gequollen, rein pflanzlich und reich an Omega-3 aus Chiasamen – morgens nur noch Beeren und Kerne darauf.",
+      "time": 10,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": ["fruehstueck", "vorbereiten", "mealprep"],
+      "image": "https://images.unsplash.com/photo-1651256785597-4efe48fd71f9",
+      "imageCredit": "Unsplash",
+      "ingredients": [
+        { "i": "chiasamen", "q": 60, "u": "g" },
+        { "i": "haferflocken", "q": 80, "u": "g" },
+        { "i": "haferdrink", "q": 600, "u": "ml" },
+        { "i": "zimt", "q": 0.5, "u": "tl" },
+        { "i": "beeren_tk", "q": 300, "u": "g" },
+        { "i": "kuerbiskerne", "q": 30, "u": "g" }
+      ],
+      "steps": [
+        { "t": "Chiasamen, Haferflocken, Haferdrink und Zimt in einer Schüssel verrühren, 10 Minuten stehen lassen und noch einmal umrühren – so verklumpt nichts." },
+        { "t": "Abgedeckt über Nacht (mindestens 2 Stunden) in den Kühlschrank stellen. Die Beeren gleich mit in den Kühlschrank legen, dann sind sie morgens aufgetaut." },
+        { "t": "Pudding in Gläser füllen, Beeren und Kürbiskerne darauf geben." }
+      ]
+    },
+    {
+      "id": "apfel-zimt-quark",
+      "title": "Apfel-Zimt-Quark mit Walnüssen",
+      "category": "suess",
+      "teaser": "Viel Eiweiß, wenig Aufwand: Magerquark mit Joghurt cremig gerührt, dazu Apfel, Zimt, Walnüsse und Leinsamen.",
+      "time": 10,
+      "active": 10,
+      "difficulty": "leicht",
+      "servings": 4,
+      "tags": ["fruehstueck", "schnell", "eiweissreich", "kinder"],
+      "image": "https://images.unsplash.com/photo-1603199477511-29c5a63e8fad",
+      "imageCredit": "Unsplash",
+      "ingredients": [
+        { "i": "magerquark", "q": 500, "u": "g" },
+        { "i": "joghurt", "q": 200, "u": "g" },
+        { "i": "milch", "q": 100, "u": "ml" },
+        { "i": "apfel", "q": 2, "u": "stk" },
+        { "i": "zimt", "q": 1, "u": "tl" },
+        { "i": "walnuesse", "q": 40, "u": "g" },
+        { "i": "leinsamen", "q": 20, "u": "g" }
+      ],
+      "steps": [
+        { "t": "Quark, Joghurt, Milch und Zimt cremig rühren." },
+        { "t": "Äpfel waschen, entkernen und in kleine Würfel schneiden oder grob raspeln." },
+        { "t": "Walnüsse grob hacken." },
+        { "t": "Quark in Schalen verteilen, Apfel, Walnüsse und Leinsamen darauf geben." }
+      ]
+    }
+  ]
+}
