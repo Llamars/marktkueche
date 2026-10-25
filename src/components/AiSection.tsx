@@ -71,7 +71,7 @@ export function AiSection() {
         <p className="mb-3 flex items-start gap-2 text-sm text-muted">
           <KeyRound size={16} className="mt-0.5 shrink-0 text-brand" />
           <span>
-            Die sonntags nachts abgerufenen Angebote liegen verschlüsselt auf der Webseite. Mit dem Familien-Schlüssel kann deine Marktküche sie lesen.
+            Die samstagabends abgerufenen Angebote liegen verschlüsselt auf der Webseite. Mit dem Familien-Schlüssel kann deine Marktküche sie lesen.
             {remote.state === 'ok' && <b className="text-good"> Aktiv – {remote.count} Angebote geladen.</b>}
             {remote.state === 'wrong' && <b className="text-accent"> Der eingetragene Schlüssel passt nicht.</b>}
             {remote.state === 'none' && ' Auf dieser Adresse ist noch kein automatischer Abruf eingerichtet.'}

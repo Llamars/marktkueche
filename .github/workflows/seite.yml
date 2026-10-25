@@ -1,4 +1,4 @@
-# Marktküche auf GitHub Pages: bei jeder Änderung neu veröffentlichen, sonntags nachts vorher die Angebote abrufen.
+# Marktküche auf GitHub Pages: bei jeder Änderung neu veröffentlichen, samstagabends vorher die Angebote abrufen.
 # Geheimnisse (Settings → Secrets and variables → Actions): DATA_KEY (Familien-Schlüssel) und GEMINI_API_KEY (kostenlos).
 # Optional statt Gemini: ANTHROPIC_API_KEY oder OPENAI_API_KEY, Auswahl über die Variable AI_PROVIDER, Modell über AI_MODEL.
 name: Seite und Angebote
@@ -7,10 +7,11 @@ on:
   push:
     branches: [main]
   schedule:
-    # GitHub rechnet in UTC: 02:00 UTC = 03:00 MEZ (Winter) bzw. 04:00 MESZ (Sommer)
+    # GitHub rechnet in UTC und startet geplante Läufe oft verspätet – deshalb schon samstagabends:
+    # 21:00 UTC = 22:00 MEZ (Winter) bzw. 23:00 MESZ (Sommer). Die Prospekte der neuen Woche sind dann online.
+    - cron: '0 21 * * 6'
+    # Nachlauf sonntags 02:00 UTC: liest nur, was beim ersten Durchgang unvollständig blieb (z. B. wegen Auslastung)
     - cron: '0 2 * * 0'
-    # Nachlauf: liest nur, was beim ersten Durchgang unvollständig blieb (z. B. wegen Auslastung)
-    - cron: '0 5 * * 0'
   workflow_dispatch:
     inputs:
       abrufen:

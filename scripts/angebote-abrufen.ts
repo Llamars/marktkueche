@@ -1,4 +1,4 @@
-// Wöchentlicher Angebotsabruf (läuft sonntags um 3 Uhr MEZ als GitHub Action, siehe .github/workflows/seite.yml).
+// Wöchentlicher Angebotsabruf (läuft samstags um 22 Uhr MEZ als GitHub Action, siehe .github/workflows/seite.yml).
 // Holt die Prospekte (Aldi Süd und Alnatura von deren Seiten, REWE, Lidl, Netto und Penny über discounto.de),
 // liest PDFs mit der KI aus und legt die Angebote verschlüsselt in public/daten/angebote.json ab.
 // Ohne DATA_KEY bricht das Skript ab.
@@ -175,8 +175,9 @@ async function main() {
     const report: SourceReport = { id: src.id, label: src.label, cityId: 'freiburg', marketId: src.marketId, ok: false, count: 0 };
     reports.push(report);
     try {
-      // Nur gültige Ausgaben und solche, die in den nächsten zwei Tagen beginnen (keine Vorschau-Prospekte Wochen im Voraus)
-      const editions = (await src.find()).filter((e) => (!e.validTo || e.validTo >= today) && (!e.validFrom || e.validFrom <= soon));
+      // Ausgaben, die morgen noch gelten (am Samstagabend also nicht mehr die auslaufende Woche) und spätestens
+      // übermorgen beginnen (keine Vorschau-Prospekte Wochen im Voraus)
+      const editions = (await src.find()).filter((e) => (!e.validTo || e.validTo > today) && (!e.validFrom || e.validFrom <= soon));
       if (!editions.length) throw new Error('Keine aktuelle Ausgabe gefunden.');
       for (const e of editions) {
         report.validFrom = e.validFrom;

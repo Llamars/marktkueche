@@ -29,7 +29,7 @@ eingetragene Angebote. Beim ersten Start gibt es erfundene Beispielangebote zum 
 ## Online über GitHub (kostenlos)
 
 Die App liegt auf **GitHub Pages**, der Workflow `.github/workflows/seite.yml` veröffentlicht sie bei jeder Änderung neu.
-**Jeden Sonntag um 3 Uhr MEZ** (02:00 UTC, mit Nachlauf um 6 Uhr) ruft er vorher die Angebote ab (`scripts/angebote-abrufen.ts`):
+**Jeden Samstag um 22 Uhr MEZ** (21:00 UTC, mit Nachlauf sonntags um 3 Uhr) ruft er vorher die Angebote ab (`scripts/angebote-abrufen.ts`):
 
 - **Aldi Süd:** offizieller Wochenprospekt (PDF, 40–50 MB). Er wird in Teile zerlegt und von der KI ausgelesen –
   standardmäßig mit **Gemini im kostenlosen Tarif** (Google darf Anfragen im Gratis-Tarif zur Verbesserung nutzen).
@@ -48,7 +48,7 @@ Einrichten (einmalig, im Projektordner):
 2. `gh secret set GEMINI_API_KEY` und den Schlüssel einfügen.
 3. Familien-Schlüssel erzeugen und hinterlegen: `openssl rand -hex 12` ausgeben lassen, dann `gh secret set DATA_KEY`
    und den Wert einfügen. Denselben Wert in der App eintragen.
-4. Abruf sofort testen: `gh workflow run seite.yml` – oder einfach bis Sonntag warten.
+4. Abruf sofort testen: `gh workflow run seite.yml` – oder einfach bis Samstagabend warten.
 
 Optional statt Gemini: `ANTHROPIC_API_KEY` oder `OPENAI_API_KEY` als Secret und die Variable `AI_PROVIDER`
 (`anthropic` bzw. `openai`) setzen, Modell über `AI_MODEL`.
