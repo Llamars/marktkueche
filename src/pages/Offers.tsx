@@ -122,7 +122,7 @@ function AutoFetchCard() {
   const remote = useStore((s) => s.remote);
   const city = useCity();
   if (remote.state === 'none' || remote.state === 'loading' || !remote.status) return null;
-  const sources = remote.status.sources.filter((x) => x.cityId === city.id);
+  const sources = remote.status.sources.filter((x) => x.cityId === city.id || x.cityIds?.includes(city.id));
   return (
     <Card className="mt-4">
       <div className="mb-2 flex items-center gap-2">

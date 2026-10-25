@@ -44,5 +44,7 @@ export function normalizeState(s: Partial<HouseholdState> & { favorites?: unknow
   const favorites = Array.isArray(s.favorites)
     ? Object.fromEntries((s.favorites as string[]).map((id) => [id, 'sonstiges']))
     : ((s.favorites as Record<string, string>) ?? {});
-  return { ...f, ...s, favorites, settings: { ...f.settings, ...s.settings } } as HouseholdState;
+  // Neu hinzugekommene Städte (z. B. München) bekommen ihre Standard-Märkte, gespeicherte Auswahl bleibt
+  const marketIds = { ...f.settings.marketIds, ...(s.settings?.marketIds ?? {}) };
+  return { ...f, ...s, favorites, settings: { ...f.settings, ...s.settings, marketIds } } as HouseholdState;
 }

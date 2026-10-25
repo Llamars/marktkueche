@@ -1,6 +1,6 @@
 // Wöchentlicher Angebotsabruf (läuft samstags um 22 Uhr MEZ als GitHub Action, siehe .github/workflows/seite.yml).
-// Holt die Prospekte (Aldi Süd und Alnatura von deren Seiten, REWE, Lidl, Netto und Penny über discounto.de,
-// No Frills für Toronto über flyers-on-line.com),
+// Holt die Prospekte (Aldi Süd und Alnatura von deren Seiten, REWE, Lidl, Netto, Penny sowie für München Kaufland und
+// Norma über discounto.de, No Frills und T&T für Toronto über flyers-on-line.com),
 // liest PDFs mit der KI aus und legt die Angebote verschlüsselt in public/daten/angebote.json ab.
 // Ohne DATA_KEY bricht das Skript ab.
 //
@@ -31,6 +31,8 @@ export interface SourceReport {
   note?: string;
   /** nicht alle Teile des Prospekts lesbar – beim nächsten Lauf erneut versuchen */
   partial?: boolean;
+  /** weitere Städte, für die dieselben (bundesweiten) Angebote gelten */
+  cityIds?: string[];
 }
 
 export interface FetchStatus {
@@ -122,7 +124,21 @@ interface ProspectSource {
 }
 
 const FREIBURG = { cityId: 'freiburg', city: 'Freiburg im Breisgau', currency: 'EUR' };
+const MUENCHEN = { cityId: 'muenchen', city: 'München', currency: 'EUR' };
 const TORONTO = { cityId: 'toronto', city: 'Toronto', currency: 'CAD' };
+
+/**
+ * Bundesweite bzw. süddeutsche Prospekte gelten auch in München: Sie werden einmal gelesen (für Freiburg) und
+ * für die weiteren Städte kopiert – ohne zusätzliche KI-Anfragen.
+ */
+const ALSO_FOR: Record<string, string[]> = {
+  'aldi-sued-prospekt': ['muenchen'],
+  'discounto-rewe': ['muenchen'],
+  'discounto-lidl': ['muenchen'],
+  'discounto-netto': ['muenchen'],
+  'discounto-penny': ['muenchen'],
+  'alnatura-wochenangebote': ['muenchen'],
+};
 
 const PROSPECT_SOURCES: ProspectSource[] = [
   { id: 'aldi-sued-prospekt', label: 'Aldi Süd', marketId: 'aldi-sued', ...FREIBURG, find: () => findAldiSuedEditions() },
@@ -130,6 +146,8 @@ const PROSPECT_SOURCES: ProspectSource[] = [
   { id: 'discounto-lidl', label: 'Lidl', marketId: 'lidl', ...FREIBURG, find: () => findDiscountoEditions('lidl') },
   { id: 'discounto-netto', label: 'Netto', marketId: 'netto', ...FREIBURG, find: () => findDiscountoEditions('Netto-Marken-Discount') },
   { id: 'discounto-penny', label: 'Penny', marketId: 'penny', ...FREIBURG, find: () => findDiscountoEditions('penny_markt') },
+  { id: 'discounto-kaufland', label: 'Kaufland', marketId: 'kaufland', ...MUENCHEN, find: () => findDiscountoEditions('Kaufland') },
+  { id: 'discounto-norma', label: 'Norma', marketId: 'norma', ...MUENCHEN, find: () => findDiscountoEditions('norma') },
   // Kanadische Prospekte laufen Donnerstag bis Mittwoch (deshalb zusätzlich ein Abruf donnerstags)
   { id: 'fol-no-frills', label: 'No Frills', marketId: 'no-frills', ...TORONTO, find: () => findFlyersOnlineEditions('no-frills/ontario') },
   // T&T ist dort gelistet, zeigt aber nicht jede Woche Prospektseiten – dann meldet der Status „keine aktuelle Ausgabe“
@@ -222,7 +240,7 @@ async function main() {
   // No Frills (Toronto) über flyers-on-line.com
   const soon = isoDate(new Date(Date.now() + 2 * 864e5));
   for (const src of PROSPECT_SOURCES) {
-    const report: SourceReport = { id: src.id, label: src.label, cityId: src.cityId, marketId: src.marketId, ok: false, count: 0 };
+    const report: SourceReport = { id: src.id, label: src.label, cityId: src.cityId, cityIds: ALSO_FOR[src.id], marketId: src.marketId, ok: false, count: 0 };
     reports.push(report);
     try {
       // Ausgaben, die morgen noch gelten (am Samstagabend also nicht mehr die auslaufende Woche) und spätestens
@@ -235,7 +253,7 @@ async function main() {
         if (done(src.id, e.validFrom) && !FORCE) {
           report.ok = true;
           // Auch Angebote mitzählen, die erst später in der Woche beginnen (z. B. ab Donnerstag)
-          report.count += prev.filter((o) => o.sourceId === src.id && (!o.validTo || o.validTo >= today)).length;
+          report.count += prev.filter((o) => o.sourceId === src.id && o.cityId === src.cityId && (!o.validTo || o.validTo >= today)).length;
           report.note = 'bereits ausgelesen';
           continue;
         }
@@ -255,7 +273,9 @@ async function main() {
   }
 
   // Alnatura: Angebotsseite ohne KI lesen
-  const aln: SourceReport = { id: 'alnatura-wochenangebote', label: 'Alnatura', cityId: 'freiburg', marketId: 'alnatura', ok: false, count: 0 };
+  const aln: SourceReport = {
+    id: 'alnatura-wochenangebote', label: 'Alnatura', cityId: 'freiburg', cityIds: ALSO_FOR['alnatura-wochenangebote'], marketId: 'alnatura', ok: false, count: 0,
+  };
   try {
     const { edition, offers } = await fetchAlnatura();
     if (!edition || !offers.length) throw new Error('Keine Angebote auf der Seite gefunden.');
@@ -269,12 +289,15 @@ async function main() {
   // Neu gelesene Quellen ersetzen ihre bisherigen Angebote ganz (auch solche, die erst ab Donnerstag gelten);
   // was diesmal nicht geladen werden konnte, bleibt bis zum Ablauf erhalten
   const freshSources = new Set(fresh.map((o) => o.sourceId));
-  const kept = prev.filter((o) => (!o.validTo || o.validTo >= today) && !freshSources.has(o.sourceId));
+  // Kopien für weitere Städte werden jedes Mal neu aus den Angeboten der Hauptstadt erzeugt
+  const copied = new Set(Object.keys(ALSO_FOR));
+  const kept = prev.filter((o) => (!o.validTo || o.validTo >= today) && !freshSources.has(o.sourceId) && !(copied.has(o.sourceId ?? '') && o.id.includes('@')));
   const now = new Date().toISOString();
-  const offers: Offer[] = [
+  const primary: Offer[] = [
     ...kept,
     ...fresh.map((o, k) => ({ ...o, id: `auto-${o.sourceId}-${o.validFrom ?? 'x'}-${k}`, createdAt: now })),
   ];
+  const offers: Offer[] = primary.flatMap((o) => [o, ...(ALSO_FOR[o.sourceId ?? ''] ?? []).map((cityId) => ({ ...o, id: `${o.id}@${cityId}`, cityId }))]);
 
   fs.mkdirSync(OUT, { recursive: true });
   fs.writeFileSync(path.join(OUT, 'angebote.json'), JSON.stringify(await seal(offers, KEY)) + '\n');

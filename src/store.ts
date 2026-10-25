@@ -12,7 +12,10 @@ import type { SharePackage } from './lib/share';
 export interface FetchStatus {
   updatedAt: string;
   provider: string | null;
-  sources: { id: string; label: string; cityId: string; marketId: string; ok: boolean; count: number; validFrom?: string; validTo?: string; note?: string }[];
+  sources: {
+    id: string; label: string; cityId: string; cityIds?: string[]; marketId: string; ok: boolean; count: number;
+    validFrom?: string; validTo?: string; note?: string;
+  }[];
 }
 
 export interface RemoteOffers {
