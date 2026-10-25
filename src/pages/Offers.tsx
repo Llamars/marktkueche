@@ -17,13 +17,15 @@ function UploadSheet({ open, onClose }: { open: boolean; onClose: () => void }) 
   const [files, setFiles] = useState<File[]>([]);
   const [validTo, setValidTo] = useState('');
   const [busy, setBusy] = useState(false);
+  const [progress, setProgress] = useState('');
   const [error, setError] = useState<string | null>(null);
 
   async function submit() {
     setBusy(true);
+    setProgress('');
     setError(null);
     try {
-      const created = await readProspect(files, marketId, validTo || undefined);
+      const created = await readProspect(files, marketId, validTo || undefined, setProgress);
       toast(created ? `${created} Angebote erkannt und übernommen.` : 'Auf den Seiten wurden keine Lebensmittel-Angebote gefunden.');
       setFiles([]);
       onClose();
@@ -38,7 +40,7 @@ function UploadSheet({ open, onClose }: { open: boolean; onClose: () => void }) 
     <Sheet open={open} onClose={onClose} title="Prospekt auslesen"
       footer={claude ? (
         <Button full onClick={submit} disabled={busy || !files.length || !marketId}>
-          {busy ? <Loader2 size={18} className="animate-spin" /> : <FileUp size={18} />} {busy ? 'Prospekt wird gelesen … (bis 1 Min.)' : 'Angebote auslesen'}
+          {busy ? <Loader2 size={18} className="animate-spin" /> : <FileUp size={18} />} {busy ? progress || 'Prospekt wird gelesen …' : 'Angebote auslesen'}
         </Button>
       ) : undefined}>
       {!claude ? (
@@ -53,7 +55,7 @@ function UploadSheet({ open, onClose }: { open: boolean; onClose: () => void }) 
               {markets.map((m) => <Chip key={m.id} active={m.id === marketId} onClick={() => setMarketId(m.id)}>{m.name}</Chip>)}
             </div>
           </Field>
-          <Field label="Fotos der Prospektseiten oder PDF" hint="Am einfachsten: die Seiten mit Lebensmitteln abfotografieren. PDFs bis 15 MB.">
+          <Field label="Fotos, Bildschirmfotos oder ganzes Prospekt-PDF" hint="Große PDFs werden in Teile zerlegt und nacheinander gelesen – das kann ein paar Minuten dauern.">
             <input type="file" accept="application/pdf,image/*" multiple capture={undefined}
               onChange={(e) => setFiles([...(e.target.files ?? [])])}
               className="block w-full rounded-xl border border-dashed border-line p-4 text-sm file:mr-3 file:rounded-full file:border-0 file:bg-brand file:px-4 file:py-2 file:text-sm file:font-semibold file:text-brand-ink" />

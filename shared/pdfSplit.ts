@@ -1,6 +1,6 @@
 import { PDFDocument } from 'pdf-lib';
 
-/** Teilt ein großes Prospekt-PDF in Stücke, die in eine KI-Anfrage passen (Prospekte haben oft 40–50 MB). */
+/** Teilt ein großes Prospekt-PDF in Stücke, die in eine KI-Anfrage passen (Prospekte haben oft 40–50 MB). Läuft in Node und im Browser. */
 export async function splitPdf(bytes: Uint8Array, maxBytes = 10 * 1024 * 1024): Promise<Uint8Array[]> {
   if (bytes.length <= maxBytes) return [bytes];
   const src = await PDFDocument.load(bytes, { ignoreEncryption: true });

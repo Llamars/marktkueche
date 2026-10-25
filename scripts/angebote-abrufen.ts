@@ -14,7 +14,7 @@ import { offersTask, readOffers } from '../shared/aiTasks';
 import { isSealed, seal, unseal } from '../shared/crypto';
 import { isoDate, matchIngredient } from '../shared/logic';
 import { fetchAlnatura, findAldiSuedEditions, findDiscountoEditions, get, type AldiEdition, type SourceOffer } from '../server/lib/quellen';
-import { splitPdf } from './pdf-teilen';
+import { splitPdf } from '../shared/pdfSplit';
 
 export interface SourceReport {
   id: string;
@@ -183,7 +183,8 @@ async function main() {
         report.validTo = e.validTo;
         if (done(src.id, e.validFrom) && !FORCE) {
           report.ok = true;
-          report.count += prev.filter((o) => o.sourceId === src.id && o.validFrom === e.validFrom).length;
+          // Auch Angebote mitzählen, die erst später in der Woche beginnen (z. B. ab Donnerstag)
+          report.count += prev.filter((o) => o.sourceId === src.id && (!o.validTo || o.validTo >= today)).length;
           report.note = 'bereits ausgelesen';
           continue;
         }
@@ -215,11 +216,10 @@ async function main() {
   }
   reports.push(aln);
 
-  // Neue Ausgaben ersetzen alte derselben Quelle; was nicht neu geladen werden konnte, bleibt bis zum Ablauf
-  const replaced = new Set(fresh.map((o) => `${o.sourceId}|${o.validFrom}`));
+  // Neu gelesene Quellen ersetzen ihre bisherigen Angebote ganz (auch solche, die erst ab Donnerstag gelten);
+  // was diesmal nicht geladen werden konnte, bleibt bis zum Ablauf erhalten
   const freshSources = new Set(fresh.map((o) => o.sourceId));
-  const kept = prev.filter((o) => (!o.validTo || o.validTo >= today) && !replaced.has(`${o.sourceId}|${o.validFrom}`) &&
-    !(o.sourceId === 'alnatura-wochenangebote' && freshSources.has(o.sourceId)));
+  const kept = prev.filter((o) => (!o.validTo || o.validTo >= today) && !freshSources.has(o.sourceId));
   const now = new Date().toISOString();
   const offers: Offer[] = [
     ...kept,
