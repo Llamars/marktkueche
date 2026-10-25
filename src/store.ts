@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import type { CartExtra, City, FavCategory, Features, HouseholdState, Ingredient, Offer, PlanEntry, Recipe, RecipeView, Settings } from '../shared/types';
 import type { SourceRef } from '../shared/references';
-import { keepExtra, matchIngredient, parsePackGrams } from '../shared/logic';
+import { fitToWeek, keepExtra, matchIngredient, offerIngredient, parsePackGrams } from '../shared/logic';
 import { seedDemoOffers } from '../shared/demoOffers';
 import { isSealed, unseal } from '../shared/crypto';
 import { enrich, featuresFor, isBaseRecipe, loadAll, normalize, toRecipe, withCustom, type DeviceSettings } from './local/data';
@@ -256,10 +256,11 @@ export const useStore = create<Store>((set, get) => {
         const box = await (await fetch(`${base}daten/angebote.json`, { cache: 'no-cache' })).json();
         if (!isSealed(box)) throw new Error();
         const catalog = get().catalog!;
-        const list = (await unseal<Offer[]>(box, key)).map((o) => ({
-          ...o,
-          ingredientId: o.ingredientId && catalog[o.ingredientId] ? o.ingredientId : matchIngredient(o.title, catalog),
-        }));
+        // Zuordnung und Gültigkeit hier noch einmal prüfen – so wirken Verbesserungen auch für bereits veröffentlichte Angebote
+        const list = (await unseal<Offer[]>(box, key)).map((o) => {
+          const src = status!.sources.find((x) => x.id === o.sourceId);
+          return fitToWeek({ ...o, ingredientId: offerIngredient(`${o.title} ${o.brand ?? ''}`, o.ingredientId, catalog) }, src ?? {});
+        });
         // Sobald echte Angebote für eine Stadt da sind, verschwinden dort die erfundenen Beispiele
         const real = new Set(list.map((o) => o.cityId));
         storeOffers([...(get().offers ?? []).filter((o) => o.source !== 'auto' && !(o.source === 'demo' && real.has(o.cityId))), ...list]);

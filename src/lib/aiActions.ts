@@ -1,7 +1,7 @@
 import type { Offer, RecipeView } from '../../shared/types';
 import { AiError, askAI, parseJson, type AiConfig, type AiFile, type AiRequest } from '../../shared/ai';
 import { ideasTask, offersTask, readOffers, readRecipe, recipeTask } from '../../shared/aiTasks';
-import { fitsPrefs, isoDate } from '../../shared/logic';
+import { fitsPrefs, fitToWeek, isoDate } from '../../shared/logic';
 import { useStore } from '../store';
 
 /** KI-Funktionen direkt in der App, mit dem auf dem Gerät hinterlegten Schlüssel (Gemini kostenlos, Claude oder OpenAI). */
@@ -125,16 +125,17 @@ export async function readProspect(files: File[], marketId: string, validTo?: st
   }
   if (!found.length && lastError) throw lastError;
   const now = new Date().toISOString();
-  const offers: Offer[] = found.map((o, k) => ({
+  // Gültigkeit: angegebenes Enddatum, sonst eine Woche ab heute; offensichtlich falsch gelesene Daten werden ersetzt
+  const week = { validFrom: today, validTo: validTo || new Date(Date.now() + 6 * 864e5).toISOString().slice(0, 10) };
+  const offers: Offer[] = found.map((o, k) => fitToWeek({
     ...o,
     id: `upload-${Date.now().toString(36)}-${k}`,
     cityId: city.id,
     marketId,
-    validFrom: o.validFrom ?? today,
     validTo: validTo || o.validTo,
-    source: 'upload',
+    source: 'upload' as const,
     createdAt: now,
-  }));
+  }, week));
   st.setOffers([...(st.offers ?? []), ...offers]);
   return offers.length;
 }

@@ -32,6 +32,42 @@ export function matchIngredient(title: string, catalog: Catalog): string | null 
   return best?.id ?? null;
 }
 
+// Wörter, die nichts über die Zutat aussagen („frisch“, „gemischt“ …)
+const FILLER = /^(frisch|gemischt|natur|klein|groß|gross|extra|fein|original|classic|verschiedene|sorten|ohne|oder|stück|packung|schale)/;
+const words = (s: string) => norm(s).replace(/[^a-zäöüß ]/g, ' ').split(' ').filter((w) => w.length >= 4 && !FILLER.test(w));
+
+/**
+ * Zutat zu einem Angebot. Der Vorschlag der KI gilt, wenn er plausibel ist: Der Produktname enthält ein Wort
+ * der Zutat und keines ihrer Ausschlusswörter. Sonst entscheidet die eigene Stichwortliste. So wird „Rinder-Hackfleisch“
+ * zu Rinderhack, aber „Hamburger vom Rind“ nicht zu Kochschinken.
+ */
+export function offerIngredient(title: string, suggestion: string | null | undefined, catalog: Catalog): string | null {
+  const ing = suggestion ? catalog[suggestion] : undefined;
+  if (ing) {
+    const t = norm(title);
+    // Ein Wort der Zutat steckt im Produktnamen – auch in Zusammensetzungen („Räucherlachs“ → Lachs)
+    const plausible = [ing.name, ing.one ?? '', ...(ing.match ?? [])].flatMap(words).some((w) => t.includes(w));
+    if (plausible && !ing.noMatch?.some((w) => t.includes(w))) return ing.id;
+  }
+  return matchIngredient(title, catalog);
+}
+
+const shiftDays = (d: string, n: number) => new Date(Date.parse(`${d}T12:00:00Z`) + n * 864e5).toISOString().slice(0, 10);
+
+/**
+ * Hält die Gültigkeit eines Angebots in der Woche des Prospekts. Die KI liest Jahreszahlen manchmal falsch
+ * (z. B. 2020 statt 2026); solche Daten werden durch die des Prospekts ersetzt.
+ */
+export function fitToWeek<T extends { validFrom?: string; validTo?: string }>(o: T, week: { validFrom?: string; validTo?: string }): T {
+  if (!week.validFrom || !week.validTo) return o;
+  const lo = shiftDays(week.validFrom, -3);
+  const hi = shiftDays(week.validTo, 7);
+  const inside = (d?: string) => !!d && d >= lo && d <= hi;
+  const validFrom = inside(o.validFrom) ? o.validFrom! : week.validFrom;
+  const validTo = inside(o.validTo) && o.validTo! >= validFrom ? o.validTo! : week.validTo;
+  return { ...o, validFrom, validTo };
+}
+
 /** Liest Packungsgrößen wie „500 g“, „1,5 kg“, „6 x 125 g“, „1 l“ aus einem Text. */
 export function parsePackGrams(text: string | undefined): number | undefined {
   if (!text) return undefined;

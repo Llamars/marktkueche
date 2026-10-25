@@ -1,5 +1,5 @@
 import type { Aisle, Ingredient, Offer, Recipe } from './types';
-import { matchIngredient, parsePackGrams } from './logic';
+import { offerIngredient, parsePackGrams } from './logic';
 import type { AiRequest } from './ai';
 
 /** Aufgaben für die KI (Prospekt auslesen, Rezept importieren, neue Ideen) – Anbieter-unabhängig, Antwort als JSON. */
@@ -68,7 +68,7 @@ export function readOffers(json: unknown, catalog: Record<string, Ingredient>): 
       perKg: num(o.perKg),
       validFrom: date(o.validFrom),
       validTo: date(o.validTo),
-      ingredientId: id && catalog[id] ? id : matchIngredient(`${title} ${str(o.brand) ?? ''}`, catalog),
+      ingredientId: offerIngredient(`${title} ${str(o.brand) ?? ''}`, id, catalog),
     }];
   });
 }

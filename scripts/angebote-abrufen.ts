@@ -12,7 +12,7 @@ import type { Ingredient, Offer } from '../shared/types';
 import { AI_PROVIDERS, AiError, askAI, parseJson, type AiConfig, type AiProvider, type AiRequest } from '../shared/ai';
 import { offersTask, readOffers } from '../shared/aiTasks';
 import { isSealed, seal, unseal } from '../shared/crypto';
-import { isoDate, matchIngredient } from '../shared/logic';
+import { fitToWeek, isoDate, matchIngredient } from '../shared/logic';
 import { fetchAlnatura, findAldiSuedEditions, findDiscountoEditions, get, type AldiEdition, type SourceOffer } from '../server/lib/quellen';
 import { splitPdf } from '../shared/pdfSplit';
 
@@ -193,10 +193,9 @@ async function main() {
         // Mehrere Prospekte derselben Woche können dieselben Angebote enthalten
         const known = new Set(fresh.filter((o) => o.sourceId === src.id).map((o) => `${o.title.toLowerCase()}|${o.price}`));
         const offers = (await readProspectPdf(ai, src.label, e, report)).filter((o) => !known.has(`${o.title.toLowerCase()}|${o.price}`));
-        fresh.push(...offers.map((o) => ({
+        fresh.push(...offers.map((o) => fitToWeek({
           ...o, cityId: 'freiburg', marketId: src.marketId, source: 'auto' as const, sourceId: src.id,
-          validFrom: o.validFrom ?? e.validFrom, validTo: o.validTo ?? e.validTo,
-        })));
+        }, e)));
         report.ok = true;
         report.count += offers.length;
       }

@@ -219,7 +219,9 @@
     "datteltomate",
     "snacktomate",
     "cherry tomato",
-    "grape tomato"
+    "grape tomato",
+    "pflaumentomaten",
+    "snacktomaten"
    ]
   },
   {
@@ -962,7 +964,8 @@
    "match": [
     "lachsfilet",
     "lachs",
-    "salmon"
+    "salmon",
+    "räucherlachs"
    ],
    "noMatch": [
     "räucherlachs",
@@ -1075,7 +1078,9 @@
     "feta",
     "hirtenkäse",
     "schafskäse",
-    "salatkäse"
+    "salatkäse",
+    "weißkäse",
+    "salzlake"
    ]
   },
   {
@@ -1237,7 +1242,10 @@
     "sojamilch",
     "mandelmilch",
     "milchschnitte",
-    "kondensmilch"
+    "kondensmilch",
+    "käse",
+    "schmelz",
+    "milkana"
    ]
   },
   {
@@ -1458,7 +1466,8 @@
     "nudeln",
     "pasta",
     "makkaroni",
-    "hörnchen"
+    "hörnchen",
+    "teigwaren"
    ],
    "noMatch": [
     "eiernudeln",
@@ -1905,7 +1914,10 @@
     "mandeln",
     "pistazie",
     "cashew",
-    "kartoffel"
+    "kartoffel",
+    "salzlake",
+    "käse",
+    "weißkäse"
    ]
   },
   {
@@ -1931,7 +1943,9 @@
     "paprika",
     "pfefferoni",
     "pfeffersalami",
-    "cayenne"
+    "cayenne",
+    "pfefferon",
+    "peperon"
    ]
   },
   {
@@ -2146,6 +2160,18 @@
    "match": [
     "honig",
     "honey"
+   ],
+   "noMatch": [
+    "melone",
+    "pomelo",
+    "senf",
+    "schinken",
+    "dressing",
+    "joghurt",
+    "müsli",
+    "kuchen",
+    "salami",
+    "wurst"
    ]
   },
   {
@@ -2241,6 +2267,10 @@
     "kräuteressig",
     "apfelessig",
     "vinegar"
+   ],
+   "noMatch": [
+    "essenz",
+    "reiniger"
    ]
   },
   {
@@ -2366,13 +2396,17 @@
     "kochschinken",
     "hinterschinken",
     "schinken gekocht",
-    "ham"
+    "ham",
+    "prosciutto cotto",
+    "kochhinterschinken"
    ],
    "noMatch": [
     "roh",
     "serrano",
     "schwarzwälder",
-    "nudeln"
+    "nudeln",
+    "burger",
+    "hamburger"
    ]
   },
   {
@@ -2525,7 +2559,9 @@
     "grobe bratwurst",
     "nürnberger",
     "thüringer",
-    "sausages"
+    "sausages",
+    "bratwürste",
+    "rostbratwürste"
    ],
    "animal": "meat",
    "allergens": [
@@ -2793,6 +2829,10 @@
    "match": [
     "grünkohl",
     "kale"
+   ],
+   "noMatch": [
+    "rustikal",
+    "brot"
    ]
   },
   {
