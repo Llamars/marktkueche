@@ -115,7 +115,7 @@ function ManualSheet({ open, onClose }: { open: boolean; onClose: () => void }) 
 const fmtWhen = (iso: string) =>
   new Date(iso).toLocaleString('de-DE', { weekday: 'short', day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
 
-/** Stand des wöchentlichen Abrufs (montags per GitHub Action) – und ob der Familien-Schlüssel fehlt. */
+/** Stand des wöchentlichen Abrufs (sonntags nachts per GitHub Action) – und ob der Familien-Schlüssel fehlt. */
 function AutoFetchCard() {
   const remote = useStore((s) => s.remote);
   const city = useCity();
@@ -148,7 +148,7 @@ function AutoFetchCard() {
       ) : (
         <p className="text-sm text-muted">Für {city.name} gibt es noch keinen automatischen Abruf – Prospektfotos auslesen oder Angebote eintragen.</p>
       )}
-      <p className="mt-2 text-[11px] text-muted">Jeden Montag früh aus den veröffentlichten Prospekten (Marktseiten und discounto.de){remote.status.provider ? `, ausgelesen mit ${remote.status.provider}` : ''}.</p>
+      <p className="mt-2 text-[11px] text-muted">Jeden Sonntag um 3 Uhr aus den veröffentlichten Prospekten (Marktseiten und discounto.de){remote.status.provider ? `, ausgelesen mit ${remote.status.provider}` : ''}.</p>
     </Card>
   );
 }

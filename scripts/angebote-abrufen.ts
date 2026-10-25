@@ -1,4 +1,4 @@
-// Wöchentlicher Angebotsabruf (läuft montags als GitHub Action, siehe .github/workflows/seite.yml).
+// Wöchentlicher Angebotsabruf (läuft sonntags um 3 Uhr MEZ als GitHub Action, siehe .github/workflows/seite.yml).
 // Holt die Prospekte (Aldi Süd und Alnatura von deren Seiten, REWE, Lidl, Netto und Penny über discounto.de),
 // liest PDFs mit der KI aus und legt die Angebote verschlüsselt in public/daten/angebote.json ab.
 // Ohne DATA_KEY bricht das Skript ab.
@@ -64,15 +64,17 @@ const isBusy = (e: unknown) =>
   e instanceof AiError && (e.retryable || /429|quota|RESOURCE_EXHAUSTED|rate limit|overloaded|high demand|unavailable|try again/i.test(e.message));
 
 /**
- * Im kostenlosen Tarif sind nur wenige Anfragen pro Minute erlaubt und die Modelle zeitweise ausgelastet:
- * warten und erneut versuchen, zuletzt mit dem Ersatzmodell.
+ * Im kostenlosen Tarif sind nur wenige Anfragen pro Minute erlaubt und die Modelle zeitweise ausgelastet.
+ * Der Abruf läuft nachts und hat Zeit: geduldig warten (1, 2, 3, 4, 5 Minuten), erst dann das Ersatzmodell.
  */
+const ATTEMPTS = 6;
+
 async function askWithRetry(ai: AiConfig, req: AiRequest): Promise<string> {
-  for (let attempt = 0; attempt < 4; attempt++) {
+  for (let attempt = 0; attempt < ATTEMPTS; attempt++) {
     try {
       return await askAI(ai, req);
     } catch (e) {
-      if (!isBusy(e) || attempt === 3) {
+      if (!isBusy(e) || attempt === ATTEMPTS - 1) {
         const fallback = process.env.AI_FALLBACK_MODEL || FALLBACK_MODEL[ai.provider];
         if (isBusy(e) && fallback && fallback !== ai.model) {
           console.log(`  weiter mit Ersatzmodell ${fallback} …`);
@@ -80,8 +82,8 @@ async function askWithRetry(ai: AiConfig, req: AiRequest): Promise<string> {
         }
         throw e;
       }
-      console.log(`  KI ausgelastet, warte ${30 * (attempt + 1)} s …`);
-      await pause(30000 * (attempt + 1));
+      console.log(`  KI ausgelastet, warte ${attempt + 1} min …`);
+      await pause(60000 * (attempt + 1));
     }
   }
   throw new AiError('Die KI ist zurzeit nicht erreichbar.');
@@ -123,7 +125,8 @@ async function readProspectPdf(ai: AiConfig, market: string, e: AldiEdition, rep
   const failed: number[] = [];
   let lastError = '';
   for (const [k, part] of parts.entries()) {
-    await pause(8000);
+    // Abstand zwischen den Anfragen, damit das Minutenkontingent des Gratis-Tarifs reicht
+    await pause(15000);
     try {
       const text = await askWithRetry(ai, {
         ...task,
