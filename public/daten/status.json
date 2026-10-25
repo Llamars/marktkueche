@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T02:20:33.632Z",
+ "updatedAt": "2026-10-25T02:49:43.770Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -7,11 +7,12 @@
    "label": "Aldi Süd",
    "cityId": "freiburg",
    "marketId": "aldi-sued",
-   "ok": false,
-   "count": 0,
+   "ok": true,
+   "count": 121,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
-   "note": "Gemini: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   "partial": true,
+   "note": "Teil 4, 6 von 8 nicht lesbar – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "alnatura-wochenangebote",
