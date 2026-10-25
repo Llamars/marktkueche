@@ -25,7 +25,12 @@ export function AiSection() {
   }
 
   async function saveFamilyKey() {
-    setDevice({ familyKey: familyKey.trim() || undefined });
+    // Auch der ganze Einladungslink geht (z. B. in der Home-Bildschirm-App am iPhone, die einen eigenen Speicher hat)
+    const raw = familyKey.trim();
+    const fromLink = raw.match(/[#&]schluessel=([^&\s]+)/)?.[1];
+    const key = fromLink ? decodeURIComponent(fromLink) : raw;
+    setFamilyKey(key);
+    setDevice({ familyKey: key || undefined });
     await syncRemote();
     const r = useStore.getState().remote;
     toast(r.state === 'ok' ? `Familien-Schlüssel passt – ${r.count ?? 0} Angebote geladen.` : r.state === 'wrong' ? 'Dieser Schlüssel passt nicht.' : 'Familien-Schlüssel gespeichert.');
@@ -33,7 +38,12 @@ export function AiSection() {
 
   async function invite() {
     const url = `${location.origin}${import.meta.env.BASE_URL}#schluessel=${encodeURIComponent(device.familyKey!)}`;
-    const res = await sendLink(url, 'Marktküche', 'Mit diesem Link bekommst du die wöchentlichen Angebote in deiner Marktküche:');
+    const res = await sendLink(
+      url,
+      'Marktküche',
+      'Mit diesem Link bekommst du die Marktküche mit den wöchentlichen Angeboten. Am iPhone danach über Teilen → „Zum Home-Bildschirm“ ' +
+        'ablegen. Fehlen dort die Angebote, den ganzen Link unter Profil → Familien-Schlüssel einfügen.',
+    );
     if (res === 'kopiert') toast('Einladungslink kopiert.');
   }
 
@@ -81,10 +91,15 @@ export function AiSection() {
           <input className={`${inputCls} flex-1`} type="password" autoComplete="off" value={familyKey} onChange={(e) => setFamilyKey(e.target.value)} placeholder="Schlüssel eintragen" />
           <Button onClick={saveFamilyKey} disabled={(device.familyKey ?? '') === familyKey.trim()} className="px-4">Speichern</Button>
         </div>
-        {device.familyKey && (
+        {device.familyKey ? (
           <button onClick={invite} className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-brand">
-            <Share2 size={16} /> Familie einladen (Link mit Schlüssel)
+            <Share2 size={16} /> Freunde & Familie einladen (Link mit Schlüssel)
           </button>
+        ) : (
+          <p className="mt-3 flex items-start gap-1.5 text-sm text-muted">
+            <Share2 size={16} className="mt-0.5 shrink-0" />
+            <span>Nach dem Speichern erscheint hier „Freunde & Familie einladen“. Du kannst auch den ganzen Einladungslink einfügen.</span>
+          </p>
         )}
       </Card>
     </>
