@@ -33,6 +33,8 @@ export interface SourceReport {
   partial?: boolean;
   /** weitere Städte, für die dieselben (bundesweiten) Angebote gelten */
   cityIds?: string[];
+  /** Beginn aller gelesenen Ausgaben (z. B. Wochen- und Donnerstagsprospekt) */
+  editions?: string[];
 }
 
 export interface FetchStatus {
@@ -70,29 +72,41 @@ const isBusy = (e: unknown) =>
 
 /**
  * Im kostenlosen Tarif sind nur wenige Anfragen pro Minute erlaubt und die Modelle zeitweise ausgelastet.
- * Der Abruf läuft nachts und hat Zeit: geduldig warten (1, 2, 3, 4, 5 Minuten), erst dann das Ersatzmodell.
+ * Kurz warten, dann aufs Ersatzmodell wechseln und für den Rest des Prospekts dabei bleiben. (Vorher wurde
+ * vor jedem Teil bis zu 15 Minuten gewartet – damit lief der Abruf in das Zeitlimit von GitHub.)
  */
-const ATTEMPTS = 6;
+let preferFallback = false;
 
 async function askWithRetry(ai: AiConfig, req: AiRequest): Promise<string> {
-  for (let attempt = 0; attempt < ATTEMPTS; attempt++) {
-    try {
-      return await askAI(ai, req);
-    } catch (e) {
-      if (!isBusy(e) || attempt === ATTEMPTS - 1) {
-        const fallback = process.env.AI_FALLBACK_MODEL || FALLBACK_MODEL[ai.provider];
-        if (isBusy(e) && fallback && fallback !== ai.model) {
-          console.log(`  weiter mit Ersatzmodell ${fallback} …`);
-          return askAI({ ...ai, model: fallback }, req);
-        }
-        throw e;
+  const primary = ai.model || AI_PROVIDERS[ai.provider].defaultModel || undefined;
+  const fallback = process.env.AI_FALLBACK_MODEL || FALLBACK_MODEL[ai.provider];
+  const models = !fallback || fallback === primary ? [primary] : preferFallback ? [fallback, primary] : [primary, fallback];
+  let last: unknown;
+  for (const [m, model] of models.entries()) {
+    // Erstes Modell: einmal 1 Minute warten; letztes Modell: 1 und 2 Minuten
+    const waits = m < models.length - 1 ? [0, 1] : [0, 1, 2];
+    for (const wait of waits) {
+      if (wait) {
+        console.log(`  KI ausgelastet, warte ${wait} min …`);
+        await pause(60000 * wait);
       }
-      console.log(`  KI ausgelastet, warte ${attempt + 1} min …`);
-      await pause(60000 * (attempt + 1));
+      try {
+        const text = await askAI({ ...ai, model }, req);
+        preferFallback = model === fallback;
+        return text;
+      } catch (e) {
+        if (!isBusy(e)) throw e;
+        last = e;
+      }
     }
+    if (models[m + 1]) console.log(`  weiter mit ${models[m + 1] === fallback ? 'Ersatzmodell' : 'Hauptmodell'} ${models[m + 1]} …`);
   }
-  throw new AiError('Die KI ist zurzeit nicht erreichbar.');
+  throw last instanceof Error ? last : new AiError('Die KI ist zurzeit nicht erreichbar.');
 }
+
+/** GitHub bricht den Lauf nach 300 Minuten ab, dann wäre alles verloren. Deshalb rechtzeitig aufhören und speichern. */
+const STOP_AT = Date.now() + Number(process.env.TIME_LIMIT_MIN || 220) * 60000;
+const timeUp = () => Date.now() > STOP_AT;
 
 function previousStatus(): FetchStatus | null {
   try {
@@ -195,7 +209,15 @@ async function readProspect(ai: AiConfig, src: ProspectSource, e: Prospect, repo
   const offers: ReturnType<typeof readOffers> = [];
   const failed: number[] = [];
   let lastError = '';
+  // Bei jedem Prospekt zuerst wieder das Hauptmodell probieren
+  preferFallback = false;
   for (const [k, part] of parts.entries()) {
+    if (timeUp()) {
+      failed.push(...parts.map((_, j) => j + 1).slice(k));
+      lastError = 'Zeitlimit erreicht – wird beim nächsten Lauf gelesen.';
+      console.log(`  Zeitlimit erreicht, Teil ${k + 1}–${parts.length} folgen beim nächsten Lauf`);
+      break;
+    }
     // Abstand zwischen den Anfragen, damit das Minutenkontingent des Gratis-Tarifs reicht
     await pause(15000);
     try {
@@ -217,7 +239,7 @@ async function readProspect(ai: AiConfig, src: ProspectSource, e: Prospect, repo
   if (!offers.length) throw new Error(lastError || 'Die KI hat im Prospekt keine Angebote gefunden.');
   if (failed.length) {
     report.partial = true;
-    report.note = `Teil ${failed.join(', ')} von ${parts.length} nicht lesbar – wird beim nächsten Lauf erneut versucht.`;
+    report.note = `Teil ${failed.join(', ')} von ${parts.length} nicht gelesen – wird beim nächsten Lauf erneut versucht.`;
   }
   return offers;
 }
@@ -229,10 +251,12 @@ async function main() {
   const prevStatus = previousStatus();
   const fresh: SourceOffer[] = [];
   const reports: SourceReport[] = [];
-  // Fertig ist eine Ausgabe nur, wenn sie beim letzten Mal vollständig gelesen wurde
-  const done = (sourceId: string, validFrom?: string) => {
-    const last = prevStatus?.sources.find((x) => x.id === sourceId && x.validFrom === validFrom);
-    return !!last?.ok && !last.partial && prev.some((o) => o.sourceId === sourceId && o.validFrom === validFrom);
+  // Fertig ist eine Quelle nur, wenn alle aktuellen Ausgaben beim letzten Mal vollständig gelesen wurden. Sonst werden
+  // alle ihre Ausgaben neu gelesen – die neuen Angebote ersetzen die bisherigen der Quelle ja ganz.
+  const done = (sourceId: string, editions: Prospect[]) => {
+    const last = prevStatus?.sources.find((x) => x.id === sourceId);
+    const known = last?.editions ?? (last?.validFrom ? [last.validFrom] : []);
+    return !!last?.ok && !last.partial && editions.every((e) => !!e.validFrom && known.includes(e.validFrom)) && prev.some((o) => o.sourceId === sourceId);
   };
 
   // Aldi Süd: Prospekt-PDF mit der KI auslesen
@@ -247,17 +271,21 @@ async function main() {
       // übermorgen beginnen (keine Vorschau-Prospekte Wochen im Voraus)
       const editions = (await src.find()).filter((e) => (!e.validTo || e.validTo > today) && (!e.validFrom || e.validFrom <= soon));
       if (!editions.length) throw new Error('Keine aktuelle Ausgabe gefunden.');
+      const newest = editions[editions.length - 1];
+      Object.assign(report, { validFrom: newest.validFrom, validTo: newest.validTo, editions: editions.map((e) => e.validFrom ?? '') });
+      if (done(src.id, editions) && !FORCE) {
+        report.ok = true;
+        // Auch Angebote mitzählen, die erst später in der Woche beginnen (z. B. ab Donnerstag)
+        report.count = prev.filter((o) => o.sourceId === src.id && o.cityId === src.cityId && (!o.validTo || o.validTo >= today)).length;
+        report.note = 'bereits ausgelesen';
+        continue;
+      }
+      if (!ai) throw new Error('Kein KI-Schlüssel hinterlegt (GEMINI_API_KEY).');
       for (const e of editions) {
-        report.validFrom = e.validFrom;
-        report.validTo = e.validTo;
-        if (done(src.id, e.validFrom) && !FORCE) {
-          report.ok = true;
-          // Auch Angebote mitzählen, die erst später in der Woche beginnen (z. B. ab Donnerstag)
-          report.count += prev.filter((o) => o.sourceId === src.id && o.cityId === src.cityId && (!o.validTo || o.validTo >= today)).length;
-          report.note = 'bereits ausgelesen';
-          continue;
+        if (timeUp()) {
+          report.partial = true;
+          throw new Error('Zeitlimit erreicht – wird beim nächsten Lauf gelesen.');
         }
-        if (!ai) throw new Error('Kein KI-Schlüssel hinterlegt (GEMINI_API_KEY).');
         // Mehrere Prospekte derselben Woche können dieselben Angebote enthalten
         const known = new Set(fresh.filter((o) => o.sourceId === src.id).map((o) => `${o.title.toLowerCase()}|${o.price}`));
         const offers = (await readProspect(ai, src, e, report)).filter((o) => !known.has(`${o.title.toLowerCase()}|${o.price}`));
@@ -287,15 +315,25 @@ async function main() {
   reports.push(aln);
 
   // Neu gelesene Quellen ersetzen ihre bisherigen Angebote ganz (auch solche, die erst ab Donnerstag gelten);
-  // was diesmal nicht geladen werden konnte, bleibt bis zum Ablauf erhalten
+  // was diesmal nicht geladen werden konnte, bleibt bis zum Ablauf erhalten. Bei unvollständig gelesenen Quellen
+  // bleiben die bisherigen Angebote zusätzlich stehen, damit z. B. ein Zeitlimit nicht die halbe Woche löscht.
   const freshSources = new Set(fresh.map((o) => o.sourceId));
+  const partialSources = new Set(reports.filter((r) => r.partial).map((r) => r.id));
+  const offerKey = (o: { sourceId?: string; title: string; price: number }) => `${o.sourceId}|${o.title.toLowerCase()}|${o.price}`;
+  const freshKeys = new Set(fresh.map(offerKey));
   // Kopien für weitere Städte werden jedes Mal neu aus den Angeboten der Hauptstadt erzeugt
   const copied = new Set(Object.keys(ALSO_FOR));
-  const kept = prev.filter((o) => (!o.validTo || o.validTo >= today) && !freshSources.has(o.sourceId) && !(copied.has(o.sourceId ?? '') && o.id.includes('@')));
+  const kept = prev.filter(
+    (o) =>
+      (!o.validTo || o.validTo >= today) &&
+      !(copied.has(o.sourceId ?? '') && o.id.includes('@')) &&
+      (!freshSources.has(o.sourceId) || (partialSources.has(o.sourceId ?? '') && !freshKeys.has(offerKey(o)))),
+  );
   const now = new Date().toISOString();
+  const run = Date.now().toString(36);
   const primary: Offer[] = [
     ...kept,
-    ...fresh.map((o, k) => ({ ...o, id: `auto-${o.sourceId}-${o.validFrom ?? 'x'}-${k}`, createdAt: now })),
+    ...fresh.map((o, k) => ({ ...o, id: `auto-${o.sourceId}-${o.validFrom ?? 'x'}-${run}-${k}`, createdAt: now })),
   ];
   const offers: Offer[] = primary.flatMap((o) => [o, ...(ALSO_FOR[o.sourceId ?? ''] ?? []).map((cityId) => ({ ...o, id: `${o.id}@${cityId}`, cityId }))]);
 
