@@ -1,62 +1,113 @@
 {
- "updatedAt": "2026-10-25T16:06:16.259Z",
+ "updatedAt": "2026-10-26T00:42:28.608Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
    "id": "aldi-sued-prospekt",
    "label": "Aldi Süd",
    "cityId": "freiburg",
+   "cityIds": [
+    "muenchen"
+   ],
    "marketId": "aldi-sued",
    "ok": true,
    "count": 101,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
+   "editions": [
+    "2026-10-26"
+   ],
    "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-rewe",
    "label": "REWE",
    "cityId": "freiburg",
+   "cityIds": [
+    "muenchen"
+   ],
    "marketId": "rewe",
    "ok": true,
-   "count": 82,
+   "count": 57,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
+   "editions": [
+    "2026-10-26"
+   ],
    "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-lidl",
    "label": "Lidl",
    "cityId": "freiburg",
+   "cityIds": [
+    "muenchen"
+   ],
    "marketId": "lidl",
    "ok": true,
-   "count": 102,
+   "count": 97,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
+   "editions": [
+    "2026-10-26"
+   ],
    "partial": true,
-   "note": "Teil 4, 6 von 11 nicht lesbar – wird beim nächsten Lauf erneut versucht."
+   "note": "Teil 4, 7 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-netto",
    "label": "Netto",
    "cityId": "freiburg",
+   "cityIds": [
+    "muenchen"
+   ],
    "marketId": "netto",
-   "ok": true,
-   "count": 118,
-   "validFrom": "2026-10-26",
-   "validTo": "2026-10-31",
-   "note": "bereits ausgelesen"
+   "ok": false,
+   "count": 0,
+   "note": "Keine aktuelle Ausgabe gefunden."
   },
   {
    "id": "discounto-penny",
    "label": "Penny",
    "cityId": "freiburg",
+   "cityIds": [
+    "muenchen"
+   ],
    "marketId": "penny",
    "ok": true,
    "count": 113,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
+   "editions": [
+    "2026-10-26"
+   ],
    "note": "bereits ausgelesen"
+  },
+  {
+   "id": "discounto-kaufland",
+   "label": "Kaufland",
+   "cityId": "muenchen",
+   "marketId": "kaufland",
+   "ok": true,
+   "count": 181,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-31",
+   "editions": [
+    "2026-10-26"
+   ]
+  },
+  {
+   "id": "discounto-norma",
+   "label": "Norma",
+   "cityId": "muenchen",
+   "marketId": "norma",
+   "ok": true,
+   "count": 87,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-31",
+   "editions": [
+    "2026-10-26"
+   ]
   },
   {
    "id": "fol-no-frills",
@@ -66,12 +117,28 @@
    "ok": true,
    "count": 127,
    "validFrom": "2026-10-22",
-   "validTo": "2026-10-28"
+   "validTo": "2026-10-28",
+   "editions": [
+    "2026-10-22"
+   ],
+   "note": "bereits ausgelesen"
+  },
+  {
+   "id": "fol-tnt",
+   "label": "T&T",
+   "cityId": "toronto",
+   "marketId": "tnt",
+   "ok": false,
+   "count": 0,
+   "note": "Keine aktuelle Ausgabe gefunden."
   },
   {
    "id": "alnatura-wochenangebote",
    "label": "Alnatura",
    "cityId": "freiburg",
+   "cityIds": [
+    "muenchen"
+   ],
    "marketId": "alnatura",
    "ok": true,
    "count": 6,
