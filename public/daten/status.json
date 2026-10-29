@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T00:42:28.608Z",
+ "updatedAt": "2026-10-29T18:29:43.232Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -45,14 +45,12 @@
    ],
    "marketId": "lidl",
    "ok": true,
-   "count": 97,
+   "count": 98,
    "validFrom": "2026-10-26",
    "validTo": "2026-10-31",
    "editions": [
     "2026-10-26"
-   ],
-   "partial": true,
-   "note": "Teil 4, 7 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   ]
   },
   {
    "id": "discounto-netto",
@@ -62,9 +60,15 @@
     "muenchen"
    ],
    "marketId": "netto",
-   "ok": false,
-   "count": 0,
-   "note": "Keine aktuelle Ausgabe gefunden."
+   "ok": true,
+   "count": 35,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-31",
+   "editions": [
+    "2026-10-26"
+   ],
+   "partial": true,
+   "note": "Teil 1 von 3 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-penny",
@@ -94,7 +98,8 @@
    "validTo": "2026-10-31",
    "editions": [
     "2026-10-26"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-norma",
@@ -107,7 +112,8 @@
    "validTo": "2026-10-31",
    "editions": [
     "2026-10-26"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "fol-no-frills",
@@ -115,13 +121,12 @@
    "cityId": "toronto",
    "marketId": "no-frills",
    "ok": true,
-   "count": 127,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-28",
+   "count": 20,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-04",
    "editions": [
-    "2026-10-22"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-10-29"
+   ]
   },
   {
    "id": "fol-tnt",
