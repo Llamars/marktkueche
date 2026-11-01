@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T00:17:35.700Z",
+ "updatedAt": "2026-11-01T08:37:44.047Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -11,14 +11,12 @@
    ],
    "marketId": "aldi-sued",
    "ok": true,
-   "count": 60,
+   "count": 88,
    "validFrom": "2026-11-02",
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
-   ],
-   "partial": true,
-   "note": "Teil 4 von 6 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   ]
   },
   {
    "id": "discounto-rewe",
@@ -34,7 +32,8 @@
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-lidl",
@@ -45,7 +44,7 @@
    ],
    "marketId": "lidl",
    "ok": true,
-   "count": 100,
+   "count": 96,
    "validFrom": "2026-11-02",
    "validTo": "2026-11-07",
    "editions": [
@@ -63,7 +62,7 @@
    ],
    "marketId": "netto",
    "ok": true,
-   "count": 128,
+   "count": 68,
    "validFrom": "2026-11-02",
    "validTo": "2026-11-07",
    "editions": [
@@ -86,16 +85,21 @@
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-kaufland",
    "label": "Kaufland",
    "cityId": "muenchen",
    "marketId": "kaufland",
-   "ok": false,
-   "count": 0,
-   "note": "Keine aktuelle Ausgabe gefunden."
+   "ok": true,
+   "count": 164,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-07",
+   "editions": [
+    "2026-11-02"
+   ]
   },
   {
    "id": "discounto-norma",
@@ -108,7 +112,8 @@
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "fol-no-frills",
@@ -135,7 +140,8 @@
    "validTo": "2026-11-05",
    "editions": [
     "2026-10-30"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "alnatura-wochenangebote",
