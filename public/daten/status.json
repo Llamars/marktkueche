@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T08:37:44.047Z",
+ "updatedAt": "2026-11-05T20:25:59.631Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -16,7 +16,8 @@
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-rewe",
@@ -44,14 +45,14 @@
    ],
    "marketId": "lidl",
    "ok": true,
-   "count": 96,
+   "count": 54,
    "validFrom": "2026-11-02",
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
    ],
    "partial": true,
-   "note": "Teil 4 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   "note": "Teil 3, 5 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-netto",
@@ -62,14 +63,12 @@
    ],
    "marketId": "netto",
    "ok": true,
-   "count": 68,
+   "count": 146,
    "validFrom": "2026-11-02",
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
-   ],
-   "partial": true,
-   "note": "Teil 3 von 3 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   ]
   },
   {
    "id": "discounto-penny",
@@ -99,7 +98,8 @@
    "validTo": "2026-11-07",
    "editions": [
     "2026-11-02"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-norma",
@@ -121,27 +121,23 @@
    "cityId": "toronto",
    "marketId": "no-frills",
    "ok": true,
-   "count": 20,
-   "validFrom": "2026-10-29",
-   "validTo": "2026-11-04",
+   "count": 48,
+   "validFrom": "2026-11-05",
+   "validTo": "2026-11-11",
    "editions": [
-    "2026-10-29"
+    "2026-11-05"
    ],
-   "note": "bereits ausgelesen"
+   "partial": true,
+   "note": "Teil 1, 2 von 4 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "fol-tnt",
    "label": "T&T",
    "cityId": "toronto",
    "marketId": "tnt",
-   "ok": true,
-   "count": 72,
-   "validFrom": "2026-10-30",
-   "validTo": "2026-11-05",
-   "editions": [
-    "2026-10-30"
-   ],
-   "note": "bereits ausgelesen"
+   "ok": false,
+   "count": 0,
+   "note": "Keine aktuelle Ausgabe gefunden."
   },
   {
    "id": "alnatura-wochenangebote",
@@ -152,9 +148,9 @@
    ],
    "marketId": "alnatura",
    "ok": true,
-   "count": 6,
-   "validFrom": "2026-10-26",
-   "validTo": "2026-10-31"
+   "count": 7,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-07"
   }
  ]
 }
