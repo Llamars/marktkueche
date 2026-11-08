@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T20:25:59.631Z",
+ "updatedAt": "2026-11-08T00:52:00.045Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -11,13 +11,14 @@
    ],
    "marketId": "aldi-sued",
    "ok": true,
-   "count": 88,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07",
+   "count": 53,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14",
    "editions": [
-    "2026-11-02"
+    "2026-11-09"
    ],
-   "note": "bereits ausgelesen"
+   "partial": true,
+   "note": "Teil 11 von 14 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-rewe",
@@ -28,13 +29,12 @@
    ],
    "marketId": "rewe",
    "ok": true,
-   "count": 105,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07",
+   "count": 112,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14",
    "editions": [
-    "2026-11-02"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-09"
+   ]
   },
   {
    "id": "discounto-lidl",
@@ -45,14 +45,14 @@
    ],
    "marketId": "lidl",
    "ok": true,
-   "count": 54,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07",
+   "count": 123,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14",
    "editions": [
-    "2026-11-02"
+    "2026-11-09"
    ],
    "partial": true,
-   "note": "Teil 3, 5 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   "note": "Teil 6, 7 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-netto",
@@ -63,11 +63,11 @@
    ],
    "marketId": "netto",
    "ok": true,
-   "count": 146,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07",
+   "count": 92,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14",
    "editions": [
-    "2026-11-02"
+    "2026-11-09"
    ]
   },
   {
@@ -79,13 +79,12 @@
    ],
    "marketId": "penny",
    "ok": true,
-   "count": 131,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07",
+   "count": 140,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14",
    "editions": [
-    "2026-11-02"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-09"
+   ]
   },
   {
    "id": "discounto-kaufland",
@@ -93,13 +92,14 @@
    "cityId": "muenchen",
    "marketId": "kaufland",
    "ok": true,
-   "count": 164,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07",
+   "count": 195,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14",
    "editions": [
-    "2026-11-02"
+    "2026-11-09",
+    "2026-11-09"
    ],
-   "note": "bereits ausgelesen"
+   "note": "Die KI hat im Prospekt keine Angebote gefunden."
   },
   {
    "id": "discounto-norma",
@@ -107,13 +107,12 @@
    "cityId": "muenchen",
    "marketId": "norma",
    "ok": true,
-   "count": 56,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07",
+   "count": 81,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14",
    "editions": [
-    "2026-11-02"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-09"
+   ]
   },
   {
    "id": "fol-no-frills",
@@ -121,23 +120,25 @@
    "cityId": "toronto",
    "marketId": "no-frills",
    "ok": true,
-   "count": 48,
+   "count": 166,
    "validFrom": "2026-11-05",
    "validTo": "2026-11-11",
    "editions": [
     "2026-11-05"
-   ],
-   "partial": true,
-   "note": "Teil 1, 2 von 4 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   ]
   },
   {
    "id": "fol-tnt",
    "label": "T&T",
    "cityId": "toronto",
    "marketId": "tnt",
-   "ok": false,
-   "count": 0,
-   "note": "Keine aktuelle Ausgabe gefunden."
+   "ok": true,
+   "count": 72,
+   "validFrom": "2026-11-06",
+   "validTo": "2026-11-12",
+   "editions": [
+    "2026-11-06"
+   ]
   },
   {
    "id": "alnatura-wochenangebote",
@@ -147,10 +148,9 @@
     "muenchen"
    ],
    "marketId": "alnatura",
-   "ok": true,
-   "count": 7,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-07"
+   "ok": false,
+   "count": 0,
+   "note": "Keine Angebote auf der Seite gefunden."
   }
  ]
 }
