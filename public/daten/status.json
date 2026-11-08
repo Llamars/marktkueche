@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T00:52:00.045Z",
+ "updatedAt": "2026-11-08T08:25:01.227Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -11,14 +11,12 @@
    ],
    "marketId": "aldi-sued",
    "ok": true,
-   "count": 53,
+   "count": 64,
    "validFrom": "2026-11-09",
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
-   ],
-   "partial": true,
-   "note": "Teil 11 von 14 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   ]
   },
   {
    "id": "discounto-rewe",
@@ -34,7 +32,8 @@
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-lidl",
@@ -45,14 +44,14 @@
    ],
    "marketId": "lidl",
    "ok": true,
-   "count": 123,
+   "count": 121,
    "validFrom": "2026-11-09",
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
    ],
    "partial": true,
-   "note": "Teil 6, 7 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   "note": "Teil 6 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-netto",
@@ -68,7 +67,8 @@
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-penny",
@@ -84,7 +84,8 @@
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-kaufland",
@@ -99,7 +100,7 @@
     "2026-11-09",
     "2026-11-09"
    ],
-   "note": "Die KI hat im Prospekt keine Angebote gefunden."
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-norma",
@@ -112,7 +113,8 @@
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "fol-no-frills",
@@ -125,7 +127,8 @@
    "validTo": "2026-11-11",
    "editions": [
     "2026-11-05"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "fol-tnt",
@@ -138,7 +141,8 @@
    "validTo": "2026-11-12",
    "editions": [
     "2026-11-06"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "alnatura-wochenangebote",
