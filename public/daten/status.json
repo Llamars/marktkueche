@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T08:25:01.227Z",
+ "updatedAt": "2026-11-12T19:58:29.823Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -16,7 +16,8 @@
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-rewe",
@@ -44,14 +45,14 @@
    ],
    "marketId": "lidl",
    "ok": true,
-   "count": 121,
+   "count": 87,
    "validFrom": "2026-11-09",
    "validTo": "2026-11-14",
    "editions": [
     "2026-11-09"
    ],
    "partial": true,
-   "note": "Teil 6 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   "note": "Teil 2 von 11 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-netto",
@@ -92,15 +93,14 @@
    "label": "Kaufland",
    "cityId": "muenchen",
    "marketId": "kaufland",
-   "ok": true,
-   "count": 195,
-   "validFrom": "2026-11-09",
+   "ok": false,
+   "count": 0,
+   "validFrom": "2026-11-12",
    "validTo": "2026-11-14",
    "editions": [
-    "2026-11-09",
-    "2026-11-09"
+    "2026-11-12"
    ],
-   "note": "bereits ausgelesen"
+   "note": "Die KI hat im Prospekt keine Angebote gefunden."
   },
   {
    "id": "discounto-norma",
@@ -122,27 +122,21 @@
    "cityId": "toronto",
    "marketId": "no-frills",
    "ok": true,
-   "count": 166,
-   "validFrom": "2026-11-05",
-   "validTo": "2026-11-11",
+   "count": 138,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-18",
    "editions": [
-    "2026-11-05"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-12"
+   ]
   },
   {
    "id": "fol-tnt",
    "label": "T&T",
    "cityId": "toronto",
    "marketId": "tnt",
-   "ok": true,
-   "count": 72,
-   "validFrom": "2026-11-06",
-   "validTo": "2026-11-12",
-   "editions": [
-    "2026-11-06"
-   ],
-   "note": "bereits ausgelesen"
+   "ok": false,
+   "count": 0,
+   "note": "Keine aktuelle Ausgabe gefunden."
   },
   {
    "id": "alnatura-wochenangebote",
@@ -152,9 +146,10 @@
     "muenchen"
    ],
    "marketId": "alnatura",
-   "ok": false,
-   "count": 0,
-   "note": "Keine Angebote auf der Seite gefunden."
+   "ok": true,
+   "count": 6,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-14"
   }
  ]
 }
