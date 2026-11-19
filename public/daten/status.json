@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T08:39:30.500Z",
+ "updatedAt": "2026-11-19T20:23:17.756Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -50,7 +50,8 @@
    "validTo": "2026-11-21",
    "editions": [
     "2026-11-16"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-netto",
@@ -78,14 +79,12 @@
    ],
    "marketId": "penny",
    "ok": true,
-   "count": 41,
+   "count": 75,
    "validFrom": "2026-11-16",
    "validTo": "2026-11-21",
    "editions": [
     "2026-11-16"
-   ],
-   "partial": true,
-   "note": "Teil 1 von 3 nicht gelesen – wird beim nächsten Lauf erneut versucht."
+   ]
   },
   {
    "id": "discounto-kaufland",
@@ -97,6 +96,7 @@
    "validFrom": "2026-11-16",
    "validTo": "2026-11-21",
    "editions": [
+    "2026-11-16",
     "2026-11-16"
    ],
    "note": "bereits ausgelesen"
@@ -120,28 +120,23 @@
    "label": "No Frills",
    "cityId": "toronto",
    "marketId": "no-frills",
-   "ok": true,
-   "count": 138,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-18",
+   "ok": false,
+   "count": 0,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-25",
    "editions": [
-    "2026-11-12"
+    "2026-11-19"
    ],
-   "note": "bereits ausgelesen"
+   "note": "Die KI hat im Prospekt keine Angebote gefunden."
   },
   {
    "id": "fol-tnt",
    "label": "T&T",
    "cityId": "toronto",
    "marketId": "tnt",
-   "ok": true,
-   "count": 70,
-   "validFrom": "2026-11-13",
-   "validTo": "2026-11-19",
-   "editions": [
-    "2026-11-13"
-   ],
-   "note": "bereits ausgelesen"
+   "ok": false,
+   "count": 0,
+   "note": "Keine aktuelle Ausgabe gefunden."
   },
   {
    "id": "alnatura-wochenangebote",
