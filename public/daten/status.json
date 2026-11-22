@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T20:23:17.756Z",
+ "updatedAt": "2026-11-22T01:21:02.033Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -11,13 +11,12 @@
    ],
    "marketId": "aldi-sued",
    "ok": true,
-   "count": 73,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21",
+   "count": 65,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28",
    "editions": [
-    "2026-11-16"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-23"
+   ]
   },
   {
    "id": "discounto-rewe",
@@ -28,13 +27,12 @@
    ],
    "marketId": "rewe",
    "ok": true,
-   "count": 114,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21",
+   "count": 155,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28",
    "editions": [
-    "2026-11-16"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-23"
+   ]
   },
   {
    "id": "discounto-lidl",
@@ -45,13 +43,13 @@
    ],
    "marketId": "lidl",
    "ok": true,
-   "count": 97,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21",
+   "count": 120,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28",
    "editions": [
-    "2026-11-16"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-23",
+    "2026-11-23"
+   ]
   },
   {
    "id": "discounto-netto",
@@ -62,13 +60,12 @@
    ],
    "marketId": "netto",
    "ok": true,
-   "count": 119,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21",
+   "count": 122,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28",
    "editions": [
-    "2026-11-16"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-23"
+   ]
   },
   {
    "id": "discounto-penny",
@@ -79,27 +76,28 @@
    ],
    "marketId": "penny",
    "ok": true,
-   "count": 75,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21",
+   "count": 100,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28",
    "editions": [
-    "2026-11-16"
-   ]
+    "2026-11-23"
+   ],
+   "partial": true,
+   "note": "Teil 4 von 10 nicht gelesen – wird beim nächsten Lauf erneut versucht."
   },
   {
    "id": "discounto-kaufland",
    "label": "Kaufland",
    "cityId": "muenchen",
    "marketId": "kaufland",
-   "ok": true,
-   "count": 160,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21",
+   "ok": false,
+   "count": 0,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28",
    "editions": [
-    "2026-11-16",
-    "2026-11-16"
+    "2026-11-23"
    ],
-   "note": "bereits ausgelesen"
+   "note": "Die KI hat im Prospekt keine Angebote gefunden."
   },
   {
    "id": "discounto-norma",
@@ -107,13 +105,12 @@
    "cityId": "muenchen",
    "marketId": "norma",
    "ok": true,
-   "count": 82,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21",
+   "count": 87,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28",
    "editions": [
-    "2026-11-16"
-   ],
-   "note": "bereits ausgelesen"
+    "2026-11-23"
+   ]
   },
   {
    "id": "fol-no-frills",
@@ -136,7 +133,12 @@
    "marketId": "tnt",
    "ok": false,
    "count": 0,
-   "note": "Keine aktuelle Ausgabe gefunden."
+   "validFrom": "2026-11-20",
+   "validTo": "2026-11-26",
+   "editions": [
+    "2026-11-20"
+   ],
+   "note": "Die KI hat im Prospekt keine Angebote gefunden."
   },
   {
    "id": "alnatura-wochenangebote",
@@ -147,9 +149,9 @@
    ],
    "marketId": "alnatura",
    "ok": true,
-   "count": 7,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-21"
+   "count": 8,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-28"
   }
  ]
 }
