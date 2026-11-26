@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T09:06:45.594Z",
+ "updatedAt": "2026-11-26T21:45:30.743Z",
  "provider": "Gemini (Google)",
  "sources": [
   {
@@ -85,20 +85,23 @@
    "validTo": "2026-11-28",
    "editions": [
     "2026-11-23"
-   ]
+   ],
+   "note": "bereits ausgelesen"
   },
   {
    "id": "discounto-kaufland",
    "label": "Kaufland",
    "cityId": "muenchen",
    "marketId": "kaufland",
-   "ok": false,
-   "count": 0,
+   "ok": true,
+   "count": 29,
    "validFrom": "2026-11-23",
    "validTo": "2026-11-28",
    "editions": [
+    "2026-11-23",
     "2026-11-23"
    ],
+   "partial": true,
    "note": "Die KI hat im Prospekt keine Angebote gefunden."
   },
   {
@@ -107,7 +110,7 @@
    "cityId": "muenchen",
    "marketId": "norma",
    "ok": true,
-   "count": 87,
+   "count": 82,
    "validFrom": "2026-11-23",
    "validTo": "2026-11-28",
    "editions": [
@@ -122,10 +125,10 @@
    "marketId": "no-frills",
    "ok": false,
    "count": 0,
-   "validFrom": "2026-11-19",
-   "validTo": "2026-11-25",
+   "validFrom": "2026-11-26",
+   "validTo": "2026-12-02",
    "editions": [
-    "2026-11-19"
+    "2026-11-26"
    ],
    "note": "Die KI hat im Prospekt keine Angebote gefunden."
   },
@@ -136,12 +139,7 @@
    "marketId": "tnt",
    "ok": false,
    "count": 0,
-   "validFrom": "2026-11-20",
-   "validTo": "2026-11-26",
-   "editions": [
-    "2026-11-20"
-   ],
-   "note": "Die KI hat im Prospekt keine Angebote gefunden."
+   "note": "Keine aktuelle Ausgabe gefunden."
   },
   {
    "id": "alnatura-wochenangebote",
